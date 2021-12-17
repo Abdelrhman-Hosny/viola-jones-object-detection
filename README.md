@@ -6,4 +6,4 @@ use `conda env update -f env.yml` to update the environment
 
 use `conda activate fer` to activate the environment
 
-use `conda env export > env.yml` to update the env file
+use `conda env export --no-build > env.yml` to update the env file
