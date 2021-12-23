@@ -1,18 +1,20 @@
 from typing import List
 import numpy as np
 
+
 class RectangleType:
     POSITIVE = 1
     NEGATIVE = -1
 
+
 class Rectangle:
-    def __init__(self, x : int, y : int, w : int, h : int, type : RectangleType) -> None:
+    def __init__(self, x: int, y: int, w: int, h: int, type: RectangleType) -> None:
         self.x = x
         self.y = y
         self.w = w
         self.h = h
         self.type = type
-    
+
     def get_bounds(self) -> tuple[int, int, int, int]:
         """
         (x1,y1) is the top left corner of the rectangle
@@ -20,10 +22,10 @@ class Rectangle:
         Returns the bounds of the rectangle.
         """
         return (self.x, self.y, self.x + self.w, self.y + self.h)
-    
+
 
 class Feature:
-    def __init__(self, rect_array : List[Rectangle]) -> None:
+    def __init__(self, rect_array: List[Rectangle]) -> None:
         """
         Initializes a feature with a list of rectangles.
         There are 4 types of features:
@@ -34,8 +36,8 @@ class Feature:
         :param rect_array: The list of rectangles that make up the feature.
         """
         self.rectangles = rect_array
-    
-    def compute_feature(self, integral_image : np.ndarray) -> int:
+
+    def compute_feature(self, integral_image: np.ndarray) -> int:
         """
         Computes the feature of the feature.
         :param image: The integral image to compute the feature of.
@@ -45,10 +47,10 @@ class Feature:
         for rect in self.rectangles:
             x1, y1, x2, y2 = rect.get_bounds()
             feature_sum += (
-                            integral_image[y2, x2] # bottom right
-                            - integral_image[y1, x2] # top right
-                            - integral_image[y2, x1] # bottom left
-                            + integral_image[y1, x1] # top left
-                            ) * rect.type
-        
+                integral_image[y2, x2]  # bottom right
+                - integral_image[y1, x2]  # top right
+                - integral_image[y2, x1]  # bottom left
+                + integral_image[y1, x1]  # top left
+            ) * rect.type
+
         return feature_sum
