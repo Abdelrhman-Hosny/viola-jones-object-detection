@@ -10,10 +10,12 @@ class WeakClassifier:
         self.success_value = success_val
         self.fail_value = fail_val
     
-    def classify(self, feature_list : list[Feature], integral_image : np.ndarray) -> float:
+    def classify(self, feature_list : list[Feature], integral_image : np.ndarray, scale: float) -> float:
 
         feature = feature_list[self.feature_idx]
-        feature_val = feature.compute_feature(integral_image)
+        
+        feature_val = feature.compute_feature(integral_image, scale)
+
         if feature_val > self.classifier_threshold:
             return self.success_value
         else:

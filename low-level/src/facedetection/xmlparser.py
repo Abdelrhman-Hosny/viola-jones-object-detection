@@ -27,12 +27,12 @@ def parse_haar_cascade_xml(xml_path : str ) -> tuple[list[Stage], list[Feature]]
             _ , _ , feature_idx , node_threshold = internal_nodes
             success_val , fail_val = leaf_values
 
-            my_classifiers.append(WeakClassifier(node_threshold, feature_idx, success_val, fail_val))    
+            my_classifiers.append(WeakClassifier(float(node_threshold), int(feature_idx), float(success_val), float(fail_val)))    
         
         # print(stage.find('stageThreshold').text)
         stage_threshold = float(stage.find('stageThreshold').text)
 
-        my_stages.append(Stage(stage_threshold, classifiers))
+        my_stages.append(Stage(stage_threshold, my_classifiers))
 
     features = all.find('cascade').find('features')
 
@@ -47,7 +47,7 @@ def parse_haar_cascade_xml(xml_path : str ) -> tuple[list[Stage], list[Feature]]
             # x, y, width, height, value
 
             my_rect = rect.text.split()
-            my_rect = [float(x) for x in my_rect]
+            my_rect = [int(float(x)) for x in my_rect]
             my_rectangles.append(Rectangle(*my_rect))
 
         my_features.append(Feature(my_rectangles))

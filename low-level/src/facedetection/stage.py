@@ -7,13 +7,12 @@ class Stage:
     def __init__(self, stage_threshold: int, classifier_list : list[WeakClassifier]) -> None:
         self.stage_threshold = stage_threshold
         self.classifier_list = classifier_list
-        self.current_val = 0
+        
     
-    def check_stage(self, feature_list : list[Feature],  integral_image : np.ndarray) -> bool:
-        for classifier in self.classifier_list:
-            self.current_val += classifier.classify(feature_list,integral_image) 
-            if(self.current_val < self.stage_Threshold):
-                return False
-        return True
+    def check_stage(self, feature_list : list[Feature],  integral_image : np.ndarray, scale : float) -> bool:
+        
+        stage_result = [ clf.classify(feature_list,integral_image, scale) for clf in self.classifier_list]
 
- 
+        self.stage_result = sum(stage_result)
+        return self.stage_result > self.stage_threshold
+       

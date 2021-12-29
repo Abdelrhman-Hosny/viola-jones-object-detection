@@ -1,3 +1,4 @@
+from matplotlib.pyplot import sca
 import numpy as np
 
 
@@ -9,13 +10,18 @@ class Rectangle:
         self.h = h
         self.val = val
 
-    def get_bounds(self) -> tuple[int, int, int, int]:
+    def get_bounds(self, scale) -> tuple[int, int, int, int]:
         """
         (x1,y1) is the top left corner of the rectangle
         (x2,y2) is the bottom right corner of the rectangle
         Returns the bounds of the rectangle.
         """
-        return (self.x, self.y, self.x + self.w, self.y + self.h)
+        return (
+            int(self.x * scale),
+            int(self.y * scale),
+            int((self.x + self.w) * scale),
+            int((self.y + self.h) * scale)
+        )
 
 
 class Feature:
@@ -31,7 +37,7 @@ class Feature:
         """
         self.rectangles = rect_array
 
-    def compute_feature(self, integral_image: np.ndarray) -> int:
+    def compute_feature(self, integral_image: np.ndarray, scale: float=1) -> float:
         """
         Computes the feature of the feature.
         :param image: The integral image to compute the feature of.
@@ -39,7 +45,8 @@ class Feature:
         """
         feature_sum = 0
         for rect in self.rectangles:
-            x1, y1, x2, y2 = rect.get_bounds()
+            x1, y1, x2, y2 = rect.get_bounds(scale)
+            
             feature_sum += (
                 integral_image[y2, x2]  # bottom right
                 - integral_image[y1, x2]  # top right
@@ -47,4 +54,4 @@ class Feature:
                 + integral_image[y1, x1]  # top left
             ) * rect.val
 
-        return feature_sum
+        return feature_sum /  ((y2 - y1) * (x2 - x1))#(integral_image.shape[0] * integral_image.shape[1])
