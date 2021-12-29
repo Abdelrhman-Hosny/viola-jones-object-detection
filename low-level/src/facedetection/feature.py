@@ -1,19 +1,13 @@
-from typing import List
 import numpy as np
 
 
-class RectangleType:
-    POSITIVE = 1
-    NEGATIVE = -1
-
-
 class Rectangle:
-    def __init__(self, x: int, y: int, w: int, h: int, type: RectangleType) -> None:
+    def __init__(self, x: int, y: int, w: int, h: int, val : int) -> None:
         self.x = x
         self.y = y
         self.w = w
         self.h = h
-        self.type = type
+        self.val = val
 
     def get_bounds(self) -> tuple[int, int, int, int]:
         """
@@ -25,7 +19,7 @@ class Rectangle:
 
 
 class Feature:
-    def __init__(self, rect_array: List[Rectangle]) -> None:
+    def __init__(self, rect_array: list[Rectangle]) -> None:
         """
         Initializes a feature with a list of rectangles.
         There are 4 types of features:
@@ -51,6 +45,6 @@ class Feature:
                 - integral_image[y1, x2]  # top right
                 - integral_image[y2, x1]  # bottom left
                 + integral_image[y1, x1]  # top left
-            ) * rect.type
+            ) * rect.val
 
         return feature_sum
