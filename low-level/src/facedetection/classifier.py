@@ -1,19 +1,26 @@
 import numpy as np
 
-from feature import Feature, Rectangle
+from feature import Feature
+
 
 class WeakClassifier:
-    def __init__(self, classifier_threshold, feature_idx, success_val, fail_val) -> None:
-        
+    def __init__(
+        self, classifier_threshold, feature_idx, success_val, fail_val
+    ) -> None:
+
         self.classifier_threshold = classifier_threshold
-        self.feature_idx = feature_idx  
+        self.feature_idx = feature_idx
         self.success_value = success_val
         self.fail_value = fail_val
-    
-    def classify(self, feature_list : list[Feature], integral_image : np.ndarray, scale: float) -> float:
+
+    def classify(
+        self, feature_list: list[Feature],
+        integral_image: np.ndarray,
+        scale: float
+    ) -> float:
 
         feature = feature_list[self.feature_idx]
-        
+
         feature_val = feature.compute_feature(integral_image, scale)
 
         if feature_val > self.classifier_threshold:

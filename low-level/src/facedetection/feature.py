@@ -1,9 +1,8 @@
-from matplotlib.pyplot import sca
 import numpy as np
 
 
 class Rectangle:
-    def __init__(self, x: int, y: int, w: int, h: int, val : int) -> None:
+    def __init__(self, x: int, y: int, w: int, h: int, val: int) -> None:
         self.x = x
         self.y = y
         self.w = w
@@ -20,7 +19,7 @@ class Rectangle:
             int(self.x * scale),
             int(self.y * scale),
             int((self.x + self.w) * scale),
-            int((self.y + self.h) * scale)
+            int((self.y + self.h) * scale),
         )
 
 
@@ -37,7 +36,11 @@ class Feature:
         """
         self.rectangles = rect_array
 
-    def compute_feature(self, integral_image: np.ndarray, scale: float=1) -> float:
+    def compute_feature(
+        self,
+        integral_image: np.ndarray,
+        scale: float = 1,
+            ) -> float:
         """
         Computes the feature of the feature.
         :param image: The integral image to compute the feature of.
@@ -46,7 +49,7 @@ class Feature:
         feature_sum = 0
         for rect in self.rectangles:
             x1, y1, x2, y2 = rect.get_bounds(scale)
-            
+
             feature_sum += (
                 integral_image[y2, x2]  # bottom right
                 - integral_image[y1, x2]  # top right
@@ -54,4 +57,6 @@ class Feature:
                 + integral_image[y1, x1]  # top left
             ) * rect.val
 
-        return feature_sum /  ((y2 - y1) * (x2 - x1))#(integral_image.shape[0] * integral_image.shape[1])
+        return feature_sum / (
+            (y2 - y1) * (x2 - x1)
+        )  # (integral_image.shape[0] * integral_image.shape[1])
