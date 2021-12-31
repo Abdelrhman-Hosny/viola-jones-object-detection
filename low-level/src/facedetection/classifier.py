@@ -5,13 +5,13 @@ from feature import Feature
 
 class WeakClassifier:
     def __init__(
-        self, classifier_threshold, feature_idx, success_val, fail_val
+        self, classifier_threshold, feature_idx, left_val, right_val
     ) -> None:
 
         self.classifier_threshold = classifier_threshold
         self.feature_idx = feature_idx
-        self.success_value = success_val
-        self.fail_value = fail_val
+        self.left_value = left_val
+        self.right_value = right_val
 
     def classify(
         self, feature_list: list[Feature],
@@ -23,7 +23,7 @@ class WeakClassifier:
 
         feature_val = feature.compute_feature(integral_image, scale)
 
-        if feature_val > self.classifier_threshold:
-            return self.success_value
+        if feature_val < self.classifier_threshold:
+            return self.left_value
         else:
-            return self.fail_value
+            return self.right_value

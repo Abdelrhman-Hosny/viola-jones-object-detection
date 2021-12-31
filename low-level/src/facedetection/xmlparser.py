@@ -25,14 +25,14 @@ def parse_haar_cascade_xml(xml_path: str) -> tuple[list[Stage], list[Feature]]:
 
             # print(f'leafValues : {leafValues}')
             _, _, feature_idx, node_threshold = internal_nodes
-            success_val, fail_val = leaf_values
+            left_val, right_val = leaf_values
 
             my_classifiers.append(
                 WeakClassifier(
                     float(node_threshold),
                     int(feature_idx),
-                    float(success_val),
-                    float(fail_val),
+                    float(left_val),
+                    float(right_val),
                 )
             )
 
