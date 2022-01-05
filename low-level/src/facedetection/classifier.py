@@ -13,17 +13,21 @@ class WeakClassifier:
         self.left_value = left_val
         self.right_value = right_val
 
+    # (features, window, window_squared, window_area, var, scale):
     def classify(
-        self, feature_list: list[Feature],
+        self,
+        feature_list: list[Feature],
         integral_image: np.ndarray,
-        scale: float
+        window_area: float,
+        var: float,
+        scale: float,
     ) -> float:
 
         feature = feature_list[self.feature_idx]
 
-        feature_val = feature.compute_feature(integral_image, scale)
+        feature_val = feature.compute_feature(integral_image, window_area, scale)
 
-        if feature_val < self.classifier_threshold:
+        if feature_val / var < self.classifier_threshold:
             return self.left_value
         else:
             return self.right_value

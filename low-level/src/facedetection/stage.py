@@ -11,15 +11,26 @@ class Stage:
         self.classifier_list = classifier_list
 
     def check_stage(
-        self, feature_list: list[Feature],
+        self,
+        feature_list: list[Feature],
         integral_image: np.ndarray,
-        scale: float
+        window_area: float,
+        var: float,
+        scale: float,
     ) -> bool:
 
         stage_result = [
-            clf.classify(feature_list, integral_image, scale)
+            clf.classify(
+                feature_list,
+                integral_image,
+                window_area,
+                var,
+                scale,
+            )
+
             for clf in self.classifier_list
         ]
+        # print(stage_result)
 
         self.stage_result = sum(stage_result)
         return self.stage_result > self.stage_threshold
