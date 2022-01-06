@@ -11,11 +11,14 @@ import matplotlib.pyplot as plt
 
 import cv2
 
-from os.path import abspath
+from os.path import abspath, join
 
 WINDOW_SIZE = (20, 20)
 
-image_path = abspath(r"./images/faces/physics.jpg")
+curr_dir = abspath(r'.')
+# curr_dir = abspath(r'../../../.')
+
+image_path = join(curr_dir, r"./images/faces/physics.jpg")
 
 img_gray = io.imread(image_path, as_gray=True)
 img_gray = 255 * img_gray
@@ -27,7 +30,7 @@ integral_image = compute_integral_image(img_gray)
 
 integral_image_sqaured = compute_integral_image(np.square(img_gray))
 
-xml_path = abspath(r"./high-level/haar-cascades/haarcascade_frontalface_default.xml")
+xml_path = join(curr_dir, r"./high-level/haar-cascades/haarcascade_frontalface_default.xml")
 
 stages, features = parse_haar_cascade_xml(xml_path)
 
