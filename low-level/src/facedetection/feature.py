@@ -55,10 +55,10 @@ class Feature:
             x1, y1, x2, y2 = rect.get_bounds(scale)
 
             feature_sum += (
-                integral_image[y2, x2] / window_area  # bottom right
-                - integral_image[y1, x2] / window_area  # top right
-                - integral_image[y2, x1] / window_area  # bottom left
-                + integral_image[y1, x1] / window_area  # top left
-            ) * rect.val
+                integral_image[y2, x2] # bottom right
+                - integral_image[y1, x2]  # top right
+                - integral_image[y2, x1]  # bottom left
+                + integral_image[y1, x1]  # top left
+            ) * rect.val / window_area
 
         return feature_sum

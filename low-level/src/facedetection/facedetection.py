@@ -13,10 +13,10 @@ import cv2
 
 from os.path import abspath, join
 
-WINDOW_SIZE = (20, 20)
+WINDOW_SIZE = (24, 24)
 
-curr_dir = abspath(r'.')
-# curr_dir = abspath(r'../../../.')
+#curr_dir = abspath(r'.')
+curr_dir = abspath(r'../../../.')
 
 image_path = join(curr_dir, r"./images/faces/physics.jpg")
 
