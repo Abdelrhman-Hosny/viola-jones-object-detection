@@ -3,10 +3,10 @@ import numpy as np
 
 class Rectangle:
     def __init__(self, x: int, y: int, w: int, h: int, val: int) -> None:
-        self.x = x
-        self.y = y
-        self.w = w
-        self.h = h
+        self.x1 = x
+        self.y1 = y
+        self.x2 = x + w
+        self.y2 = y + h
         self.val = val
 
     def get_bounds(self, scale) -> tuple[int, int, int, int]:
@@ -16,10 +16,10 @@ class Rectangle:
         Returns the bounds of the rectangle.
         """
         return (
-            int(self.x * scale),
-            int(self.y * scale),
-            int((self.x + self.w) * scale),
-            int((self.y + self.h) * scale),
+            int(self.x1 * scale),
+            int(self.y1 * scale),
+            int(self.x2 * scale),
+            int(self.y2 * scale),
         )
 
 
@@ -38,10 +38,7 @@ class Feature:
 
     # (features, window, window_squared, window_area, var, scale):
     def compute_feature(
-        self,
-        integral_image: np.ndarray,
-        window_area: float,
-        scale: float = 1,
+        self, integral_image: np.ndarray, window_area: float, scale: float = 1,
     ) -> float:
         """
         Computes the feature of the feature.
@@ -55,10 +52,10 @@ class Feature:
             x1, y1, x2, y2 = rect.get_bounds(scale)
 
             feature_sum += (
-                integral_image[y2, x2] # bottom right
+                integral_image[y2, x2]  # bottom right
                 - integral_image[y1, x2]  # top right
                 - integral_image[y2, x1]  # bottom left
                 + integral_image[y1, x1]  # top left
-            ) * rect.val / window_area
+            ) * rect.val
 
-        return feature_sum
+        return feature_sum / window_area
