@@ -65,7 +65,7 @@ def parse_haar_cascade_xml(xml_path: str) -> tuple[list[Stage], list[Feature]]:
 
 
 
-def parse_haar_cascade_xml2(xml_path: str) -> tuple[list[Stage], np.array([[[]]])]:
+def parse_haar_cascade_xml2(xml_path: str) -> tuple[list[Stage], np.array([[[]]]),np.array([]),np.array([])]:
     """Reads xml file and returns a list of stages and a list of features."""
 
     all = ET.parse(xml_path)
@@ -73,6 +73,8 @@ def parse_haar_cascade_xml2(xml_path: str) -> tuple[list[Stage], np.array([[[]]]
     stages = all.find("cascade").find("stages")
 
     my_stages = []
+    stages_threshold = []
+    stage_classifiers_count = []
 
     for stage in stages:
 
@@ -97,9 +99,15 @@ def parse_haar_cascade_xml2(xml_path: str) -> tuple[list[Stage], np.array([[[]]]
             )
 
         # print(stage.find('stageThreshold').text)
+        classifiers_count = int(stage.find("maxWeakCount").text)
         stage_threshold = float(stage.find("stageThreshold").text)
+        stages_threshold.append(stage_threshold)
+        
+        classifiers_with_padding = np.zeros((211,4), np.float32)
+        classifiers_with_padding[:classifiers_count] = my_classifiers
 
-        my_stages.append(my_classifiers)
+        stage_classifiers_count.append(classifiers_count)
+        my_stages.append(classifiers_with_padding)
 
     features = all.find("cascade").find("features")
 
@@ -115,9 +123,16 @@ def parse_haar_cascade_xml2(xml_path: str) -> tuple[list[Stage], np.array([[[]]]
 
             my_rect = rect.text.split()
             my_rect = [int(float(x)) for x in my_rect]
+            my_rect[2] += my_rect[0]
+            my_rect[3] += my_rect[1]
+
             my_rectangles.append((my_rect))
+            
+        if(len(my_rectangles) == 2):
+            rect = np.zeros(5)
+            my_rectangles.append((rect))
 
         my_features.append((my_rectangles))
 
-    return my_stages, my_features
+    return my_stages, my_features,stages_threshold,stage_classifiers_count
 

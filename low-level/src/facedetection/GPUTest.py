@@ -77,8 +77,7 @@ if __name__=="__main__":
     func(a)
     print("without GPU:", timer()-start)   
 
-    a = [x for x in range(10000000)]
-    a = np.array(a)
+    a = [[1,2,3],[3,1,4]]
     start = timer()
     da = cuda.to_device(a)
     bpg = int(np.ceil(float(n)/tpb))
