@@ -22,6 +22,7 @@ from timeit import default_timer as timer
 
 WINDOW_SIZE = (24, 24)
 
+
 @cuda.jit    
 def DetectFace(stages_np,features_np,my_stages_threshold_np,WINDOW_SIZE,Stage_classifier_Count,AllWindows_np,AllWindow_Squared_np,face_indexes):
     #for scale in [1, 1.1, 1.2]:   
@@ -101,8 +102,8 @@ def DetectFace(stages_np,features_np,my_stages_threshold_np,WINDOW_SIZE,Stage_cl
                 #img_draw[x][y] = 0
             index+=1
 
-#curr_dir = abspath(r'.')
-curr_dir = abspath(r'../../../.')
+curr_dir = abspath(r'.')
+#curr_dir = abspath(r'../../../.')
 
 image_path = join(curr_dir, r"./images/faces/physics.jpg")
 
@@ -133,6 +134,7 @@ y_max, x_max = img_gray.shape
 device = cuda.get_current_device()
 threadsperblock = device.WARP_SIZE
 blockperthread = int(np.ceil(float((y_max- int(WINDOW_SIZE[0]) - 1)*(x_max- int(WINDOW_SIZE[0]) - 1))/threadsperblock))
+#blockperthread = 1024
 
 
 print(threadsperblock)
@@ -187,10 +189,12 @@ faceIndex = np.zeros(int(np.ceil(float(y_max*x_max))))
 
 GPU_face_indexes = cuda.to_device(faceIndex)
 
-DetectFace[blockperthread, threadsperblock](GPU_stages,GPU_features,GPU_my_stages_threshold_np,GPU_WINDOW_SIZE,GPU_stage_classifiers_count,GPU_AllWindows_np,GPU_AllWindow_Squard,GPU_face_indexes)
 
 
-#DetectFace(integral_image,integral_image_sqaured,x_max,y_max,stages_np,features_np,my_stages_threshold_np,WINDOW_SIZE,scale,img_draw,stage_classifiers_count,AllWindows,AllWindows_Squard,faceIndex)
+DetectFace[1024, threadsperblock](GPU_stages,GPU_features,GPU_my_stages_threshold_np,GPU_WINDOW_SIZE,GPU_stage_classifiers_count,GPU_AllWindows_np,GPU_AllWindow_Squard,GPU_face_indexes)
+
+
+#DetectFace(stages_np,features_np,my_stages_threshold_np,WINDOW_SIZE,img_draw,stage_classifiers_count,AllWindows,AllWindows_Squard,faceIndex)
 
 faceIndex = GPU_face_indexes.copy_to_host()
 

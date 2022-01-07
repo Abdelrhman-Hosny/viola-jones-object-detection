@@ -74,14 +74,14 @@ if __name__=="__main__":
     n = 10000000                           
     a = np.ones(n, dtype = np.float64)
     start = timer()
-    func(a)
+    #func(a)
     print("without GPU:", timer()-start)   
 
     a = [[1,2,3],[3,1,4]]
     start = timer()
     da = cuda.to_device(a)
     bpg = int(np.ceil(float(n)/tpb))
-    func2[bpg, tpb](da)
+    #func2[bpg, tpb](da)
     print("with GPU:", timer()-start)
 
     start = timer()
@@ -102,4 +102,7 @@ if __name__=="__main__":
     print (a[-5:, -5:])
     print (b[-5:, -5:])
     print (c[-5:, -5:])
-    print("GPU: vectorise", timer()-start)  
+    print("GPU: vectorise", timer()-start) 
+
+    gpu = cuda.get_current_device()
+    print(gpu)
