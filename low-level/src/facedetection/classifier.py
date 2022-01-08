@@ -27,7 +27,7 @@ class WeakClassifier:
 
         feature_val = feature.compute_feature(integral_image, window_area, scale)
 
-        if feature_val / var < self.classifier_threshold:
+        if feature_val  < self.classifier_threshold * var:
             return self.left_value
         else:
             return self.right_value

@@ -23,10 +23,13 @@ WINDOW_SIZE = (24, 24)
 curr_dir = abspath(r'.')
 #curr_dir = abspath(r'../../../.')
 
-image_path = join(curr_dir, r"./images/faces/physics.jpg")
+#image_path = join(curr_dir, r"./images/faces/physics.jpg")
+image_path = join(curr_dir, r"./images/faces/man1.jpeg")
+
 
 img_gray = io.imread(image_path, as_gray=True)
 img_gray = 255 * img_gray
+img_gray = cv2.resize(img_gray,(640, 480))
 img_draw = img_gray.astype(np.uint8)
 img_gray = img_gray.astype(np.uint64)
 print(np.max(img_gray))
@@ -53,22 +56,27 @@ plt.show()
 
 edges = np.array(img_canny , dtype= np.uint64)
 print(np.any(img_canny != False))
-print(edges)
-print(edges.shape)
-
 canny_integral_image = compute_integral_image(edges)
-print(canny_integral_image)
 
 
 #, 1.1, 1.2
 count = 0
-for scale in [1, 1.1, 1.2]:
+for scale in [10]:
     print(f"Scale : {scale}")
     print("-" * 20)
     window_area = WINDOW_SIZE[0] * WINDOW_SIZE[1] * scale * scale
+    faces = []
 
     for x in range(0, x_max - int(scale * WINDOW_SIZE[0]) - 1):
         for y in range(0, y_max - int(scale * WINDOW_SIZE[1]) - 1):
+
+            Dup = False
+            for face in faces:
+                if (x < face[0] + WINDOW_SIZE[0] * scale /2) and (y < face[1]  + WINDOW_SIZE[0] * scale  /2):
+                    Dup = True
+                    break
+            if Dup:
+                continue
 
             window_canny = canny_integral_image[
                 y : y + int(scale * WINDOW_SIZE[1]) + 1,
@@ -130,14 +138,17 @@ for scale in [1, 1.1, 1.2]:
                     break
 
             if face_found:
-                print("Face Found")
-                cv2.rectangle(
+               # print("Face Found")  
+               faces.append((x,y))
+               cv2.rectangle(
                     img_draw,
                     (x, y),
                     (x + int(scale * WINDOW_SIZE[0]), y + int(scale * WINDOW_SIZE[1])),
                     (0, 255, 0),
                     2,
                 )
+               y += WINDOW_SIZE[0] * scale /2
+            
 
 plt.imshow(img_draw, cmap="gray")
 plt.show()
