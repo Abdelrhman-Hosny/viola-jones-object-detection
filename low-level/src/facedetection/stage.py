@@ -21,16 +21,15 @@ class Stage:
 
         stage_result = [
             clf.classify(
-                feature_list,
-                integral_image,
-                window_area,
-                var,
-                scale,
+                        feature_list,
+                        integral_image,
+                        window_area,
+                        var,
+                        scale,
             )
+
             for clf in self.classifier_list
-        ] 
-        
-        # print(stage_result)
+        ]
 
         self.stage_result = sum(stage_result)
         return self.stage_result > self.stage_threshold
