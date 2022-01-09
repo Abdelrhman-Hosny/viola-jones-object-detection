@@ -19,7 +19,7 @@ class Stage:
         scale: float,
     ) -> bool:
 
-        stage_result = np.array([
+        stage_result = [
             clf.classify(
                 feature_list,
                 integral_image,
@@ -27,10 +27,10 @@ class Stage:
                 var,
                 scale,
             )
-
             for clf in self.classifier_list
-        ] , dtype=np.float32)
+        ] 
+        
         # print(stage_result)
 
-        self.stage_result = np.sum(stage_result)
+        self.stage_result = sum(stage_result)
         return self.stage_result > self.stage_threshold

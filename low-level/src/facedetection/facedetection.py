@@ -12,6 +12,7 @@ from skimage import feature
 import matplotlib.pyplot as plt
 
 import cv2
+from timeit import default_timer as timer  
 
 from os.path import abspath, join
 
@@ -25,6 +26,8 @@ curr_dir = abspath(r'.')
 
 #image_path = join(curr_dir, r"./images/faces/physics.jpg")
 image_path = join(curr_dir, r"./images/faces/man1.jpeg")
+#image_path = join(curr_dir, r"./images/Neutral/image0000767.jpg")
+
 
 
 img_gray = io.imread(image_path, as_gray=True)
@@ -61,23 +64,20 @@ canny_integral_image = compute_integral_image(edges)
 
 #, 1.1, 1.2
 count = 0
-for scale in [10]:
+start = timer()
+maxScale = int(min((y_max/24),(x_max/24)))
+
+scale = 2
+while (scale < maxScale):
     print(f"Scale : {scale}")
     print("-" * 20)
     window_area = WINDOW_SIZE[0] * WINDOW_SIZE[1] * scale * scale
     faces = []
+    step = int(scale*WINDOW_SIZE[0]*1)//7
 
-    for x in range(0, x_max - int(scale * WINDOW_SIZE[0]) - 1):
-        for y in range(0, y_max - int(scale * WINDOW_SIZE[1]) - 1):
-
-            Dup = False
-            for face in faces:
-                if (x < face[0] + WINDOW_SIZE[0] * scale /2) and (y < face[1]  + WINDOW_SIZE[0] * scale  /2):
-                    Dup = True
-                    break
-            if Dup:
-                continue
-
+    for x in range(0, x_max - int(scale * WINDOW_SIZE[0]) - 1,step):
+        for y in range(0, y_max - int(scale * WINDOW_SIZE[1]) - 1,step):
+           
             window_canny = canny_integral_image[
                 y : y + int(scale * WINDOW_SIZE[1]) + 1,
                 x : x + int(scale * WINDOW_SIZE[0]) + 1,
@@ -147,8 +147,9 @@ for scale in [10]:
                     (0, 255, 0),
                     2,
                 )
-               y += WINDOW_SIZE[0] * scale /2
             
+    scale*=1.25
 
+print(timer() - start )
 plt.imshow(img_draw, cmap="gray")
 plt.show()

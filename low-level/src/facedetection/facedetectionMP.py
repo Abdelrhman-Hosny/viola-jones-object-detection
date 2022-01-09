@@ -30,17 +30,11 @@ from itertools import repeat
 
 
 
-def DetectFaceMP(window, window_squard, Canny_window, X_Y , WINDOW_SIZE , scale , stages_np,features_np,my_stages_threshold_np,stage_classifiers_count):
-
-    window_area = WINDOW_SIZE[0] * WINDOW_SIZE[1] * scale * scale
-    index = 0
+def DetectFaceMP(window, window_squard, X_Y  , scale , stages_np,features_np,my_stages_threshold_np,stage_classifiers_count,window_area):
     #for window_index, window in enumerate(AllWindows_np):
     y1, x1 = 0, 0
     y2, x2 = window.shape[0] - 1, window.shape[1] - 1
-    total_cannay = Canny_window[y2, x2] + Canny_window[y1, x1] - Canny_window[y2, x1] - Canny_window[y1, x2]
-    if (total_cannay < WINDOW_SIZE[0]*2.5*scale):
-        return
-    
+
     total_im = window[y2, x2] + window[y1, x1] - window[y2, x1] - window[y1, x2]
     total_im_square = (
         window_squard[y2, x2]
@@ -66,7 +60,7 @@ def DetectFaceMP(window, window_squard, Canny_window, X_Y , WINDOW_SIZE , scale 
             for feature in features_np[int(classifiers[1])]:
                  # each rect has 5 values
                  # x, y, width, height, value
-                x1, y1, x2, y2 = feature[0],feature[1],feature[2],feature[3]
+                x1, y1, x2, y2 = feature[0]*scale,feature[1]*scale,feature[2]*scale,feature[3]*scale
                 feature_sum += (
                     window[y2, x2] # bottom right
                     - window[y1, x2]  # top right
@@ -78,9 +72,11 @@ def DetectFaceMP(window, window_squard, Canny_window, X_Y , WINDOW_SIZE , scale 
             else:
                 classifiers_result += classifiers[3]
         current_stage_result = classifiers_result
+
         if(current_stage_result < my_stages_threshold_np[c]):
             face_found = False
             break
+
     if face_found:
         return X_Y
     
@@ -89,13 +85,13 @@ def DetectFaceMP(window, window_squard, Canny_window, X_Y , WINDOW_SIZE , scale 
 if __name__ == '__main__':
     start = timer()
     print("start")
-    scale = 10
+    scale = 2
     CANNY_THRESHOLD_SCALE = 2.5
     WINDOW_SIZE = (24, 24)
     curr_dir = abspath(r'.')
     #curr_dir = abspath(r'../../../.')
-    #image_path = join(curr_dir, r"./images/faces/physics.jpg")
-    image_path = join(curr_dir, r"./images/faces/man1.jpeg")
+    image_path = join(curr_dir, r"./images/faces/physics.jpg")
+    #image_path = join(curr_dir, r"./images/faces/man1.jpeg")
 
     img_gray = io.imread(image_path, as_gray=True)
     img_gray = 255 * img_gray
@@ -120,8 +116,23 @@ if __name__ == '__main__':
     AllWindows_Squard = []
     AllCannyWindows = []
     AllX_Y = []
+
     for x in range(0, x_max - int(scale*WINDOW_SIZE[0]) - 1):
         for y in range(0, y_max - int(scale* WINDOW_SIZE[1]) - 1):
+            
+            window_canny = canny_integral_image[
+                    y : y + int(scale * WINDOW_SIZE[1]) + 1,
+                    x : x + int(scale * WINDOW_SIZE[0]) + 1,
+                ]
+
+            y1, x1 = 0, 0
+            y2, x2 = window_canny.shape[0] - 1, window_canny.shape[1] - 1
+
+            total_cannay = window_canny[y2, x2] + window_canny[y1, x1] - window_canny[y2, x1] - window_canny[y1, x2]
+
+            if (total_cannay < WINDOW_SIZE[0]*2.5*scale):
+                continue
+
             window = integral_image[
                 y : y + int(scale * WINDOW_SIZE[1]) + 1,
                 x : x + int(scale * WINDOW_SIZE[0]) + 1,
@@ -130,31 +141,35 @@ if __name__ == '__main__':
                 y : y + int(scale * WINDOW_SIZE[1]) + 1,
                 x : x + int(scale * WINDOW_SIZE[0]) + 1,
             ]
-            window_canny = canny_integral_image[
-                    y : y + int(scale * WINDOW_SIZE[1]) + 1,
-                    x : x + int(scale * WINDOW_SIZE[0]) + 1,
-                ]
+    
             AllWindows.append(window)
             AllWindows_Squard.append(window_squared)
-            AllCannyWindows.append(window_canny)
             X_Y =[x,y]
             AllX_Y.append(X_Y)
 
 
+    ####NP array Slower is multiprocessoring than the list ####
+    ##print(timer() - start)
+    #AllWindows_np = np.array(AllWindows, dtype = np.uint64)
+    #AllWindow_Squared_np = np.array(AllWindows_Squard, dtype = np.uint64)
+    #print(AllWindows_np.shape)
+    #pool = Pool()
+    #start = timer()
+    #Allfaces = pool.starmap(DetectFaceMP, zip(AllWindows_np,AllWindow_Squared_np,AllX_Y,repeat(WINDOW_SIZE),repeat(scale),repeat(stages_np), repeat(features_np) , repeat(my_stages_threshold_np),repeat(stage_classifiers_count_np)))
+    #print("NP array")
+    #print(timer() - start)
 
-    print(timer() - start)
 
-    AllWindows_np = np.array(AllWindows, dtype = np.uint64)
-    AllWindow_Squared_np = np.array(AllWindows_Squard, dtype = np.uint64)
-    AllCannyWindow_np = np.array(AllCannyWindows, dtype = np.uint64)
-
-
+    window_area = WINDOW_SIZE[0] * WINDOW_SIZE[1]* scale * scale
     pool = Pool()
-    Allfaces = pool.starmap(DetectFaceMP, zip(AllWindows_np,AllWindow_Squared_np,AllCannyWindow_np,AllX_Y,repeat(WINDOW_SIZE),repeat(scale),repeat(stages_np), repeat(features_np) , repeat(my_stages_threshold_np),repeat(stage_classifiers_count_np)))
+    start = timer()
+    Allfaces = pool.starmap(DetectFaceMP, zip(AllWindows,AllWindows_Squard,AllX_Y,repeat(scale),repeat(stages_np), repeat(features_np) , repeat(my_stages_threshold_np),repeat(stage_classifiers_count_np) , repeat(window_area)))
+    print("List array")
+    print(timer() - start)
 
     Not_none_values = filter(None.__ne__, Allfaces)
     faces = list(Not_none_values)
-    print(faces)
+    #print(faces)
     for face in faces:
         cv2.rectangle(
              img_draw,
