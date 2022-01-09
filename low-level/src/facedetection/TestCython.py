@@ -5,9 +5,11 @@ from timeit import default_timer as timer
 import skimage.io as io
 import cv2
 import numpy as np
+import matplotlib.pyplot as plt
 
-curr_dir = abspath(r'.')
-#curr_dir = abspath(r'../../../.')
+
+#curr_dir = abspath(r'.')
+curr_dir = abspath(r'../../../.')
 
 image_path = join(curr_dir, r"./images/faces/Ali.jpg")
 #image_path = join(curr_dir, r"./images/faces/man1.jpeg")
@@ -28,3 +30,17 @@ faces = facedetectionCython.getFaces(img_gray, stages, features)
 print(timer() - start)
 
 print(faces)
+
+for (x,y,scale) in faces:
+        # print(x,y,w,h)
+        cv2.rectangle(
+                    img_draw,
+                    (x, y),
+                    (x + int(scale * 24), y + int(scale * 24)),
+                    (0, 255, 0),
+                    2,
+                )
+
+
+plt.imshow(img_draw, cmap="gray")
+plt.show()

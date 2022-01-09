@@ -5,6 +5,7 @@ cimport numpy as np
 from timeit import default_timer as timer  
 
 
+
 cpdef getIntegralImageCY(np.ndarray[np.int64_t, ndim=2] img):
       return np.cumsum(np.cumsum(img, axis=0), axis=1)
 
@@ -130,7 +131,23 @@ cpdef getFaces(img,stages_in,features_in):
 
         scale = int(np.ceil(scale*1.25))
     
-    return faces
+
+    finalFaces = []
+    for i in range(len(faces)):
+        for j in range(i + 1, len(faces)):
+           found = False
+           if(abs(faces[i][0] - faces[j][0] < 24 * faces[i][2]) and abs(faces[i][1] - faces[j][1] < 24 * faces[i][2])):
+               #overlapping remove the one with smaller scale
+               if(faces[i][2] < faces[j][2]):
+                   found = True
+                   finalFaces.append(faces[j])
+               else:
+                   found = True
+                   finalFaces.append(faces[i])
+        if not found:
+            finalFaces.append(faces[i])
+
+    return finalFaces
 
 
 
