@@ -24,8 +24,8 @@ WINDOW_SIZE = (24, 24)
 curr_dir = abspath(r'.')
 #curr_dir = abspath(r'../../../.')
 
-#image_path = join(curr_dir, r"./images/faces/physics.jpg")
-image_path = join(curr_dir, r"./images/faces/man1.jpeg")
+image_path = join(curr_dir, r"./images/faces/Ali.jpg")
+#image_path = join(curr_dir, r"./images/faces/man1.jpeg")
 #image_path = join(curr_dir, r"./images/Neutral/image0000767.jpg")
 
 
@@ -64,23 +64,26 @@ canny_integral_image = compute_integral_image(edges)
 
 #, 1.1, 1.2
 count = 0
-start = timer()
+
 maxScale = int(min((y_max/24),(x_max/24)))
 
-scale = 2
+faces = []
+
+scale = 4
+start = timer()
 while (scale < maxScale):
-    print(f"Scale : {scale}")
-    print("-" * 20)
     window_area = WINDOW_SIZE[0] * WINDOW_SIZE[1] * scale * scale
-    faces = []
+    canny_threshold = WINDOW_SIZE[0]*scale*scale
     step = int(scale*WINDOW_SIZE[0]*1)//7
+    
+    windowStep = int(scale * WINDOW_SIZE[0]) + 1
 
     for x in range(0, x_max - int(scale * WINDOW_SIZE[0]) - 1,step):
         for y in range(0, y_max - int(scale * WINDOW_SIZE[1]) - 1,step):
            
             window_canny = canny_integral_image[
-                y : y + int(scale * WINDOW_SIZE[1]) + 1,
-                x : x + int(scale * WINDOW_SIZE[0]) + 1,
+                y : y + windowStep,
+                x : x + windowStep,
             ]
             
             y1, x1 = 0, 0
@@ -89,19 +92,19 @@ while (scale < maxScale):
             total_cannay = window_canny[y2, x2] + window_canny[y1, x1] - window_canny[y2, x1] - window_canny[y1, x2]
             
             
-            if (total_cannay < WINDOW_SIZE[0]*2.5*scale):
+            if (total_cannay < canny_threshold ):
                 continue
             
             #print("Passed")
 
             window = integral_image[
-                y : y + int(scale * WINDOW_SIZE[1]) + 1,
-                x : x + int(scale * WINDOW_SIZE[0]) + 1,
+                y : y + windowStep,
+                x : x + windowStep,
             ]
 
             window_squared = integral_image_sqaured[
-                y : y + int(scale * WINDOW_SIZE[1]) + 1,
-                x : x + int(scale * WINDOW_SIZE[0]) + 1,
+                y : y + windowStep,
+                x : x + windowStep,
             ]
 
             y1, x1 = 0, 0
@@ -117,7 +120,6 @@ while (scale < maxScale):
             )
 
             im_mean = total_im / window_area
-            # print(total_im_square/window_area - im_mean * im_mean)
             im_var = total_im_square / window_area - im_mean * im_mean
             im_var = np.sqrt(im_var)
 
@@ -125,13 +127,10 @@ while (scale < maxScale):
                 im_var = 1
 
             face_found = True
-            for c, stage in enumerate(stages):
+            for stage in stages:
 
                 if not stage.check_stage(features, window, window_area, im_var, scale):
                     face_found = False
-                    if c < 3:
-                        break
-
                     #print(f"Stage {c} failed")
                     #print(f"stage threshold : {stage.stage_threshold}")
                     #print(f"stage current value : {stage.stage_result}")
@@ -139,7 +138,7 @@ while (scale < maxScale):
 
             if face_found:
                # print("Face Found")  
-               faces.append((x,y))
+               faces.append((x,y,scale))
                cv2.rectangle(
                     img_draw,
                     (x, y),
@@ -148,8 +147,10 @@ while (scale < maxScale):
                     2,
                 )
             
-    scale*=1.25
+    scale = int(np.ceil(scale*1.25))
 
 print(timer() - start )
+print(faces)
+
 plt.imshow(img_draw, cmap="gray")
 plt.show()

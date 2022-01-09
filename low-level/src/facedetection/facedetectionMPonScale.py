@@ -49,7 +49,7 @@ def DetectFaces(scale ,WINDOW_SIZE ,canny_integral_image , integral_image , inte
             total_cannay = window_canny[y2, x2] + window_canny[y1, x1] - window_canny[y2, x1] - window_canny[y1, x2]
             
             
-            if (total_cannay < WINDOW_SIZE[0]*2.5*scale):
+            if (total_cannay < WINDOW_SIZE[0]*scale*scale):
                 continue
             
             window = integral_image[
@@ -102,8 +102,8 @@ if __name__ == '__main__':
     curr_dir = abspath(r'.')
     #curr_dir = abspath(r'../../../.')
 
-    image_path = join(curr_dir, r"./images/faces/house.jpg")
-    #image_path = join(curr_dir, r"./images/faces/ebo.jpeg")
+    image_path = join(curr_dir, r"./images/faces/Ali.jpg")
+    #image_path = join(curr_dir, r"./images/faces/man1.jpeg")
 
 
     img_gray = io.imread(image_path, as_gray=True)
@@ -111,7 +111,6 @@ if __name__ == '__main__':
     img_gray = cv2.resize(img_gray,(640, 480))
     img_draw = img_gray.astype(np.uint8)
     img_gray = img_gray.astype(np.uint64)
-    print(np.max(img_gray))
 
     integral_image = compute_integral_image(img_gray)
 
@@ -131,7 +130,6 @@ if __name__ == '__main__':
 
     img_canny = feature.canny(img_draw, sigma=3)
     edges = np.array(img_canny , dtype= np.uint64)
-    print(np.any(img_canny != False))
     canny_integral_image = compute_integral_image(edges)
 
 
@@ -143,7 +141,7 @@ if __name__ == '__main__':
     AllScales = []
     while (scale < maxScale):
         AllScales.append(scale)
-        scale*=1.25
+        scale = int(np.ceil(scale*1.25))
 
 
     start = timer()
