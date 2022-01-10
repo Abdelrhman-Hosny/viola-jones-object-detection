@@ -74,6 +74,8 @@ cpdef getFaces(img,stages_in,features_in):
         windowStep = int(scale * WINDOW_SIZE[0]) + 1
         lastStepX = x_max - int(scale * WINDOW_SIZE[0]) - 1
         lastStepY = y_max - int(scale * WINDOW_SIZE[1]) - 1
+        
+        rect_values = [[rect.get_bounds(scale) for rect in ft.rectangles] for ft in features]
         for x in range(0, lastStepX , step):
             for y in range(0, lastStepY, step):
             
@@ -122,7 +124,7 @@ cpdef getFaces(img,stages_in,features_in):
 
                 face_found = True
                 for stage in stages:
-                    if not stage.check_stage(features, window, window_area, im_var, scale):
+                    if not stage.check_stage(features, window, window_area, im_var, scale, rect_values):
                         face_found = False
                         break
 
