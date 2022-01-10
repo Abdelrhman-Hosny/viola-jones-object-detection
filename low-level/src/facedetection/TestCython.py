@@ -11,9 +11,9 @@ import matplotlib.pyplot as plt
 #curr_dir = abspath(r'.')
 curr_dir = abspath(r'../../../.')
 
-image_path = join(curr_dir, r"./images/faces/Ali.jpg")
-#image_path = join(curr_dir, r"./images/faces/man1.jpeg")
-#image_path = join(curr_dir, r"./images/Neutral/image0000767.jpg")
+# image_path = join(curr_dir, r"./images/faces/ebo.jpeg")
+image_path = join(curr_dir, r"./images/faces/man1.jpeg")
+# image_path = join(curr_dir, r"./images/Neutral/image0000767.jpg")
 
 
 
