@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
-from classifier import WeakClassifier
-from feature import Feature, Rectangle
-from stage import Stage
+from facedetection.blocks.classifier import WeakClassifier
+from facedetection.blocks.feature import Feature, Rectangle
+from facedetection.blocks.stage import Stage
 import numpy as np
 
 
@@ -63,9 +63,9 @@ def parse_haar_cascade_xml(xml_path: str) -> tuple[list[Stage], list[Feature]]:
     return my_stages, my_features
 
 
-
-
-def parse_haar_cascade_xml2(xml_path: str) -> tuple[list[Stage], np.array([[[]]]),np.array([]),np.array([])]:
+def parse_haar_cascade_xml2(
+    xml_path: str,
+) -> tuple[list[Stage], np.array([[[]]]), np.array([]), np.array([])]:
     """Reads xml file and returns a list of stages and a list of features."""
 
     all = ET.parse(xml_path)
@@ -91,10 +91,13 @@ def parse_haar_cascade_xml2(xml_path: str) -> tuple[list[Stage], np.array([[[]]]
             left_val, right_val = leaf_values
 
             my_classifiers.append(
-                np.array([float(node_threshold),
-                    float(feature_idx),
-                    float(left_val),
-                    float(right_val)] 
+                np.array(
+                    [
+                        float(node_threshold),
+                        float(feature_idx),
+                        float(left_val),
+                        float(right_val),
+                    ]
                 )
             )
 
@@ -102,8 +105,8 @@ def parse_haar_cascade_xml2(xml_path: str) -> tuple[list[Stage], np.array([[[]]]
         classifiers_count = int(stage.find("maxWeakCount").text)
         stage_threshold = float(stage.find("stageThreshold").text)
         stages_threshold.append(stage_threshold)
-        
-        classifiers_with_padding = np.zeros((211,4), np.float32)
+
+        classifiers_with_padding = np.zeros((211, 4), np.float32)
         classifiers_with_padding[:classifiers_count] = my_classifiers
 
         stage_classifiers_count.append(classifiers_count)
@@ -127,12 +130,11 @@ def parse_haar_cascade_xml2(xml_path: str) -> tuple[list[Stage], np.array([[[]]]
             my_rect[3] += my_rect[1]
 
             my_rectangles.append((my_rect))
-            
-        if(len(my_rectangles) == 2):
+
+        if len(my_rectangles) == 2:
             rect = np.zeros(5)
             my_rectangles.append((rect))
 
         my_features.append((my_rectangles))
 
-    return my_stages, my_features,stages_threshold,stage_classifiers_count
-
+    return my_stages, my_features, stages_threshold, stage_classifiers_count
