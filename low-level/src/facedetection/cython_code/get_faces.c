@@ -4,12 +4,12 @@
 {
     "distutils": {
         "depends": [],
-        "name": "facedetectionCython",
+        "name": "facedetection.cython_code.get_faces",
         "sources": [
-            "facedetectionCython.pyx"
+            "./facedetection/cython_code/get_faces.pyx"
         ]
     },
-    "module_name": "facedetectionCython"
+    "module_name": "facedetection.cython_code.get_faces"
 }
 END: Cython Metadata */
 
@@ -686,8 +686,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__facedetectionCython
-#define __PYX_HAVE_API__facedetectionCython
+#define __PYX_HAVE__facedetection__cython_code__get_faces
+#define __PYX_HAVE_API__facedetection__cython_code__get_faces
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -930,7 +930,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "facedetectionCython.pyx",
+  "facedetection/cython_code/get_faces.pyx",
   "__init__.pxd",
   "type.pxd",
 };
@@ -971,7 +971,7 @@ typedef struct {
 } __Pyx_BufFmt_Context;
 
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":690
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":690
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -980,7 +980,7 @@ typedef struct {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":691
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":691
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -989,7 +989,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":692
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":692
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -998,7 +998,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":693
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":693
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -1007,7 +1007,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":697
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":697
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -1016,7 +1016,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":698
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":698
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -1025,7 +1025,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":699
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":699
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -1034,7 +1034,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":700
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":700
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -1043,7 +1043,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":704
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":704
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -1052,7 +1052,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":705
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":705
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -1061,7 +1061,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":714
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":714
  * # The int types are mapped a bit surprising --
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t             # <<<<<<<<<<<<<<
@@ -1070,7 +1070,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_long __pyx_t_5numpy_int_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":715
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":715
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t             # <<<<<<<<<<<<<<
@@ -1079,7 +1079,7 @@ typedef npy_long __pyx_t_5numpy_int_t;
  */
 typedef npy_longlong __pyx_t_5numpy_long_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":716
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":716
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1088,7 +1088,7 @@ typedef npy_longlong __pyx_t_5numpy_long_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":718
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":718
  * ctypedef npy_longlong   longlong_t
  * 
  * ctypedef npy_ulong      uint_t             # <<<<<<<<<<<<<<
@@ -1097,7 +1097,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulong __pyx_t_5numpy_uint_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":719
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":719
  * 
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t             # <<<<<<<<<<<<<<
@@ -1106,7 +1106,7 @@ typedef npy_ulong __pyx_t_5numpy_uint_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":720
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":720
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1115,7 +1115,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":722
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":722
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1124,7 +1124,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":723
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":723
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1133,7 +1133,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":725
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":725
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1142,7 +1142,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":726
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":726
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1151,7 +1151,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":727
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":727
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1186,7 +1186,7 @@ static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(do
 
 /*--- Type declarations ---*/
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":729
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":729
  * ctypedef npy_longdouble longdouble_t
  * 
  * ctypedef npy_cfloat      cfloat_t             # <<<<<<<<<<<<<<
@@ -1195,7 +1195,7 @@ static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(do
  */
 typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":730
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":730
  * 
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t             # <<<<<<<<<<<<<<
@@ -1204,7 +1204,7 @@ typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":731
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":731
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t             # <<<<<<<<<<<<<<
@@ -1213,7 +1213,7 @@ typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
  */
 typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":733
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":733
  * ctypedef npy_clongdouble clongdouble_t
  * 
  * ctypedef npy_cdouble     complex_t             # <<<<<<<<<<<<<<
@@ -1416,9 +1416,6 @@ static int __Pyx__ArgTypeTest(PyObject *obj, PyTypeObject *type, const char *nam
 /* ExtTypeTest.proto */
 static CYTHON_INLINE int __Pyx_TypeTest(PyObject *obj, PyTypeObject *type);
 
-/* BufferFallbackError.proto */
-static void __Pyx_RaiseBufferFallbackError(void);
-
 /* PyCFunctionFastCall.proto */
 #if CYTHON_FAST_PYCCALL
 static CYTHON_INLINE PyObject *__Pyx_PyCFunction_FastCall(PyObject *func, PyObject **args, Py_ssize_t nargs);
@@ -1461,6 +1458,13 @@ static CYTHON_INLINE PyObject* __Pyx_PyObject_CallMethO(PyObject *func, PyObject
 
 /* PyObjectCallOneArg.proto */
 static CYTHON_INLINE PyObject* __Pyx_PyObject_CallOneArg(PyObject *func, PyObject *arg);
+
+/* PyObjectCallNoArg.proto */
+#if CYTHON_COMPILING_IN_CPYTHON
+static CYTHON_INLINE PyObject* __Pyx_PyObject_CallNoArg(PyObject *func);
+#else
+#define __Pyx_PyObject_CallNoArg(func) __Pyx_PyObject_Call(func, __pyx_empty_tuple, NULL)
+#endif
 
 /* RaiseTooManyValuesToUnpack.proto */
 static CYTHON_INLINE void __Pyx_RaiseTooManyValuesError(Py_ssize_t expected);
@@ -1523,12 +1527,32 @@ static PyObject* __Pyx_PyInt_SubtractObjC(PyObject *op1, PyObject *op2, long int
     (inplace ? PyNumber_InPlaceSubtract(op1, op2) : PyNumber_Subtract(op1, op2))
 #endif
 
+/* ListCompAppend.proto */
+#if CYTHON_USE_PYLIST_INTERNALS && CYTHON_ASSUME_SAFE_MACROS
+static CYTHON_INLINE int __Pyx_ListComp_Append(PyObject* list, PyObject* x) {
+    PyListObject* L = (PyListObject*) list;
+    Py_ssize_t len = Py_SIZE(list);
+    if (likely(L->allocated > len)) {
+        Py_INCREF(x);
+        PyList_SET_ITEM(list, len, x);
+        __Pyx_SET_SIZE(list, len + 1);
+        return 0;
+    }
+    return PyList_Append(list, x);
+}
+#else
+#define __Pyx_ListComp_Append(L,x) PyList_Append(L,x)
+#endif
+
 /* ObjectGetItem.proto */
 #if CYTHON_USE_TYPE_SLOTS
 static CYTHON_INLINE PyObject *__Pyx_PyObject_GetItem(PyObject *obj, PyObject* key);
 #else
 #define __Pyx_PyObject_GetItem(obj, key)  PyObject_GetItem(obj, key)
 #endif
+
+/* BufferFallbackError.proto */
+static void __Pyx_RaiseBufferFallbackError(void);
 
 /* BufferIndexError.proto */
 static void __Pyx_RaiseBufferIndexError(int axis);
@@ -1847,22 +1871,24 @@ static PyTypeObject *__pyx_ptype_5numpy_flexible = 0;
 static PyTypeObject *__pyx_ptype_5numpy_character = 0;
 static PyTypeObject *__pyx_ptype_5numpy_ufunc = 0;
 
-/* Module declarations from 'facedetectionCython' */
-static PyObject *__pyx_f_19facedetectionCython_getIntegralImageCY(PyArrayObject *, int __pyx_skip_dispatch); /*proto*/
-static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *, PyObject *, PyObject *, int __pyx_skip_dispatch); /*proto*/
+/* Module declarations from 'facedetection.cython_code.get_faces' */
+static PyObject *__pyx_f_13facedetection_11cython_code_9get_faces_get_integral_image(PyArrayObject *, int __pyx_skip_dispatch); /*proto*/
+static PyObject *__pyx_f_13facedetection_11cython_code_9get_faces_get_faces(PyObject *, PyObject *, PyObject *, int __pyx_skip_dispatch); /*proto*/
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t = { "int64_t", NULL, sizeof(__pyx_t_5numpy_int64_t), { 0 }, 0, IS_UNSIGNED(__pyx_t_5numpy_int64_t) ? 'U' : 'I', IS_UNSIGNED(__pyx_t_5numpy_int64_t), 0 };
-#define __Pyx_MODULE_NAME "facedetectionCython"
-extern int __pyx_module_is_main_facedetectionCython;
-int __pyx_module_is_main_facedetectionCython = 0;
+#define __Pyx_MODULE_NAME "facedetection.cython_code.get_faces"
+extern int __pyx_module_is_main_facedetection__cython_code__get_faces;
+int __pyx_module_is_main_facedetection__cython_code__get_faces = 0;
 
-/* Implementation of 'facedetectionCython' */
+/* Implementation of 'facedetection.cython_code.get_faces' */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_ImportError;
 static const char __pyx_k_np[] = "np";
 static const char __pyx_k_img[] = "img";
 static const char __pyx_k_axis[] = "axis";
 static const char __pyx_k_ceil[] = "ceil";
+static const char __pyx_k_copy[] = "copy";
 static const char __pyx_k_main[] = "__main__";
+static const char __pyx_k_math[] = "math";
 static const char __pyx_k_name[] = "__name__";
 static const char __pyx_k_sqrt[] = "sqrt";
 static const char __pyx_k_test[] = "__test__";
@@ -1874,24 +1900,20 @@ static const char __pyx_k_numpy[] = "numpy";
 static const char __pyx_k_range[] = "range";
 static const char __pyx_k_shape[] = "shape";
 static const char __pyx_k_sigma[] = "sigma";
-static const char __pyx_k_timer[] = "timer";
 static const char __pyx_k_uint8[] = "uint8";
-static const char __pyx_k_utils[] = "utils";
 static const char __pyx_k_astype[] = "astype";
 static const char __pyx_k_cumsum[] = "cumsum";
 static const char __pyx_k_import[] = "__import__";
 static const char __pyx_k_square[] = "square";
-static const char __pyx_k_timeit[] = "timeit";
-static const char __pyx_k_uint64[] = "uint64";
 static const char __pyx_k_feature[] = "feature";
 static const char __pyx_k_skimage[] = "skimage";
 static const char __pyx_k_stages_in[] = "stages_in";
+static const char __pyx_k_get_bounds[] = "get_bounds";
+static const char __pyx_k_rectangles[] = "rectangles";
 static const char __pyx_k_ImportError[] = "ImportError";
 static const char __pyx_k_check_stage[] = "check_stage";
 static const char __pyx_k_features_in[] = "features_in";
-static const char __pyx_k_default_timer[] = "default_timer";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
-static const char __pyx_k_compute_integral_image[] = "compute_integral_image";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_numpy_core_umath_failed_to_impor[] = "numpy.core.umath failed to import";
 static PyObject *__pyx_n_s_ImportError;
@@ -1902,22 +1924,24 @@ static PyObject *__pyx_n_s_canny;
 static PyObject *__pyx_n_s_ceil;
 static PyObject *__pyx_n_s_check_stage;
 static PyObject *__pyx_n_s_cline_in_traceback;
-static PyObject *__pyx_n_s_compute_integral_image;
+static PyObject *__pyx_n_s_copy;
 static PyObject *__pyx_n_s_cumsum;
-static PyObject *__pyx_n_s_default_timer;
 static PyObject *__pyx_n_s_dtype;
 static PyObject *__pyx_n_s_feature;
 static PyObject *__pyx_n_s_features_in;
+static PyObject *__pyx_n_s_get_bounds;
 static PyObject *__pyx_n_s_img;
 static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_int64;
 static PyObject *__pyx_n_s_main;
+static PyObject *__pyx_n_s_math;
 static PyObject *__pyx_n_s_name;
 static PyObject *__pyx_n_s_np;
 static PyObject *__pyx_n_s_numpy;
 static PyObject *__pyx_kp_s_numpy_core_multiarray_failed_to;
 static PyObject *__pyx_kp_s_numpy_core_umath_failed_to_impor;
 static PyObject *__pyx_n_s_range;
+static PyObject *__pyx_n_s_rectangles;
 static PyObject *__pyx_n_s_shape;
 static PyObject *__pyx_n_s_sigma;
 static PyObject *__pyx_n_s_skimage;
@@ -1925,13 +1949,9 @@ static PyObject *__pyx_n_s_sqrt;
 static PyObject *__pyx_n_s_square;
 static PyObject *__pyx_n_s_stages_in;
 static PyObject *__pyx_n_s_test;
-static PyObject *__pyx_n_s_timeit;
-static PyObject *__pyx_n_s_timer;
-static PyObject *__pyx_n_s_uint64;
 static PyObject *__pyx_n_s_uint8;
-static PyObject *__pyx_n_s_utils;
-static PyObject *__pyx_pf_19facedetectionCython_getIntegralImageCY(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_img); /* proto */
-static PyObject *__pyx_pf_19facedetectionCython_2getFaces(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_img, PyObject *__pyx_v_stages_in, PyObject *__pyx_v_features_in); /* proto */
+static PyObject *__pyx_pf_13facedetection_11cython_code_9get_faces_get_integral_image(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_img); /* proto */
+static PyObject *__pyx_pf_13facedetection_11cython_code_9get_faces_2get_faces(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_img, PyObject *__pyx_v_stages_in, PyObject *__pyx_v_features_in); /* proto */
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_int_1;
 static PyObject *__pyx_int_3;
@@ -1942,16 +1962,16 @@ static PyObject *__pyx_tuple__2;
 static PyObject *__pyx_tuple__3;
 /* Late includes */
 
-/* "facedetectionCython.pyx":9
+/* "facedetection/cython_code/get_faces.pyx":7
  * 
  * 
- * cpdef getIntegralImageCY(np.ndarray[np.int64_t, ndim=2] img):             # <<<<<<<<<<<<<<
- *       return np.cumsum(np.cumsum(img, axis=0), axis=1)
+ * cpdef get_integral_image(np.ndarray[np.int64_t, ndim=2] img):             # <<<<<<<<<<<<<<
+ *     """returns the integral image for a given img
  * 
  */
 
-static PyObject *__pyx_pw_19facedetectionCython_1getIntegralImageCY(PyObject *__pyx_self, PyObject *__pyx_v_img); /*proto*/
-static PyObject *__pyx_f_19facedetectionCython_getIntegralImageCY(PyArrayObject *__pyx_v_img, CYTHON_UNUSED int __pyx_skip_dispatch) {
+static PyObject *__pyx_pw_13facedetection_11cython_code_9get_faces_1get_integral_image(PyObject *__pyx_self, PyObject *__pyx_v_img); /*proto*/
+static PyObject *__pyx_f_13facedetection_11cython_code_9get_faces_get_integral_image(PyArrayObject *__pyx_v_img, CYTHON_UNUSED int __pyx_skip_dispatch) {
   __Pyx_LocalBuf_ND __pyx_pybuffernd_img;
   __Pyx_Buffer __pyx_pybuffer_img;
   PyObject *__pyx_r = NULL;
@@ -1964,57 +1984,57 @@ static PyObject *__pyx_f_19facedetectionCython_getIntegralImageCY(PyArrayObject 
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("getIntegralImageCY", 0);
+  __Pyx_RefNannySetupContext("get_integral_image", 0);
   __pyx_pybuffer_img.pybuffer.buf = NULL;
   __pyx_pybuffer_img.refcount = 0;
   __pyx_pybuffernd_img.data = NULL;
   __pyx_pybuffernd_img.rcbuffer = &__pyx_pybuffer_img;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_img.rcbuffer->pybuffer, (PyObject*)__pyx_v_img, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 9, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_img.rcbuffer->pybuffer, (PyObject*)__pyx_v_img, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 7, __pyx_L1_error)
   }
   __pyx_pybuffernd_img.diminfo[0].strides = __pyx_pybuffernd_img.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_img.diminfo[0].shape = __pyx_pybuffernd_img.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_img.diminfo[1].strides = __pyx_pybuffernd_img.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_img.diminfo[1].shape = __pyx_pybuffernd_img.rcbuffer->pybuffer.shape[1];
 
-  /* "facedetectionCython.pyx":10
- * 
- * cpdef getIntegralImageCY(np.ndarray[np.int64_t, ndim=2] img):
- *       return np.cumsum(np.cumsum(img, axis=0), axis=1)             # <<<<<<<<<<<<<<
+  /* "facedetection/cython_code/get_faces.pyx":19
+ *         integral_img: numpy array of shape (height, width)
+ *     """
+ *     return np.cumsum(np.cumsum(img, axis=0), axis=1)             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_cumsum); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_cumsum); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_cumsum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_cumsum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_v_img));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_img));
   PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject *)__pyx_v_img));
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_axis, __pyx_int_0) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 10, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_axis, __pyx_int_0) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_5);
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_axis, __pyx_int_1) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_axis, __pyx_int_1) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -2023,11 +2043,11 @@ static PyObject *__pyx_f_19facedetectionCython_getIntegralImageCY(PyArrayObject 
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "facedetectionCython.pyx":9
+  /* "facedetection/cython_code/get_faces.pyx":7
  * 
  * 
- * cpdef getIntegralImageCY(np.ndarray[np.int64_t, ndim=2] img):             # <<<<<<<<<<<<<<
- *       return np.cumsum(np.cumsum(img, axis=0), axis=1)
+ * cpdef get_integral_image(np.ndarray[np.int64_t, ndim=2] img):             # <<<<<<<<<<<<<<
+ *     """returns the integral image for a given img
  * 
  */
 
@@ -2044,7 +2064,7 @@ static PyObject *__pyx_f_19facedetectionCython_getIntegralImageCY(PyArrayObject 
     __Pyx_ErrFetch(&__pyx_type, &__pyx_value, &__pyx_tb);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_img.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("facedetectionCython.getIntegralImageCY", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("facedetection.cython_code.get_faces.get_integral_image", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   goto __pyx_L2;
   __pyx_L0:;
@@ -2056,16 +2076,17 @@ static PyObject *__pyx_f_19facedetectionCython_getIntegralImageCY(PyArrayObject 
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_19facedetectionCython_1getIntegralImageCY(PyObject *__pyx_self, PyObject *__pyx_v_img); /*proto*/
-static PyObject *__pyx_pw_19facedetectionCython_1getIntegralImageCY(PyObject *__pyx_self, PyObject *__pyx_v_img) {
+static PyObject *__pyx_pw_13facedetection_11cython_code_9get_faces_1get_integral_image(PyObject *__pyx_self, PyObject *__pyx_v_img); /*proto*/
+static char __pyx_doc_13facedetection_11cython_code_9get_faces_get_integral_image[] = "returns the integral image for a given img\n\n    If you want to know more about the integral image, check out:\n        https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf\n\n    paramaters:\n        img: numpy array of shape (height, width)\n    \n    returns:\n        integral_img: numpy array of shape (height, width)\n    ";
+static PyObject *__pyx_pw_13facedetection_11cython_code_9get_faces_1get_integral_image(PyObject *__pyx_self, PyObject *__pyx_v_img) {
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("getIntegralImageCY (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_img), __pyx_ptype_5numpy_ndarray, 1, "img", 0))) __PYX_ERR(0, 9, __pyx_L1_error)
-  __pyx_r = __pyx_pf_19facedetectionCython_getIntegralImageCY(__pyx_self, ((PyArrayObject *)__pyx_v_img));
+  __Pyx_RefNannySetupContext("get_integral_image (wrapper)", 0);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_img), __pyx_ptype_5numpy_ndarray, 1, "img", 0))) __PYX_ERR(0, 7, __pyx_L1_error)
+  __pyx_r = __pyx_pf_13facedetection_11cython_code_9get_faces_get_integral_image(__pyx_self, ((PyArrayObject *)__pyx_v_img));
 
   /* function exit code */
   goto __pyx_L0;
@@ -2076,7 +2097,7 @@ static PyObject *__pyx_pw_19facedetectionCython_1getIntegralImageCY(PyObject *__
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_19facedetectionCython_getIntegralImageCY(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_img) {
+static PyObject *__pyx_pf_13facedetection_11cython_code_9get_faces_get_integral_image(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_img) {
   __Pyx_LocalBuf_ND __pyx_pybuffernd_img;
   __Pyx_Buffer __pyx_pybuffer_img;
   PyObject *__pyx_r = NULL;
@@ -2085,18 +2106,18 @@ static PyObject *__pyx_pf_19facedetectionCython_getIntegralImageCY(CYTHON_UNUSED
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("getIntegralImageCY", 0);
+  __Pyx_RefNannySetupContext("get_integral_image", 0);
   __pyx_pybuffer_img.pybuffer.buf = NULL;
   __pyx_pybuffer_img.refcount = 0;
   __pyx_pybuffernd_img.data = NULL;
   __pyx_pybuffernd_img.rcbuffer = &__pyx_pybuffer_img;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_img.rcbuffer->pybuffer, (PyObject*)__pyx_v_img, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 9, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_img.rcbuffer->pybuffer, (PyObject*)__pyx_v_img, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) __PYX_ERR(0, 7, __pyx_L1_error)
   }
   __pyx_pybuffernd_img.diminfo[0].strides = __pyx_pybuffernd_img.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_img.diminfo[0].shape = __pyx_pybuffernd_img.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_img.diminfo[1].strides = __pyx_pybuffernd_img.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_img.diminfo[1].shape = __pyx_pybuffernd_img.rcbuffer->pybuffer.shape[1];
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_19facedetectionCython_getIntegralImageCY(__pyx_v_img, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13facedetection_11cython_code_9get_faces_get_integral_image(__pyx_v_img, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -2111,7 +2132,7 @@ static PyObject *__pyx_pf_19facedetectionCython_getIntegralImageCY(CYTHON_UNUSED
     __Pyx_ErrFetch(&__pyx_type, &__pyx_value, &__pyx_tb);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_img.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("facedetectionCython.getIntegralImageCY", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("facedetection.cython_code.get_faces.get_integral_image", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -2122,16 +2143,16 @@ static PyObject *__pyx_pf_19facedetectionCython_getIntegralImageCY(CYTHON_UNUSED
   return __pyx_r;
 }
 
-/* "facedetectionCython.pyx":15
+/* "facedetection/cython_code/get_faces.pyx":24
  * 
  * 
- * cpdef getFaces(img,stages_in,features_in):             # <<<<<<<<<<<<<<
- *     cdef list stages
- *     cdef list features
+ * cpdef get_faces(img,stages_in,features_in):             # <<<<<<<<<<<<<<
+ *     """returns bounding boxes on the faces inside the image
+ * 
  */
 
-static PyObject *__pyx_pw_19facedetectionCython_3getFaces(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *__pyx_v_img, PyObject *__pyx_v_stages_in, PyObject *__pyx_v_features_in, CYTHON_UNUSED int __pyx_skip_dispatch) {
+static PyObject *__pyx_pw_13facedetection_11cython_code_9get_faces_3get_faces(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_f_13facedetection_11cython_code_9get_faces_get_faces(PyObject *__pyx_v_img, PyObject *__pyx_v_stages_in, PyObject *__pyx_v_features_in, CYTHON_UNUSED int __pyx_skip_dispatch) {
   PyObject *__pyx_v_stages = 0;
   PyObject *__pyx_v_features = 0;
   PyObject *__pyx_v_WINDOW_SIZE = NULL;
@@ -2154,24 +2175,33 @@ static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *__pyx_v_img, P
   int __pyx_v_windowStep;
   int __pyx_v_lastStepX;
   int __pyx_v_lastStepY;
+  int __pyx_v_total_im;
+  int __pyx_v_total_im_square;
+  int __pyx_v_window_area;
   PyObject *__pyx_v_faces = NULL;
   int __pyx_v_scale;
   PyArrayObject *__pyx_v_window_canny = 0;
   PyArrayObject *__pyx_v_window = 0;
   PyArrayObject *__pyx_v_window_squared = 0;
-  int __pyx_v_total_im;
-  int __pyx_v_total_im_square;
   float __pyx_v_im_mean;
   float __pyx_v_im_var;
-  int __pyx_v_window_area;
   PyObject *__pyx_v_canny_threshold = NULL;
+  PyObject *__pyx_v_rect_values = NULL;
   long __pyx_v_y1;
   long __pyx_v_x1;
   long __pyx_v_y2;
   long __pyx_v_x2;
-  PyObject *__pyx_v_total_cannay = NULL;
+  PyObject *__pyx_v_total_canny = NULL;
   int __pyx_v_face_found;
   PyObject *__pyx_v_stage = NULL;
+  PyObject *__pyx_v_final_faces = NULL;
+  PyObject *__pyx_v_i = NULL;
+  PyObject *__pyx_v_main_rect = NULL;
+  PyObject *__pyx_v_j = NULL;
+  PyObject *__pyx_v_sub_rect = NULL;
+  int __pyx_v_found;
+  PyObject *__pyx_v_ft = NULL;
+  PyObject *__pyx_v_rect = NULL;
   __Pyx_LocalBuf_ND __pyx_pybuffernd_canny_integral_image;
   __Pyx_Buffer __pyx_pybuffer_canny_integral_image;
   __Pyx_LocalBuf_ND __pyx_pybuffernd_img_gray;
@@ -2194,46 +2224,44 @@ static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *__pyx_v_img, P
   PyObject *__pyx_t_4 = NULL;
   PyObject *__pyx_t_5 = NULL;
   PyArrayObject *__pyx_t_6 = NULL;
-  int __pyx_t_7;
-  PyObject *__pyx_t_8 = NULL;
-  PyObject *__pyx_t_9 = NULL;
-  PyObject *__pyx_t_10 = NULL;
+  PyArrayObject *__pyx_t_7 = NULL;
+  PyArrayObject *__pyx_t_8 = NULL;
+  PyObject *(*__pyx_t_9)(PyObject *);
+  int __pyx_t_10;
   PyArrayObject *__pyx_t_11 = NULL;
-  PyArrayObject *__pyx_t_12 = NULL;
-  PyObject *(*__pyx_t_13)(PyObject *);
-  PyArrayObject *__pyx_t_14 = NULL;
-  long __pyx_t_15;
-  long __pyx_t_16;
-  long __pyx_t_17;
-  int __pyx_t_18;
-  Py_ssize_t __pyx_t_19;
-  PyObject *(*__pyx_t_20)(PyObject *);
-  Py_ssize_t __pyx_t_21;
+  long __pyx_t_12;
+  long __pyx_t_13;
+  long __pyx_t_14;
+  int __pyx_t_15;
+  Py_ssize_t __pyx_t_16;
+  Py_ssize_t __pyx_t_17;
+  PyObject *(*__pyx_t_18)(PyObject *);
+  PyObject *__pyx_t_19 = NULL;
+  PyObject *__pyx_t_20 = NULL;
+  PyObject *__pyx_t_21 = NULL;
   PyObject *(*__pyx_t_22)(PyObject *);
-  PyObject *__pyx_t_23 = NULL;
-  PyArrayObject *__pyx_t_24 = NULL;
-  Py_ssize_t __pyx_t_25;
-  Py_ssize_t __pyx_t_26;
+  PyArrayObject *__pyx_t_23 = NULL;
+  PyObject *__pyx_t_24 = NULL;
+  PyObject *__pyx_t_25 = NULL;
+  PyObject *__pyx_t_26 = NULL;
   Py_ssize_t __pyx_t_27;
   Py_ssize_t __pyx_t_28;
   Py_ssize_t __pyx_t_29;
   Py_ssize_t __pyx_t_30;
   Py_ssize_t __pyx_t_31;
   Py_ssize_t __pyx_t_32;
-  PyArrayObject *__pyx_t_33 = NULL;
-  PyArrayObject *__pyx_t_34 = NULL;
+  Py_ssize_t __pyx_t_33;
+  Py_ssize_t __pyx_t_34;
   float __pyx_t_35;
   Py_ssize_t __pyx_t_36;
   PyObject *__pyx_t_37 = NULL;
   PyObject *__pyx_t_38 = NULL;
-  PyObject *__pyx_t_39 = NULL;
-  PyObject *__pyx_t_40 = NULL;
-  int __pyx_t_41;
-  int __pyx_t_42;
+  int __pyx_t_39;
+  int __pyx_t_40;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("getFaces", 0);
+  __Pyx_RefNannySetupContext("get_faces", 0);
   __pyx_pybuffer_img_gray.pybuffer.buf = NULL;
   __pyx_pybuffer_img_gray.refcount = 0;
   __pyx_pybuffernd_img_gray.data = NULL;
@@ -2263,108 +2291,99 @@ static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *__pyx_v_img, P
   __pyx_pybuffernd_window_squared.data = NULL;
   __pyx_pybuffernd_window_squared.rcbuffer = &__pyx_pybuffer_window_squared;
 
-  /* "facedetectionCython.pyx":18
- *     cdef list stages
- *     cdef list features
- *     stages = stages_in             # <<<<<<<<<<<<<<
- *     features = features_in
+  /* "facedetection/cython_code/get_faces.pyx":37
+ *     """
+ * 
+ *     cdef list stages = stages_in             # <<<<<<<<<<<<<<
+ *     cdef list features = features_in
  * 
  */
-  if (!(likely(PyList_CheckExact(__pyx_v_stages_in))||((__pyx_v_stages_in) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_v_stages_in)->tp_name), 0))) __PYX_ERR(0, 18, __pyx_L1_error)
+  if (!(likely(PyList_CheckExact(__pyx_v_stages_in))||((__pyx_v_stages_in) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_v_stages_in)->tp_name), 0))) __PYX_ERR(0, 37, __pyx_L1_error)
   __pyx_t_1 = __pyx_v_stages_in;
   __Pyx_INCREF(__pyx_t_1);
   __pyx_v_stages = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "facedetectionCython.pyx":19
- *     cdef list features
- *     stages = stages_in
- *     features = features_in             # <<<<<<<<<<<<<<
+  /* "facedetection/cython_code/get_faces.pyx":38
+ * 
+ *     cdef list stages = stages_in
+ *     cdef list features = features_in             # <<<<<<<<<<<<<<
  * 
  *     WINDOW_SIZE = (24, 24)
  */
-  if (!(likely(PyList_CheckExact(__pyx_v_features_in))||((__pyx_v_features_in) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_v_features_in)->tp_name), 0))) __PYX_ERR(0, 19, __pyx_L1_error)
+  if (!(likely(PyList_CheckExact(__pyx_v_features_in))||((__pyx_v_features_in) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_v_features_in)->tp_name), 0))) __PYX_ERR(0, 38, __pyx_L1_error)
   __pyx_t_1 = __pyx_v_features_in;
   __Pyx_INCREF(__pyx_t_1);
   __pyx_v_features = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "facedetectionCython.pyx":21
- *     features = features_in
+  /* "facedetection/cython_code/get_faces.pyx":40
+ *     cdef list features = features_in
  * 
  *     WINDOW_SIZE = (24, 24)             # <<<<<<<<<<<<<<
- *     #img_gray = io.imread(img, as_gray=True)
- *     cdef np.ndarray[np.int64_t, ndim=2] img_gray
+ *     cdef np.ndarray[np.int64_t, ndim=2] img_gray = np.array(img,dtype=np.int64)
+ * 
  */
   __Pyx_INCREF(__pyx_tuple_);
   __pyx_v_WINDOW_SIZE = __pyx_tuple_;
 
-  /* "facedetectionCython.pyx":24
- *     #img_gray = io.imread(img, as_gray=True)
- *     cdef np.ndarray[np.int64_t, ndim=2] img_gray
- *     img_gray = np.array(img,dtype=np.int64)             # <<<<<<<<<<<<<<
+  /* "facedetection/cython_code/get_faces.pyx":41
+ * 
+ *     WINDOW_SIZE = (24, 24)
+ *     cdef np.ndarray[np.int64_t, ndim=2] img_gray = np.array(img,dtype=np.int64)             # <<<<<<<<<<<<<<
+ * 
  *     img_draw = img.astype(np.uint8)
- *     img_gray_2 = img_gray.astype(np.uint64)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_v_img);
   __Pyx_GIVEREF(__pyx_v_img);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_v_img);
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_int64); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_int64); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 24, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 41, __pyx_L1_error)
   __pyx_t_6 = ((PyArrayObject *)__pyx_t_5);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_img_gray.rcbuffer->pybuffer);
-    __pyx_t_7 = __Pyx_GetBufferAndValidate(&__pyx_pybuffernd_img_gray.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack);
-    if (unlikely(__pyx_t_7 < 0)) {
-      PyErr_Fetch(&__pyx_t_8, &__pyx_t_9, &__pyx_t_10);
-      if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_img_gray.rcbuffer->pybuffer, (PyObject*)__pyx_v_img_gray, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) {
-        Py_XDECREF(__pyx_t_8); Py_XDECREF(__pyx_t_9); Py_XDECREF(__pyx_t_10);
-        __Pyx_RaiseBufferFallbackError();
-      } else {
-        PyErr_Restore(__pyx_t_8, __pyx_t_9, __pyx_t_10);
-      }
-      __pyx_t_8 = __pyx_t_9 = __pyx_t_10 = 0;
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_img_gray.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) {
+      __pyx_v_img_gray = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_img_gray.rcbuffer->pybuffer.buf = NULL;
+      __PYX_ERR(0, 41, __pyx_L1_error)
+    } else {__pyx_pybuffernd_img_gray.diminfo[0].strides = __pyx_pybuffernd_img_gray.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_img_gray.diminfo[0].shape = __pyx_pybuffernd_img_gray.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_img_gray.diminfo[1].strides = __pyx_pybuffernd_img_gray.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_img_gray.diminfo[1].shape = __pyx_pybuffernd_img_gray.rcbuffer->pybuffer.shape[1];
     }
-    __pyx_pybuffernd_img_gray.diminfo[0].strides = __pyx_pybuffernd_img_gray.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_img_gray.diminfo[0].shape = __pyx_pybuffernd_img_gray.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_img_gray.diminfo[1].strides = __pyx_pybuffernd_img_gray.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_img_gray.diminfo[1].shape = __pyx_pybuffernd_img_gray.rcbuffer->pybuffer.shape[1];
-    if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 24, __pyx_L1_error)
   }
   __pyx_t_6 = 0;
   __pyx_v_img_gray = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "facedetectionCython.pyx":25
- *     cdef np.ndarray[np.int64_t, ndim=2] img_gray
- *     img_gray = np.array(img,dtype=np.int64)
+  /* "facedetection/cython_code/get_faces.pyx":43
+ *     cdef np.ndarray[np.int64_t, ndim=2] img_gray = np.array(img,dtype=np.int64)
+ * 
  *     img_draw = img.astype(np.uint8)             # <<<<<<<<<<<<<<
- *     img_gray_2 = img_gray.astype(np.uint64)
+ *     img_gray_2 = img_gray.copy()
  * 
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_img, __pyx_n_s_astype); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 25, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_img, __pyx_n_s_astype); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 25, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_uint8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 25, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_uint8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_1 = NULL;
@@ -2380,26 +2399,21 @@ static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *__pyx_v_img, P
   __pyx_t_5 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2);
   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 25, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_img_draw = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "facedetectionCython.pyx":26
- *     img_gray = np.array(img,dtype=np.int64)
- *     img_draw = img.astype(np.uint8)
- *     img_gray_2 = img_gray.astype(np.uint64)             # <<<<<<<<<<<<<<
+  /* "facedetection/cython_code/get_faces.pyx":44
  * 
- *     cdef np.ndarray[np.int64_t, ndim=2] integral_image
+ *     img_draw = img.astype(np.uint8)
+ *     img_gray_2 = img_gray.copy()             # <<<<<<<<<<<<<<
+ * 
+ *     cdef np.ndarray[np.int64_t, ndim=2] integral_image = get_integral_image(img_gray)
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_img_gray), __pyx_n_s_astype); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_img_gray), __pyx_n_s_copy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 26, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_uint64); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
     __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
@@ -2410,574 +2424,623 @@ static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *__pyx_v_img, P
       __Pyx_DECREF_SET(__pyx_t_3, function);
     }
   }
-  __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1);
+  __pyx_t_5 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 26, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_img_gray_2 = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "facedetectionCython.pyx":29
+  /* "facedetection/cython_code/get_faces.pyx":46
+ *     img_gray_2 = img_gray.copy()
  * 
- *     cdef np.ndarray[np.int64_t, ndim=2] integral_image
- *     integral_image =getIntegralImageCY(img_gray)             # <<<<<<<<<<<<<<
+ *     cdef np.ndarray[np.int64_t, ndim=2] integral_image = get_integral_image(img_gray)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_5 = __pyx_f_19facedetectionCython_getIntegralImageCY(((PyArrayObject *)__pyx_v_img_gray), 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_5 = __pyx_f_13facedetection_11cython_code_9get_faces_get_integral_image(((PyArrayObject *)__pyx_v_img_gray), 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_t_11 = ((PyArrayObject *)__pyx_t_5);
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_7 = ((PyArrayObject *)__pyx_t_5);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_integral_image.rcbuffer->pybuffer);
-    __pyx_t_7 = __Pyx_GetBufferAndValidate(&__pyx_pybuffernd_integral_image.rcbuffer->pybuffer, (PyObject*)__pyx_t_11, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack);
-    if (unlikely(__pyx_t_7 < 0)) {
-      PyErr_Fetch(&__pyx_t_10, &__pyx_t_9, &__pyx_t_8);
-      if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_integral_image.rcbuffer->pybuffer, (PyObject*)__pyx_v_integral_image, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) {
-        Py_XDECREF(__pyx_t_10); Py_XDECREF(__pyx_t_9); Py_XDECREF(__pyx_t_8);
-        __Pyx_RaiseBufferFallbackError();
-      } else {
-        PyErr_Restore(__pyx_t_10, __pyx_t_9, __pyx_t_8);
-      }
-      __pyx_t_10 = __pyx_t_9 = __pyx_t_8 = 0;
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_integral_image.rcbuffer->pybuffer, (PyObject*)__pyx_t_7, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) {
+      __pyx_v_integral_image = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_integral_image.rcbuffer->pybuffer.buf = NULL;
+      __PYX_ERR(0, 46, __pyx_L1_error)
+    } else {__pyx_pybuffernd_integral_image.diminfo[0].strides = __pyx_pybuffernd_integral_image.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_integral_image.diminfo[0].shape = __pyx_pybuffernd_integral_image.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_integral_image.diminfo[1].strides = __pyx_pybuffernd_integral_image.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_integral_image.diminfo[1].shape = __pyx_pybuffernd_integral_image.rcbuffer->pybuffer.shape[1];
     }
-    __pyx_pybuffernd_integral_image.diminfo[0].strides = __pyx_pybuffernd_integral_image.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_integral_image.diminfo[0].shape = __pyx_pybuffernd_integral_image.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_integral_image.diminfo[1].strides = __pyx_pybuffernd_integral_image.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_integral_image.diminfo[1].shape = __pyx_pybuffernd_integral_image.rcbuffer->pybuffer.shape[1];
-    if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 29, __pyx_L1_error)
   }
-  __pyx_t_11 = 0;
+  __pyx_t_7 = 0;
   __pyx_v_integral_image = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "facedetectionCython.pyx":34
- *     cdef np.ndarray[np.int64_t, ndim=2] integral_image_sqaured
+  /* "facedetection/cython_code/get_faces.pyx":49
  * 
- *     integral_image_sqaured = np.array(getIntegralImageCY(np.square(img_gray)),dtype=np.int64)             # <<<<<<<<<<<<<<
  * 
- *     #curr_dir = abspath(r'.')
+ *     cdef np.ndarray[np.int64_t, ndim=2] integral_image_sqaured =  get_integral_image(np.square(img_gray))             # <<<<<<<<<<<<<<
+ * 
+ *     y_max_py,  x_max_py = img_gray_2.shape
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 34, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_square); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_square); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = NULL;
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
-    __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_2);
-    if (likely(__pyx_t_1)) {
+    __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
+    if (likely(__pyx_t_3)) {
       PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
-      __Pyx_INCREF(__pyx_t_1);
+      __Pyx_INCREF(__pyx_t_3);
       __Pyx_INCREF(function);
       __Pyx_DECREF_SET(__pyx_t_2, function);
     }
   }
-  __pyx_t_5 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_1, ((PyObject *)__pyx_v_img_gray)) : __Pyx_PyObject_CallOneArg(__pyx_t_2, ((PyObject *)__pyx_v_img_gray));
-  __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_5 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, ((PyObject *)__pyx_v_img_gray)) : __Pyx_PyObject_CallOneArg(__pyx_t_2, ((PyObject *)__pyx_v_img_gray));
+  __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 34, __pyx_L1_error)
-  __pyx_t_2 = __pyx_f_19facedetectionCython_getIntegralImageCY(((PyArrayObject *)__pyx_t_5), 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_13facedetection_11cython_code_9get_faces_get_integral_image(((PyArrayObject *)__pyx_t_5), 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 34, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GIVEREF(__pyx_t_2);
-  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2);
-  __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_int64); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 34, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 34, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 34, __pyx_L1_error)
-  __pyx_t_12 = ((PyArrayObject *)__pyx_t_4);
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_t_8 = ((PyArrayObject *)__pyx_t_2);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_integral_image_sqaured.rcbuffer->pybuffer);
-    __pyx_t_7 = __Pyx_GetBufferAndValidate(&__pyx_pybuffernd_integral_image_sqaured.rcbuffer->pybuffer, (PyObject*)__pyx_t_12, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack);
-    if (unlikely(__pyx_t_7 < 0)) {
-      PyErr_Fetch(&__pyx_t_8, &__pyx_t_9, &__pyx_t_10);
-      if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_integral_image_sqaured.rcbuffer->pybuffer, (PyObject*)__pyx_v_integral_image_sqaured, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) {
-        Py_XDECREF(__pyx_t_8); Py_XDECREF(__pyx_t_9); Py_XDECREF(__pyx_t_10);
-        __Pyx_RaiseBufferFallbackError();
-      } else {
-        PyErr_Restore(__pyx_t_8, __pyx_t_9, __pyx_t_10);
-      }
-      __pyx_t_8 = __pyx_t_9 = __pyx_t_10 = 0;
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_integral_image_sqaured.rcbuffer->pybuffer, (PyObject*)__pyx_t_8, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) {
+      __pyx_v_integral_image_sqaured = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_integral_image_sqaured.rcbuffer->pybuffer.buf = NULL;
+      __PYX_ERR(0, 49, __pyx_L1_error)
+    } else {__pyx_pybuffernd_integral_image_sqaured.diminfo[0].strides = __pyx_pybuffernd_integral_image_sqaured.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_integral_image_sqaured.diminfo[0].shape = __pyx_pybuffernd_integral_image_sqaured.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_integral_image_sqaured.diminfo[1].strides = __pyx_pybuffernd_integral_image_sqaured.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_integral_image_sqaured.diminfo[1].shape = __pyx_pybuffernd_integral_image_sqaured.rcbuffer->pybuffer.shape[1];
     }
-    __pyx_pybuffernd_integral_image_sqaured.diminfo[0].strides = __pyx_pybuffernd_integral_image_sqaured.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_integral_image_sqaured.diminfo[0].shape = __pyx_pybuffernd_integral_image_sqaured.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_integral_image_sqaured.diminfo[1].strides = __pyx_pybuffernd_integral_image_sqaured.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_integral_image_sqaured.diminfo[1].shape = __pyx_pybuffernd_integral_image_sqaured.rcbuffer->pybuffer.shape[1];
-    if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 34, __pyx_L1_error)
   }
-  __pyx_t_12 = 0;
-  __pyx_v_integral_image_sqaured = ((PyArrayObject *)__pyx_t_4);
-  __pyx_t_4 = 0;
+  __pyx_t_8 = 0;
+  __pyx_v_integral_image_sqaured = ((PyArrayObject *)__pyx_t_2);
+  __pyx_t_2 = 0;
 
-  /* "facedetectionCython.pyx":40
- * 
+  /* "facedetection/cython_code/get_faces.pyx":51
+ *     cdef np.ndarray[np.int64_t, ndim=2] integral_image_sqaured =  get_integral_image(np.square(img_gray))
  * 
  *     y_max_py,  x_max_py = img_gray_2.shape             # <<<<<<<<<<<<<<
  *     cdef int y_max = y_max_py
  *     cdef int x_max = x_max_py
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_img_gray_2, __pyx_n_s_shape); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 40, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  if ((likely(PyTuple_CheckExact(__pyx_t_4))) || (PyList_CheckExact(__pyx_t_4))) {
-    PyObject* sequence = __pyx_t_4;
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_img_gray_2, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if ((likely(PyTuple_CheckExact(__pyx_t_2))) || (PyList_CheckExact(__pyx_t_2))) {
+    PyObject* sequence = __pyx_t_2;
     Py_ssize_t size = __Pyx_PySequence_SIZE(sequence);
     if (unlikely(size != 2)) {
       if (size > 2) __Pyx_RaiseTooManyValuesError(2);
       else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-      __PYX_ERR(0, 40, __pyx_L1_error)
+      __PYX_ERR(0, 51, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
-      __pyx_t_2 = PyTuple_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 1); 
+      __pyx_t_5 = PyTuple_GET_ITEM(sequence, 0); 
+      __pyx_t_3 = PyTuple_GET_ITEM(sequence, 1); 
     } else {
-      __pyx_t_2 = PyList_GET_ITEM(sequence, 0); 
-      __pyx_t_5 = PyList_GET_ITEM(sequence, 1); 
+      __pyx_t_5 = PyList_GET_ITEM(sequence, 0); 
+      __pyx_t_3 = PyList_GET_ITEM(sequence, 1); 
     }
-    __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_5);
+    __Pyx_INCREF(__pyx_t_3);
     #else
-    __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 40, __pyx_L1_error)
+    __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 51, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
     #endif
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   } else {
     Py_ssize_t index = -1;
-    __pyx_t_3 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_13 = Py_TYPE(__pyx_t_3)->tp_iternext;
-    index = 0; __pyx_t_2 = __pyx_t_13(__pyx_t_3); if (unlikely(!__pyx_t_2)) goto __pyx_L3_unpacking_failed;
-    __Pyx_GOTREF(__pyx_t_2);
-    index = 1; __pyx_t_5 = __pyx_t_13(__pyx_t_3); if (unlikely(!__pyx_t_5)) goto __pyx_L3_unpacking_failed;
+    __pyx_t_1 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_9 = Py_TYPE(__pyx_t_1)->tp_iternext;
+    index = 0; __pyx_t_5 = __pyx_t_9(__pyx_t_1); if (unlikely(!__pyx_t_5)) goto __pyx_L3_unpacking_failed;
     __Pyx_GOTREF(__pyx_t_5);
-    if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_3), 2) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
-    __pyx_t_13 = NULL;
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    index = 1; __pyx_t_3 = __pyx_t_9(__pyx_t_1); if (unlikely(!__pyx_t_3)) goto __pyx_L3_unpacking_failed;
+    __Pyx_GOTREF(__pyx_t_3);
+    if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_1), 2) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
+    __pyx_t_9 = NULL;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     goto __pyx_L4_unpacking_done;
     __pyx_L3_unpacking_failed:;
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_13 = NULL;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __pyx_t_9 = NULL;
     if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-    __PYX_ERR(0, 40, __pyx_L1_error)
+    __PYX_ERR(0, 51, __pyx_L1_error)
     __pyx_L4_unpacking_done:;
   }
-  __pyx_v_y_max_py = __pyx_t_2;
-  __pyx_t_2 = 0;
-  __pyx_v_x_max_py = __pyx_t_5;
+  __pyx_v_y_max_py = __pyx_t_5;
   __pyx_t_5 = 0;
+  __pyx_v_x_max_py = __pyx_t_3;
+  __pyx_t_3 = 0;
 
-  /* "facedetectionCython.pyx":41
+  /* "facedetection/cython_code/get_faces.pyx":52
  * 
  *     y_max_py,  x_max_py = img_gray_2.shape
  *     cdef int y_max = y_max_py             # <<<<<<<<<<<<<<
  *     cdef int x_max = x_max_py
- *     # print(f'x_max : {x_max}')
+ * 
  */
-  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_y_max_py); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 41, __pyx_L1_error)
-  __pyx_v_y_max = __pyx_t_7;
+  __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_v_y_max_py); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_v_y_max = __pyx_t_10;
 
-  /* "facedetectionCython.pyx":42
+  /* "facedetection/cython_code/get_faces.pyx":53
  *     y_max_py,  x_max_py = img_gray_2.shape
  *     cdef int y_max = y_max_py
  *     cdef int x_max = x_max_py             # <<<<<<<<<<<<<<
- *     # print(f'x_max : {x_max}')
- *     # print(f'y_max : {y_max}'
+ * 
+ *     img_canny = feature.canny(img_draw, sigma=3)
  */
-  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_v_x_max_py); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 42, __pyx_L1_error)
-  __pyx_v_x_max = __pyx_t_7;
+  __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_v_x_max_py); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_v_x_max = __pyx_t_10;
 
-  /* "facedetectionCython.pyx":46
- *     # print(f'y_max : {y_max}'
+  /* "facedetection/cython_code/get_faces.pyx":55
+ *     cdef int x_max = x_max_py
  * 
  *     img_canny = feature.canny(img_draw, sigma=3)             # <<<<<<<<<<<<<<
  *     edges = np.array(img_canny,dtype=np.int64)
- *     cdef np.ndarray[np.int64_t, ndim=2] canny_integral_image
+ *     cdef np.ndarray[np.int64_t, ndim=2] canny_integral_image = get_integral_image(edges)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_feature); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_canny); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 46, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_feature); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_canny); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_img_draw);
   __Pyx_GIVEREF(__pyx_v_img_draw);
-  PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_v_img_draw);
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_sigma, __pyx_int_3) < 0) __PYX_ERR(0, 46, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_img_draw);
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_sigma, __pyx_int_3) < 0) __PYX_ERR(0, 55, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_v_img_canny = __pyx_t_3;
-  __pyx_t_3 = 0;
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_v_img_canny = __pyx_t_1;
+  __pyx_t_1 = 0;
 
-  /* "facedetectionCython.pyx":47
+  /* "facedetection/cython_code/get_faces.pyx":56
  * 
  *     img_canny = feature.canny(img_draw, sigma=3)
  *     edges = np.array(img_canny,dtype=np.int64)             # <<<<<<<<<<<<<<
- *     cdef np.ndarray[np.int64_t, ndim=2] canny_integral_image
- *     canny_integral_image = getIntegralImageCY(edges)
+ *     cdef np.ndarray[np.int64_t, ndim=2] canny_integral_image = get_integral_image(edges)
+ * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 47, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_array); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 47, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_v_img_canny);
   __Pyx_GIVEREF(__pyx_v_img_canny);
-  PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_img_canny);
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)
+  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_v_img_canny);
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_int64); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 47, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_int64); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_v_edges = __pyx_t_1;
-  __pyx_t_1 = 0;
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_edges = __pyx_t_4;
+  __pyx_t_4 = 0;
 
-  /* "facedetectionCython.pyx":49
+  /* "facedetection/cython_code/get_faces.pyx":57
+ *     img_canny = feature.canny(img_draw, sigma=3)
  *     edges = np.array(img_canny,dtype=np.int64)
- *     cdef np.ndarray[np.int64_t, ndim=2] canny_integral_image
- *     canny_integral_image = getIntegralImageCY(edges)             # <<<<<<<<<<<<<<
+ *     cdef np.ndarray[np.int64_t, ndim=2] canny_integral_image = get_integral_image(edges)             # <<<<<<<<<<<<<<
  * 
- *     cdef int maxScale = int(min((y_max/24),(x_max/24)))
+ *     # variable definitions used in looping
  */
-  if (!(likely(((__pyx_v_edges) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_edges, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 49, __pyx_L1_error)
-  __pyx_t_1 = __pyx_f_19facedetectionCython_getIntegralImageCY(((PyArrayObject *)__pyx_v_edges), 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 49, __pyx_L1_error)
-  __pyx_t_14 = ((PyArrayObject *)__pyx_t_1);
+  if (!(likely(((__pyx_v_edges) == Py_None) || likely(__Pyx_TypeTest(__pyx_v_edges, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_t_4 = __pyx_f_13facedetection_11cython_code_9get_faces_get_integral_image(((PyArrayObject *)__pyx_v_edges), 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_t_11 = ((PyArrayObject *)__pyx_t_4);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_canny_integral_image.rcbuffer->pybuffer);
-    __pyx_t_7 = __Pyx_GetBufferAndValidate(&__pyx_pybuffernd_canny_integral_image.rcbuffer->pybuffer, (PyObject*)__pyx_t_14, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack);
-    if (unlikely(__pyx_t_7 < 0)) {
-      PyErr_Fetch(&__pyx_t_10, &__pyx_t_9, &__pyx_t_8);
-      if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_canny_integral_image.rcbuffer->pybuffer, (PyObject*)__pyx_v_canny_integral_image, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) {
-        Py_XDECREF(__pyx_t_10); Py_XDECREF(__pyx_t_9); Py_XDECREF(__pyx_t_8);
-        __Pyx_RaiseBufferFallbackError();
-      } else {
-        PyErr_Restore(__pyx_t_10, __pyx_t_9, __pyx_t_8);
-      }
-      __pyx_t_10 = __pyx_t_9 = __pyx_t_8 = 0;
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_canny_integral_image.rcbuffer->pybuffer, (PyObject*)__pyx_t_11, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) {
+      __pyx_v_canny_integral_image = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_canny_integral_image.rcbuffer->pybuffer.buf = NULL;
+      __PYX_ERR(0, 57, __pyx_L1_error)
+    } else {__pyx_pybuffernd_canny_integral_image.diminfo[0].strides = __pyx_pybuffernd_canny_integral_image.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_canny_integral_image.diminfo[0].shape = __pyx_pybuffernd_canny_integral_image.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_canny_integral_image.diminfo[1].strides = __pyx_pybuffernd_canny_integral_image.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_canny_integral_image.diminfo[1].shape = __pyx_pybuffernd_canny_integral_image.rcbuffer->pybuffer.shape[1];
     }
-    __pyx_pybuffernd_canny_integral_image.diminfo[0].strides = __pyx_pybuffernd_canny_integral_image.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_canny_integral_image.diminfo[0].shape = __pyx_pybuffernd_canny_integral_image.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_canny_integral_image.diminfo[1].strides = __pyx_pybuffernd_canny_integral_image.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_canny_integral_image.diminfo[1].shape = __pyx_pybuffernd_canny_integral_image.rcbuffer->pybuffer.shape[1];
-    if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 49, __pyx_L1_error)
   }
-  __pyx_t_14 = 0;
-  __pyx_v_canny_integral_image = ((PyArrayObject *)__pyx_t_1);
-  __pyx_t_1 = 0;
+  __pyx_t_11 = 0;
+  __pyx_v_canny_integral_image = ((PyArrayObject *)__pyx_t_4);
+  __pyx_t_4 = 0;
 
-  /* "facedetectionCython.pyx":51
- *     canny_integral_image = getIntegralImageCY(edges)
+  /* "facedetection/cython_code/get_faces.pyx":60
  * 
+ *     # variable definitions used in looping
  *     cdef int maxScale = int(min((y_max/24),(x_max/24)))             # <<<<<<<<<<<<<<
- *     cdef int x
- *     cdef int y
+ *     cdef int x, y, step, windowStep, lastStepX, lastStepY
+ *     cdef int total_im, total_im_square, window_area
  */
-  __pyx_t_15 = __Pyx_div_long(__pyx_v_x_max, 24);
-  __pyx_t_16 = __Pyx_div_long(__pyx_v_y_max, 24);
-  if (((__pyx_t_15 < __pyx_t_16) != 0)) {
-    __pyx_t_17 = __pyx_t_15;
+  __pyx_t_12 = __Pyx_div_long(__pyx_v_x_max, 24);
+  __pyx_t_13 = __Pyx_div_long(__pyx_v_y_max, 24);
+  if (((__pyx_t_12 < __pyx_t_13) != 0)) {
+    __pyx_t_14 = __pyx_t_12;
   } else {
-    __pyx_t_17 = __pyx_t_16;
+    __pyx_t_14 = __pyx_t_13;
   }
-  __pyx_v_maxScale = ((int)__pyx_t_17);
+  __pyx_v_maxScale = ((int)__pyx_t_14);
 
-  /* "facedetectionCython.pyx":58
- *     cdef int lastStepX
- *     cdef int lastStepY
+  /* "facedetection/cython_code/get_faces.pyx":63
+ *     cdef int x, y, step, windowStep, lastStepX, lastStepY
+ *     cdef int total_im, total_im_square, window_area
  *     faces = []             # <<<<<<<<<<<<<<
- * 
  *     cdef int scale = 4
+ *     cdef np.ndarray[np.int64_t, ndim=2] window_canny, window, window_squared
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_v_faces = ((PyObject*)__pyx_t_1);
-  __pyx_t_1 = 0;
+  __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_v_faces = ((PyObject*)__pyx_t_4);
+  __pyx_t_4 = 0;
 
-  /* "facedetectionCython.pyx":60
+  /* "facedetection/cython_code/get_faces.pyx":64
+ *     cdef int total_im, total_im_square, window_area
  *     faces = []
- * 
  *     cdef int scale = 4             # <<<<<<<<<<<<<<
- *     cdef np.ndarray[np.int64_t, ndim=2] window_canny
- *     cdef np.ndarray[np.int64_t, ndim=2] window
+ *     cdef np.ndarray[np.int64_t, ndim=2] window_canny, window, window_squared
+ *     cdef float im_mean, im_var
  */
   __pyx_v_scale = 4;
 
-  /* "facedetectionCython.pyx":70
- *     cdef int window_area
+  /* "facedetection/cython_code/get_faces.pyx":68
+ *     cdef float im_mean, im_var
  * 
  *     while (scale < maxScale):             # <<<<<<<<<<<<<<
  *         window_area = WINDOW_SIZE[0] * WINDOW_SIZE[1] * scale * scale
  *         canny_threshold = WINDOW_SIZE[0]*scale*scale
  */
   while (1) {
-    __pyx_t_18 = ((__pyx_v_scale < __pyx_v_maxScale) != 0);
-    if (!__pyx_t_18) break;
+    __pyx_t_15 = ((__pyx_v_scale < __pyx_v_maxScale) != 0);
+    if (!__pyx_t_15) break;
 
-    /* "facedetectionCython.pyx":71
+    /* "facedetection/cython_code/get_faces.pyx":69
  * 
  *     while (scale < maxScale):
  *         window_area = WINDOW_SIZE[0] * WINDOW_SIZE[1] * scale * scale             # <<<<<<<<<<<<<<
  *         canny_threshold = WINDOW_SIZE[0]*scale*scale
  *         step = int(scale*WINDOW_SIZE[0]*1)//7
  */
-    __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 69, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_1 = PyNumber_Multiply(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 69, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_4 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 69, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_1 = PyNumber_Multiply(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 69, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 71, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_v_window_area = __pyx_t_7;
+    __pyx_v_window_area = __pyx_t_10;
 
-    /* "facedetectionCython.pyx":72
+    /* "facedetection/cython_code/get_faces.pyx":70
  *     while (scale < maxScale):
  *         window_area = WINDOW_SIZE[0] * WINDOW_SIZE[1] * scale * scale
  *         canny_threshold = WINDOW_SIZE[0]*scale*scale             # <<<<<<<<<<<<<<
  *         step = int(scale*WINDOW_SIZE[0]*1)//7
  *         windowStep = int(scale * WINDOW_SIZE[0]) + 1
  */
-    __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 72, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 70, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_4 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = PyNumber_Multiply(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 72, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 70, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_1 = PyNumber_Multiply(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_XDECREF_SET(__pyx_v_canny_threshold, __pyx_t_3);
-    __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_canny_threshold, __pyx_t_1);
+    __pyx_t_1 = 0;
 
-    /* "facedetectionCython.pyx":73
+    /* "facedetection/cython_code/get_faces.pyx":71
  *         window_area = WINDOW_SIZE[0] * WINDOW_SIZE[1] * scale * scale
  *         canny_threshold = WINDOW_SIZE[0]*scale*scale
  *         step = int(scale*WINDOW_SIZE[0]*1)//7             # <<<<<<<<<<<<<<
  *         windowStep = int(scale * WINDOW_SIZE[0]) + 1
  *         lastStepX = x_max - int(scale * WINDOW_SIZE[0]) - 1
  */
-    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 73, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 73, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = PyNumber_Multiply(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 73, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyNumber_Multiply(__pyx_t_1, __pyx_int_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 73, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_4 = PyNumber_Multiply(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyNumber_Int(__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 73, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = PyNumber_Multiply(__pyx_t_4, __pyx_int_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_FloorDivideObjC(__pyx_t_1, __pyx_int_7, 7, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 73, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyNumber_Int(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 73, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = __Pyx_PyInt_FloorDivideObjC(__pyx_t_4, __pyx_int_7, 7, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_v_step = __pyx_t_7;
+    __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 71, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_v_step = __pyx_t_10;
 
-    /* "facedetectionCython.pyx":74
+    /* "facedetection/cython_code/get_faces.pyx":72
  *         canny_threshold = WINDOW_SIZE[0]*scale*scale
  *         step = int(scale*WINDOW_SIZE[0]*1)//7
  *         windowStep = int(scale * WINDOW_SIZE[0]) + 1             # <<<<<<<<<<<<<<
  *         lastStepX = x_max - int(scale * WINDOW_SIZE[0]) - 1
  *         lastStepY = y_max - int(scale * WINDOW_SIZE[1]) - 1
  */
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 72, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Multiply(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = PyNumber_Multiply(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 74, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __pyx_t_4 = __Pyx_PyNumber_Int(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyNumber_Int(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_AddObjC(__pyx_t_4, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_t_1, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 74, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 72, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_v_windowStep = __pyx_t_7;
+    __pyx_v_windowStep = __pyx_t_10;
 
-    /* "facedetectionCython.pyx":75
+    /* "facedetection/cython_code/get_faces.pyx":73
  *         step = int(scale*WINDOW_SIZE[0]*1)//7
  *         windowStep = int(scale * WINDOW_SIZE[0]) + 1
  *         lastStepX = x_max - int(scale * WINDOW_SIZE[0]) - 1             # <<<<<<<<<<<<<<
  *         lastStepY = y_max - int(scale * WINDOW_SIZE[1]) - 1
- *         for x in range(0, lastStepX , step):
+ * 
  */
-    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_x_max); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 75, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_x_max); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 73, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 75, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 73, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = PyNumber_Multiply(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 73, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = PyNumber_Multiply(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 73, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = __Pyx_PyNumber_Int(__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 73, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_5 = PyNumber_Subtract(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 73, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyNumber_Int(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 75, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyNumber_Subtract(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_SubtractObjC(__pyx_t_5, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 73, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_SubtractObjC(__pyx_t_2, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 75, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 73, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 75, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_v_lastStepX = __pyx_t_7;
+    __pyx_v_lastStepX = __pyx_t_10;
 
-    /* "facedetectionCython.pyx":76
+    /* "facedetection/cython_code/get_faces.pyx":74
  *         windowStep = int(scale * WINDOW_SIZE[0]) + 1
  *         lastStepX = x_max - int(scale * WINDOW_SIZE[0]) - 1
  *         lastStepY = y_max - int(scale * WINDOW_SIZE[1]) - 1             # <<<<<<<<<<<<<<
+ * 
+ *         rect_values = [[rect.get_bounds(scale) for rect in ft.rectangles] for ft in features]
+ */
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_y_max); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_4 = PyNumber_Multiply(__pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __pyx_t_1 = __Pyx_PyNumber_Int(__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __pyx_t_4 = PyNumber_Subtract(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __pyx_t_1 = __Pyx_PyInt_SubtractObjC(__pyx_t_4, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 74, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __pyx_v_lastStepY = __pyx_t_10;
+
+    /* "facedetection/cython_code/get_faces.pyx":76
+ *         lastStepY = y_max - int(scale * WINDOW_SIZE[1]) - 1
+ * 
+ *         rect_values = [[rect.get_bounds(scale) for rect in ft.rectangles] for ft in features]             # <<<<<<<<<<<<<<
  *         for x in range(0, lastStepX , step):
  *             for y in range(0, lastStepY, step):
  */
-    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_y_max); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_1 = PyNumber_Multiply(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyNumber_Int(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyNumber_Subtract(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
+    if (unlikely(__pyx_v_features == Py_None)) {
+      PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
+      __PYX_ERR(0, 76, __pyx_L1_error)
+    }
+    __pyx_t_4 = __pyx_v_features; __Pyx_INCREF(__pyx_t_4); __pyx_t_16 = 0;
+    for (;;) {
+      if (__pyx_t_16 >= PyList_GET_SIZE(__pyx_t_4)) break;
+      #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+      __pyx_t_2 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_16); __Pyx_INCREF(__pyx_t_2); __pyx_t_16++; if (unlikely(0 < 0)) __PYX_ERR(0, 76, __pyx_L1_error)
+      #else
+      __pyx_t_2 = PySequence_ITEM(__pyx_t_4, __pyx_t_16); __pyx_t_16++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      #endif
+      __Pyx_XDECREF_SET(__pyx_v_ft, __pyx_t_2);
+      __pyx_t_2 = 0;
+      __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_ft, __pyx_n_s_rectangles); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 76, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      if (likely(PyList_CheckExact(__pyx_t_5)) || PyTuple_CheckExact(__pyx_t_5)) {
+        __pyx_t_3 = __pyx_t_5; __Pyx_INCREF(__pyx_t_3); __pyx_t_17 = 0;
+        __pyx_t_18 = NULL;
+      } else {
+        __pyx_t_17 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_18 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 76, __pyx_L1_error)
+      }
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      for (;;) {
+        if (likely(!__pyx_t_18)) {
+          if (likely(PyList_CheckExact(__pyx_t_3))) {
+            if (__pyx_t_17 >= PyList_GET_SIZE(__pyx_t_3)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_5 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_17); __Pyx_INCREF(__pyx_t_5); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 76, __pyx_L1_error)
+            #else
+            __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 76, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_5);
+            #endif
+          } else {
+            if (__pyx_t_17 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
+            #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+            __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_17); __Pyx_INCREF(__pyx_t_5); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 76, __pyx_L1_error)
+            #else
+            __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 76, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_5);
+            #endif
+          }
+        } else {
+          __pyx_t_5 = __pyx_t_18(__pyx_t_3);
+          if (unlikely(!__pyx_t_5)) {
+            PyObject* exc_type = PyErr_Occurred();
+            if (exc_type) {
+              if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+              else __PYX_ERR(0, 76, __pyx_L1_error)
+            }
+            break;
+          }
+          __Pyx_GOTREF(__pyx_t_5);
+        }
+        __Pyx_XDECREF_SET(__pyx_v_rect, __pyx_t_5);
+        __pyx_t_5 = 0;
+        __pyx_t_19 = __Pyx_PyObject_GetAttrStr(__pyx_v_rect, __pyx_n_s_get_bounds); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 76, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_19);
+        __pyx_t_20 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 76, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_20);
+        __pyx_t_21 = NULL;
+        if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_19))) {
+          __pyx_t_21 = PyMethod_GET_SELF(__pyx_t_19);
+          if (likely(__pyx_t_21)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_19);
+            __Pyx_INCREF(__pyx_t_21);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_19, function);
+          }
+        }
+        __pyx_t_5 = (__pyx_t_21) ? __Pyx_PyObject_Call2Args(__pyx_t_19, __pyx_t_21, __pyx_t_20) : __Pyx_PyObject_CallOneArg(__pyx_t_19, __pyx_t_20);
+        __Pyx_XDECREF(__pyx_t_21); __pyx_t_21 = 0;
+        __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
+        if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 76, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_2, (PyObject*)__pyx_t_5))) __PYX_ERR(0, 76, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_2))) __PYX_ERR(0, 76, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_SubtractObjC(__pyx_t_1, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 76, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_v_lastStepY = __pyx_t_7;
+    __Pyx_XDECREF_SET(__pyx_v_rect_values, ((PyObject*)__pyx_t_1));
+    __pyx_t_1 = 0;
 
-    /* "facedetectionCython.pyx":77
- *         lastStepX = x_max - int(scale * WINDOW_SIZE[0]) - 1
- *         lastStepY = y_max - int(scale * WINDOW_SIZE[1]) - 1
+    /* "facedetection/cython_code/get_faces.pyx":77
+ * 
+ *         rect_values = [[rect.get_bounds(scale) for rect in ft.rectangles] for ft in features]
  *         for x in range(0, lastStepX , step):             # <<<<<<<<<<<<<<
  *             for y in range(0, lastStepY, step):
  * 
  */
-    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_lastStepX); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 77, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_step); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_lastStepX); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyTuple_New(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_step); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 77, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_int_0);
     __Pyx_GIVEREF(__pyx_int_0);
-    PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_int_0);
-    __Pyx_GIVEREF(__pyx_t_3);
-    PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3);
+    PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_int_0);
     __Pyx_GIVEREF(__pyx_t_1);
-    PyTuple_SET_ITEM(__pyx_t_4, 2, __pyx_t_1);
-    __pyx_t_3 = 0;
+    PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_1);
+    __Pyx_GIVEREF(__pyx_t_4);
+    PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_t_4);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
-      __pyx_t_4 = __pyx_t_1; __Pyx_INCREF(__pyx_t_4); __pyx_t_19 = 0;
-      __pyx_t_20 = NULL;
+    __pyx_t_4 = 0;
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_2, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    if (likely(PyList_CheckExact(__pyx_t_4)) || PyTuple_CheckExact(__pyx_t_4)) {
+      __pyx_t_2 = __pyx_t_4; __Pyx_INCREF(__pyx_t_2); __pyx_t_16 = 0;
+      __pyx_t_18 = NULL;
     } else {
-      __pyx_t_19 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_20 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 77, __pyx_L1_error)
+      __pyx_t_16 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 77, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_18 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 77, __pyx_L1_error)
     }
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     for (;;) {
-      if (likely(!__pyx_t_20)) {
-        if (likely(PyList_CheckExact(__pyx_t_4))) {
-          if (__pyx_t_19 >= PyList_GET_SIZE(__pyx_t_4)) break;
+      if (likely(!__pyx_t_18)) {
+        if (likely(PyList_CheckExact(__pyx_t_2))) {
+          if (__pyx_t_16 >= PyList_GET_SIZE(__pyx_t_2)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_19); __Pyx_INCREF(__pyx_t_1); __pyx_t_19++; if (unlikely(0 < 0)) __PYX_ERR(0, 77, __pyx_L1_error)
+          __pyx_t_4 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_16); __Pyx_INCREF(__pyx_t_4); __pyx_t_16++; if (unlikely(0 < 0)) __PYX_ERR(0, 77, __pyx_L1_error)
           #else
-          __pyx_t_1 = PySequence_ITEM(__pyx_t_4, __pyx_t_19); __pyx_t_19++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_4 = PySequence_ITEM(__pyx_t_2, __pyx_t_16); __pyx_t_16++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
           #endif
         } else {
-          if (__pyx_t_19 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
+          if (__pyx_t_16 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_19); __Pyx_INCREF(__pyx_t_1); __pyx_t_19++; if (unlikely(0 < 0)) __PYX_ERR(0, 77, __pyx_L1_error)
+          __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_16); __Pyx_INCREF(__pyx_t_4); __pyx_t_16++; if (unlikely(0 < 0)) __PYX_ERR(0, 77, __pyx_L1_error)
           #else
-          __pyx_t_1 = PySequence_ITEM(__pyx_t_4, __pyx_t_19); __pyx_t_19++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_4 = PySequence_ITEM(__pyx_t_2, __pyx_t_16); __pyx_t_16++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
           #endif
         }
       } else {
-        __pyx_t_1 = __pyx_t_20(__pyx_t_4);
-        if (unlikely(!__pyx_t_1)) {
+        __pyx_t_4 = __pyx_t_18(__pyx_t_2);
+        if (unlikely(!__pyx_t_4)) {
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
@@ -2985,68 +3048,68 @@ static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *__pyx_v_img, P
           }
           break;
         }
-        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_GOTREF(__pyx_t_4);
       }
-      __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
-      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_v_x = __pyx_t_7;
+      __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+      __pyx_v_x = __pyx_t_10;
 
-      /* "facedetectionCython.pyx":78
- *         lastStepY = y_max - int(scale * WINDOW_SIZE[1]) - 1
+      /* "facedetection/cython_code/get_faces.pyx":78
+ *         rect_values = [[rect.get_bounds(scale) for rect in ft.rectangles] for ft in features]
  *         for x in range(0, lastStepX , step):
  *             for y in range(0, lastStepY, step):             # <<<<<<<<<<<<<<
  * 
  *                 window_canny = canny_integral_image[
  */
-      __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_lastStepY); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_lastStepY); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_4);
+      __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_step); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_step); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
+      __pyx_t_3 = PyTuple_New(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_int_0);
       __Pyx_GIVEREF(__pyx_int_0);
-      PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_int_0);
+      PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_int_0);
+      __Pyx_GIVEREF(__pyx_t_4);
+      PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_4);
       __Pyx_GIVEREF(__pyx_t_1);
-      PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_1);
-      __Pyx_GIVEREF(__pyx_t_3);
-      PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_t_3);
+      PyTuple_SET_ITEM(__pyx_t_3, 2, __pyx_t_1);
+      __pyx_t_4 = 0;
       __pyx_t_1 = 0;
-      __pyx_t_3 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_3);
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
-        __pyx_t_2 = __pyx_t_3; __Pyx_INCREF(__pyx_t_2); __pyx_t_21 = 0;
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_1);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
+        __pyx_t_3 = __pyx_t_1; __Pyx_INCREF(__pyx_t_3); __pyx_t_17 = 0;
         __pyx_t_22 = NULL;
       } else {
-        __pyx_t_21 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_22 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_22)) __PYX_ERR(0, 78, __pyx_L1_error)
+        __pyx_t_17 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_22 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_22)) __PYX_ERR(0, 78, __pyx_L1_error)
       }
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       for (;;) {
         if (likely(!__pyx_t_22)) {
-          if (likely(PyList_CheckExact(__pyx_t_2))) {
-            if (__pyx_t_21 >= PyList_GET_SIZE(__pyx_t_2)) break;
+          if (likely(PyList_CheckExact(__pyx_t_3))) {
+            if (__pyx_t_17 >= PyList_GET_SIZE(__pyx_t_3)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_21); __Pyx_INCREF(__pyx_t_3); __pyx_t_21++; if (unlikely(0 < 0)) __PYX_ERR(0, 78, __pyx_L1_error)
+            __pyx_t_1 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_17); __Pyx_INCREF(__pyx_t_1); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 78, __pyx_L1_error)
             #else
-            __pyx_t_3 = PySequence_ITEM(__pyx_t_2, __pyx_t_21); __pyx_t_21++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_3);
+            __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_1);
             #endif
           } else {
-            if (__pyx_t_21 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
+            if (__pyx_t_17 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_21); __Pyx_INCREF(__pyx_t_3); __pyx_t_21++; if (unlikely(0 < 0)) __PYX_ERR(0, 78, __pyx_L1_error)
+            __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_17); __Pyx_INCREF(__pyx_t_1); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 78, __pyx_L1_error)
             #else
-            __pyx_t_3 = PySequence_ITEM(__pyx_t_2, __pyx_t_21); __pyx_t_21++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_3);
+            __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_1);
             #endif
           }
         } else {
-          __pyx_t_3 = __pyx_t_22(__pyx_t_2);
-          if (unlikely(!__pyx_t_3)) {
+          __pyx_t_1 = __pyx_t_22(__pyx_t_3);
+          if (unlikely(!__pyx_t_1)) {
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
@@ -3054,646 +3117,646 @@ static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *__pyx_v_img, P
             }
             break;
           }
-          __Pyx_GOTREF(__pyx_t_3);
+          __Pyx_GOTREF(__pyx_t_1);
         }
-        __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 78, __pyx_L1_error)
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __pyx_v_y = __pyx_t_7;
+        __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 78, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __pyx_v_y = __pyx_t_10;
 
-        /* "facedetectionCython.pyx":81
+        /* "facedetection/cython_code/get_faces.pyx":81
  * 
  *                 window_canny = canny_integral_image[
  *                     y : y + windowStep,             # <<<<<<<<<<<<<<
  *                     x : x + windowStep,
  *                 ]
  */
-        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 81, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_1 = __Pyx_PyInt_From_int((__pyx_v_y + __pyx_v_windowStep)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_4 = __Pyx_PyInt_From_int((__pyx_v_y + __pyx_v_windowStep)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
 
-        /* "facedetectionCython.pyx":80
+        /* "facedetection/cython_code/get_faces.pyx":80
  *             for y in range(0, lastStepY, step):
  * 
  *                 window_canny = canny_integral_image[             # <<<<<<<<<<<<<<
  *                     y : y + windowStep,
  *                     x : x + windowStep,
  */
-        __pyx_t_5 = PySlice_New(__pyx_t_3, __pyx_t_1, Py_None); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 80, __pyx_L1_error)
+        __pyx_t_5 = PySlice_New(__pyx_t_1, __pyx_t_4, Py_None); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 80, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "facedetectionCython.pyx":82
+        /* "facedetection/cython_code/get_faces.pyx":82
  *                 window_canny = canny_integral_image[
  *                     y : y + windowStep,
  *                     x : x + windowStep,             # <<<<<<<<<<<<<<
  *                 ]
  *                 y1, x1 = 0, 0
  */
-        __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
+        __pyx_t_1 = __Pyx_PyInt_From_int((__pyx_v_x + __pyx_v_windowStep)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_3 = __Pyx_PyInt_From_int((__pyx_v_x + __pyx_v_windowStep)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 82, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_3);
 
-        /* "facedetectionCython.pyx":80
+        /* "facedetection/cython_code/get_faces.pyx":80
  *             for y in range(0, lastStepY, step):
  * 
  *                 window_canny = canny_integral_image[             # <<<<<<<<<<<<<<
  *                     y : y + windowStep,
  *                     x : x + windowStep,
  */
-        __pyx_t_23 = PySlice_New(__pyx_t_1, __pyx_t_3, Py_None); if (unlikely(!__pyx_t_23)) __PYX_ERR(0, 80, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_23);
+        __pyx_t_19 = PySlice_New(__pyx_t_4, __pyx_t_1, Py_None); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 80, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_19);
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 80, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 80, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
         __Pyx_GIVEREF(__pyx_t_5);
-        PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_5);
-        __Pyx_GIVEREF(__pyx_t_23);
-        PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_23);
+        PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
+        __Pyx_GIVEREF(__pyx_t_19);
+        PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_19);
         __pyx_t_5 = 0;
-        __pyx_t_23 = 0;
-        __pyx_t_23 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_canny_integral_image), __pyx_t_3); if (unlikely(!__pyx_t_23)) __PYX_ERR(0, 80, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_23);
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        if (!(likely(((__pyx_t_23) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_23, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 80, __pyx_L1_error)
-        __pyx_t_24 = ((PyArrayObject *)__pyx_t_23);
+        __pyx_t_19 = 0;
+        __pyx_t_19 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_canny_integral_image), __pyx_t_1); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 80, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_19);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        if (!(likely(((__pyx_t_19) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_19, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 80, __pyx_L1_error)
+        __pyx_t_23 = ((PyArrayObject *)__pyx_t_19);
         {
           __Pyx_BufFmt_StackElem __pyx_stack[1];
           __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_window_canny.rcbuffer->pybuffer);
-          __pyx_t_7 = __Pyx_GetBufferAndValidate(&__pyx_pybuffernd_window_canny.rcbuffer->pybuffer, (PyObject*)__pyx_t_24, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack);
-          if (unlikely(__pyx_t_7 < 0)) {
-            PyErr_Fetch(&__pyx_t_8, &__pyx_t_9, &__pyx_t_10);
+          __pyx_t_10 = __Pyx_GetBufferAndValidate(&__pyx_pybuffernd_window_canny.rcbuffer->pybuffer, (PyObject*)__pyx_t_23, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack);
+          if (unlikely(__pyx_t_10 < 0)) {
+            PyErr_Fetch(&__pyx_t_24, &__pyx_t_25, &__pyx_t_26);
             if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_window_canny.rcbuffer->pybuffer, (PyObject*)__pyx_v_window_canny, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) {
-              Py_XDECREF(__pyx_t_8); Py_XDECREF(__pyx_t_9); Py_XDECREF(__pyx_t_10);
+              Py_XDECREF(__pyx_t_24); Py_XDECREF(__pyx_t_25); Py_XDECREF(__pyx_t_26);
               __Pyx_RaiseBufferFallbackError();
             } else {
-              PyErr_Restore(__pyx_t_8, __pyx_t_9, __pyx_t_10);
+              PyErr_Restore(__pyx_t_24, __pyx_t_25, __pyx_t_26);
             }
-            __pyx_t_8 = __pyx_t_9 = __pyx_t_10 = 0;
+            __pyx_t_24 = __pyx_t_25 = __pyx_t_26 = 0;
           }
           __pyx_pybuffernd_window_canny.diminfo[0].strides = __pyx_pybuffernd_window_canny.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_window_canny.diminfo[0].shape = __pyx_pybuffernd_window_canny.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_window_canny.diminfo[1].strides = __pyx_pybuffernd_window_canny.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_window_canny.diminfo[1].shape = __pyx_pybuffernd_window_canny.rcbuffer->pybuffer.shape[1];
-          if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 80, __pyx_L1_error)
+          if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 80, __pyx_L1_error)
         }
-        __pyx_t_24 = 0;
-        __Pyx_XDECREF_SET(__pyx_v_window_canny, ((PyArrayObject *)__pyx_t_23));
         __pyx_t_23 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_window_canny, ((PyArrayObject *)__pyx_t_19));
+        __pyx_t_19 = 0;
 
-        /* "facedetectionCython.pyx":84
+        /* "facedetection/cython_code/get_faces.pyx":84
  *                     x : x + windowStep,
  *                 ]
  *                 y1, x1 = 0, 0             # <<<<<<<<<<<<<<
  *                 y2, x2 = window_canny.shape[0] - 1, window_canny.shape[1] - 1
- *                 total_cannay = window_canny[y2, x2] + window_canny[y1, x1] - window_canny[y2, x1] - window_canny[y1, x2]
+ * 
  */
-        __pyx_t_17 = 0;
-        __pyx_t_15 = 0;
-        __pyx_v_y1 = __pyx_t_17;
-        __pyx_v_x1 = __pyx_t_15;
+        __pyx_t_14 = 0;
+        __pyx_t_12 = 0;
+        __pyx_v_y1 = __pyx_t_14;
+        __pyx_v_x1 = __pyx_t_12;
 
-        /* "facedetectionCython.pyx":85
+        /* "facedetection/cython_code/get_faces.pyx":85
  *                 ]
  *                 y1, x1 = 0, 0
  *                 y2, x2 = window_canny.shape[0] - 1, window_canny.shape[1] - 1             # <<<<<<<<<<<<<<
- *                 total_cannay = window_canny[y2, x2] + window_canny[y1, x1] - window_canny[y2, x1] - window_canny[y1, x2]
  * 
+ *                 total_canny = window_canny[y2, x2] + window_canny[y1, x1] - window_canny[y2, x1] - window_canny[y1, x2]
  */
-        __pyx_t_15 = ((__pyx_v_window_canny->dimensions[0]) - 1);
-        __pyx_t_17 = ((__pyx_v_window_canny->dimensions[1]) - 1);
-        __pyx_v_y2 = __pyx_t_15;
-        __pyx_v_x2 = __pyx_t_17;
+        __pyx_t_12 = ((__pyx_v_window_canny->dimensions[0]) - 1);
+        __pyx_t_14 = ((__pyx_v_window_canny->dimensions[1]) - 1);
+        __pyx_v_y2 = __pyx_t_12;
+        __pyx_v_x2 = __pyx_t_14;
 
-        /* "facedetectionCython.pyx":86
- *                 y1, x1 = 0, 0
+        /* "facedetection/cython_code/get_faces.pyx":87
  *                 y2, x2 = window_canny.shape[0] - 1, window_canny.shape[1] - 1
- *                 total_cannay = window_canny[y2, x2] + window_canny[y1, x1] - window_canny[y2, x1] - window_canny[y1, x2]             # <<<<<<<<<<<<<<
  * 
+ *                 total_canny = window_canny[y2, x2] + window_canny[y1, x1] - window_canny[y2, x1] - window_canny[y1, x2]             # <<<<<<<<<<<<<<
  * 
+ *                 if (total_canny < canny_threshold):
  */
-        __pyx_t_25 = __pyx_v_y2;
-        __pyx_t_26 = __pyx_v_x2;
-        __pyx_t_7 = -1;
-        if (__pyx_t_25 < 0) {
-          __pyx_t_25 += __pyx_pybuffernd_window_canny.diminfo[0].shape;
-          if (unlikely(__pyx_t_25 < 0)) __pyx_t_7 = 0;
-        } else if (unlikely(__pyx_t_25 >= __pyx_pybuffernd_window_canny.diminfo[0].shape)) __pyx_t_7 = 0;
-        if (__pyx_t_26 < 0) {
-          __pyx_t_26 += __pyx_pybuffernd_window_canny.diminfo[1].shape;
-          if (unlikely(__pyx_t_26 < 0)) __pyx_t_7 = 1;
-        } else if (unlikely(__pyx_t_26 >= __pyx_pybuffernd_window_canny.diminfo[1].shape)) __pyx_t_7 = 1;
-        if (unlikely(__pyx_t_7 != -1)) {
-          __Pyx_RaiseBufferIndexError(__pyx_t_7);
-          __PYX_ERR(0, 86, __pyx_L1_error)
-        }
-        __pyx_t_27 = __pyx_v_y1;
-        __pyx_t_28 = __pyx_v_x1;
-        __pyx_t_7 = -1;
+        __pyx_t_27 = __pyx_v_y2;
+        __pyx_t_28 = __pyx_v_x2;
+        __pyx_t_10 = -1;
         if (__pyx_t_27 < 0) {
           __pyx_t_27 += __pyx_pybuffernd_window_canny.diminfo[0].shape;
-          if (unlikely(__pyx_t_27 < 0)) __pyx_t_7 = 0;
-        } else if (unlikely(__pyx_t_27 >= __pyx_pybuffernd_window_canny.diminfo[0].shape)) __pyx_t_7 = 0;
+          if (unlikely(__pyx_t_27 < 0)) __pyx_t_10 = 0;
+        } else if (unlikely(__pyx_t_27 >= __pyx_pybuffernd_window_canny.diminfo[0].shape)) __pyx_t_10 = 0;
         if (__pyx_t_28 < 0) {
           __pyx_t_28 += __pyx_pybuffernd_window_canny.diminfo[1].shape;
-          if (unlikely(__pyx_t_28 < 0)) __pyx_t_7 = 1;
-        } else if (unlikely(__pyx_t_28 >= __pyx_pybuffernd_window_canny.diminfo[1].shape)) __pyx_t_7 = 1;
-        if (unlikely(__pyx_t_7 != -1)) {
-          __Pyx_RaiseBufferIndexError(__pyx_t_7);
-          __PYX_ERR(0, 86, __pyx_L1_error)
+          if (unlikely(__pyx_t_28 < 0)) __pyx_t_10 = 1;
+        } else if (unlikely(__pyx_t_28 >= __pyx_pybuffernd_window_canny.diminfo[1].shape)) __pyx_t_10 = 1;
+        if (unlikely(__pyx_t_10 != -1)) {
+          __Pyx_RaiseBufferIndexError(__pyx_t_10);
+          __PYX_ERR(0, 87, __pyx_L1_error)
         }
-        __pyx_t_29 = __pyx_v_y2;
+        __pyx_t_29 = __pyx_v_y1;
         __pyx_t_30 = __pyx_v_x1;
-        __pyx_t_7 = -1;
+        __pyx_t_10 = -1;
         if (__pyx_t_29 < 0) {
           __pyx_t_29 += __pyx_pybuffernd_window_canny.diminfo[0].shape;
-          if (unlikely(__pyx_t_29 < 0)) __pyx_t_7 = 0;
-        } else if (unlikely(__pyx_t_29 >= __pyx_pybuffernd_window_canny.diminfo[0].shape)) __pyx_t_7 = 0;
+          if (unlikely(__pyx_t_29 < 0)) __pyx_t_10 = 0;
+        } else if (unlikely(__pyx_t_29 >= __pyx_pybuffernd_window_canny.diminfo[0].shape)) __pyx_t_10 = 0;
         if (__pyx_t_30 < 0) {
           __pyx_t_30 += __pyx_pybuffernd_window_canny.diminfo[1].shape;
-          if (unlikely(__pyx_t_30 < 0)) __pyx_t_7 = 1;
-        } else if (unlikely(__pyx_t_30 >= __pyx_pybuffernd_window_canny.diminfo[1].shape)) __pyx_t_7 = 1;
-        if (unlikely(__pyx_t_7 != -1)) {
-          __Pyx_RaiseBufferIndexError(__pyx_t_7);
-          __PYX_ERR(0, 86, __pyx_L1_error)
+          if (unlikely(__pyx_t_30 < 0)) __pyx_t_10 = 1;
+        } else if (unlikely(__pyx_t_30 >= __pyx_pybuffernd_window_canny.diminfo[1].shape)) __pyx_t_10 = 1;
+        if (unlikely(__pyx_t_10 != -1)) {
+          __Pyx_RaiseBufferIndexError(__pyx_t_10);
+          __PYX_ERR(0, 87, __pyx_L1_error)
         }
-        __pyx_t_31 = __pyx_v_y1;
-        __pyx_t_32 = __pyx_v_x2;
-        __pyx_t_7 = -1;
+        __pyx_t_31 = __pyx_v_y2;
+        __pyx_t_32 = __pyx_v_x1;
+        __pyx_t_10 = -1;
         if (__pyx_t_31 < 0) {
           __pyx_t_31 += __pyx_pybuffernd_window_canny.diminfo[0].shape;
-          if (unlikely(__pyx_t_31 < 0)) __pyx_t_7 = 0;
-        } else if (unlikely(__pyx_t_31 >= __pyx_pybuffernd_window_canny.diminfo[0].shape)) __pyx_t_7 = 0;
+          if (unlikely(__pyx_t_31 < 0)) __pyx_t_10 = 0;
+        } else if (unlikely(__pyx_t_31 >= __pyx_pybuffernd_window_canny.diminfo[0].shape)) __pyx_t_10 = 0;
         if (__pyx_t_32 < 0) {
           __pyx_t_32 += __pyx_pybuffernd_window_canny.diminfo[1].shape;
-          if (unlikely(__pyx_t_32 < 0)) __pyx_t_7 = 1;
-        } else if (unlikely(__pyx_t_32 >= __pyx_pybuffernd_window_canny.diminfo[1].shape)) __pyx_t_7 = 1;
-        if (unlikely(__pyx_t_7 != -1)) {
-          __Pyx_RaiseBufferIndexError(__pyx_t_7);
-          __PYX_ERR(0, 86, __pyx_L1_error)
+          if (unlikely(__pyx_t_32 < 0)) __pyx_t_10 = 1;
+        } else if (unlikely(__pyx_t_32 >= __pyx_pybuffernd_window_canny.diminfo[1].shape)) __pyx_t_10 = 1;
+        if (unlikely(__pyx_t_10 != -1)) {
+          __Pyx_RaiseBufferIndexError(__pyx_t_10);
+          __PYX_ERR(0, 87, __pyx_L1_error)
         }
-        __pyx_t_23 = __Pyx_PyInt_From_npy_int64(((((*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_canny.rcbuffer->pybuffer.buf, __pyx_t_25, __pyx_pybuffernd_window_canny.diminfo[0].strides, __pyx_t_26, __pyx_pybuffernd_window_canny.diminfo[1].strides)) + (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_canny.rcbuffer->pybuffer.buf, __pyx_t_27, __pyx_pybuffernd_window_canny.diminfo[0].strides, __pyx_t_28, __pyx_pybuffernd_window_canny.diminfo[1].strides))) - (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_canny.rcbuffer->pybuffer.buf, __pyx_t_29, __pyx_pybuffernd_window_canny.diminfo[0].strides, __pyx_t_30, __pyx_pybuffernd_window_canny.diminfo[1].strides))) - (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_canny.rcbuffer->pybuffer.buf, __pyx_t_31, __pyx_pybuffernd_window_canny.diminfo[0].strides, __pyx_t_32, __pyx_pybuffernd_window_canny.diminfo[1].strides)))); if (unlikely(!__pyx_t_23)) __PYX_ERR(0, 86, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_23);
-        __Pyx_XDECREF_SET(__pyx_v_total_cannay, __pyx_t_23);
-        __pyx_t_23 = 0;
+        __pyx_t_33 = __pyx_v_y1;
+        __pyx_t_34 = __pyx_v_x2;
+        __pyx_t_10 = -1;
+        if (__pyx_t_33 < 0) {
+          __pyx_t_33 += __pyx_pybuffernd_window_canny.diminfo[0].shape;
+          if (unlikely(__pyx_t_33 < 0)) __pyx_t_10 = 0;
+        } else if (unlikely(__pyx_t_33 >= __pyx_pybuffernd_window_canny.diminfo[0].shape)) __pyx_t_10 = 0;
+        if (__pyx_t_34 < 0) {
+          __pyx_t_34 += __pyx_pybuffernd_window_canny.diminfo[1].shape;
+          if (unlikely(__pyx_t_34 < 0)) __pyx_t_10 = 1;
+        } else if (unlikely(__pyx_t_34 >= __pyx_pybuffernd_window_canny.diminfo[1].shape)) __pyx_t_10 = 1;
+        if (unlikely(__pyx_t_10 != -1)) {
+          __Pyx_RaiseBufferIndexError(__pyx_t_10);
+          __PYX_ERR(0, 87, __pyx_L1_error)
+        }
+        __pyx_t_19 = __Pyx_PyInt_From_npy_int64(((((*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_canny.rcbuffer->pybuffer.buf, __pyx_t_27, __pyx_pybuffernd_window_canny.diminfo[0].strides, __pyx_t_28, __pyx_pybuffernd_window_canny.diminfo[1].strides)) + (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_canny.rcbuffer->pybuffer.buf, __pyx_t_29, __pyx_pybuffernd_window_canny.diminfo[0].strides, __pyx_t_30, __pyx_pybuffernd_window_canny.diminfo[1].strides))) - (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_canny.rcbuffer->pybuffer.buf, __pyx_t_31, __pyx_pybuffernd_window_canny.diminfo[0].strides, __pyx_t_32, __pyx_pybuffernd_window_canny.diminfo[1].strides))) - (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_canny.rcbuffer->pybuffer.buf, __pyx_t_33, __pyx_pybuffernd_window_canny.diminfo[0].strides, __pyx_t_34, __pyx_pybuffernd_window_canny.diminfo[1].strides)))); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 87, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_19);
+        __Pyx_XDECREF_SET(__pyx_v_total_canny, __pyx_t_19);
+        __pyx_t_19 = 0;
 
-        /* "facedetectionCython.pyx":89
+        /* "facedetection/cython_code/get_faces.pyx":89
+ *                 total_canny = window_canny[y2, x2] + window_canny[y1, x1] - window_canny[y2, x1] - window_canny[y1, x2]
  * 
- * 
- *                 if (total_cannay < canny_threshold):             # <<<<<<<<<<<<<<
+ *                 if (total_canny < canny_threshold):             # <<<<<<<<<<<<<<
  *                     continue
  * 
  */
-        __pyx_t_23 = PyObject_RichCompare(__pyx_v_total_cannay, __pyx_v_canny_threshold, Py_LT); __Pyx_XGOTREF(__pyx_t_23); if (unlikely(!__pyx_t_23)) __PYX_ERR(0, 89, __pyx_L1_error)
-        __pyx_t_18 = __Pyx_PyObject_IsTrue(__pyx_t_23); if (unlikely(__pyx_t_18 < 0)) __PYX_ERR(0, 89, __pyx_L1_error)
-        __Pyx_DECREF(__pyx_t_23); __pyx_t_23 = 0;
-        if (__pyx_t_18) {
+        __pyx_t_19 = PyObject_RichCompare(__pyx_v_total_canny, __pyx_v_canny_threshold, Py_LT); __Pyx_XGOTREF(__pyx_t_19); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 89, __pyx_L1_error)
+        __pyx_t_15 = __Pyx_PyObject_IsTrue(__pyx_t_19); if (unlikely(__pyx_t_15 < 0)) __PYX_ERR(0, 89, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+        if (__pyx_t_15) {
 
-          /* "facedetectionCython.pyx":90
+          /* "facedetection/cython_code/get_faces.pyx":90
  * 
- *                 if (total_cannay < canny_threshold):
+ *                 if (total_canny < canny_threshold):
  *                     continue             # <<<<<<<<<<<<<<
  * 
- * 
+ *                 window = integral_image[
  */
-          goto __pyx_L9_continue;
+          goto __pyx_L13_continue;
 
-          /* "facedetectionCython.pyx":89
+          /* "facedetection/cython_code/get_faces.pyx":89
+ *                 total_canny = window_canny[y2, x2] + window_canny[y1, x1] - window_canny[y2, x1] - window_canny[y1, x2]
  * 
- * 
- *                 if (total_cannay < canny_threshold):             # <<<<<<<<<<<<<<
+ *                 if (total_canny < canny_threshold):             # <<<<<<<<<<<<<<
  *                     continue
  * 
  */
         }
 
-        /* "facedetectionCython.pyx":94
+        /* "facedetection/cython_code/get_faces.pyx":93
  * 
  *                 window = integral_image[
  *                     y : y + windowStep,             # <<<<<<<<<<<<<<
  *                     x : x + windowStep,
  *                 ]
  */
-        __pyx_t_23 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_23)) __PYX_ERR(0, 94, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_23);
-        __pyx_t_3 = __Pyx_PyInt_From_int((__pyx_v_y + __pyx_v_windowStep)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 94, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_19 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 93, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_19);
+        __pyx_t_1 = __Pyx_PyInt_From_int((__pyx_v_y + __pyx_v_windowStep)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
 
-        /* "facedetectionCython.pyx":93
- * 
+        /* "facedetection/cython_code/get_faces.pyx":92
+ *                     continue
  * 
  *                 window = integral_image[             # <<<<<<<<<<<<<<
  *                     y : y + windowStep,
  *                     x : x + windowStep,
  */
-        __pyx_t_5 = PySlice_New(__pyx_t_23, __pyx_t_3, Py_None); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 93, __pyx_L1_error)
+        __pyx_t_5 = PySlice_New(__pyx_t_19, __pyx_t_1, Py_None); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 92, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __Pyx_DECREF(__pyx_t_23); __pyx_t_23 = 0;
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-        /* "facedetectionCython.pyx":95
+        /* "facedetection/cython_code/get_faces.pyx":94
  *                 window = integral_image[
  *                     y : y + windowStep,
  *                     x : x + windowStep,             # <<<<<<<<<<<<<<
  *                 ]
  * 
  */
-        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 95, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_23 = __Pyx_PyInt_From_int((__pyx_v_x + __pyx_v_windowStep)); if (unlikely(!__pyx_t_23)) __PYX_ERR(0, 95, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_23);
+        __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_19 = __Pyx_PyInt_From_int((__pyx_v_x + __pyx_v_windowStep)); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 94, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_19);
 
-        /* "facedetectionCython.pyx":93
- * 
+        /* "facedetection/cython_code/get_faces.pyx":92
+ *                     continue
  * 
  *                 window = integral_image[             # <<<<<<<<<<<<<<
  *                     y : y + windowStep,
  *                     x : x + windowStep,
  */
-        __pyx_t_1 = PySlice_New(__pyx_t_3, __pyx_t_23, Py_None); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_1);
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __Pyx_DECREF(__pyx_t_23); __pyx_t_23 = 0;
-        __pyx_t_23 = PyTuple_New(2); if (unlikely(!__pyx_t_23)) __PYX_ERR(0, 93, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_23);
+        __pyx_t_4 = PySlice_New(__pyx_t_1, __pyx_t_19, Py_None); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 92, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+        __pyx_t_19 = PyTuple_New(2); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 92, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_19);
         __Pyx_GIVEREF(__pyx_t_5);
-        PyTuple_SET_ITEM(__pyx_t_23, 0, __pyx_t_5);
-        __Pyx_GIVEREF(__pyx_t_1);
-        PyTuple_SET_ITEM(__pyx_t_23, 1, __pyx_t_1);
+        PyTuple_SET_ITEM(__pyx_t_19, 0, __pyx_t_5);
+        __Pyx_GIVEREF(__pyx_t_4);
+        PyTuple_SET_ITEM(__pyx_t_19, 1, __pyx_t_4);
         __pyx_t_5 = 0;
-        __pyx_t_1 = 0;
-        __pyx_t_1 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_integral_image), __pyx_t_23); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_1);
-        __Pyx_DECREF(__pyx_t_23); __pyx_t_23 = 0;
-        if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 93, __pyx_L1_error)
-        __pyx_t_33 = ((PyArrayObject *)__pyx_t_1);
+        __pyx_t_4 = 0;
+        __pyx_t_4 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_integral_image), __pyx_t_19); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 92, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+        if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 92, __pyx_L1_error)
+        __pyx_t_23 = ((PyArrayObject *)__pyx_t_4);
         {
           __Pyx_BufFmt_StackElem __pyx_stack[1];
           __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_window.rcbuffer->pybuffer);
-          __pyx_t_7 = __Pyx_GetBufferAndValidate(&__pyx_pybuffernd_window.rcbuffer->pybuffer, (PyObject*)__pyx_t_33, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack);
-          if (unlikely(__pyx_t_7 < 0)) {
-            PyErr_Fetch(&__pyx_t_10, &__pyx_t_9, &__pyx_t_8);
+          __pyx_t_10 = __Pyx_GetBufferAndValidate(&__pyx_pybuffernd_window.rcbuffer->pybuffer, (PyObject*)__pyx_t_23, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack);
+          if (unlikely(__pyx_t_10 < 0)) {
+            PyErr_Fetch(&__pyx_t_26, &__pyx_t_25, &__pyx_t_24);
             if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_window.rcbuffer->pybuffer, (PyObject*)__pyx_v_window, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) {
-              Py_XDECREF(__pyx_t_10); Py_XDECREF(__pyx_t_9); Py_XDECREF(__pyx_t_8);
+              Py_XDECREF(__pyx_t_26); Py_XDECREF(__pyx_t_25); Py_XDECREF(__pyx_t_24);
               __Pyx_RaiseBufferFallbackError();
             } else {
-              PyErr_Restore(__pyx_t_10, __pyx_t_9, __pyx_t_8);
+              PyErr_Restore(__pyx_t_26, __pyx_t_25, __pyx_t_24);
             }
-            __pyx_t_10 = __pyx_t_9 = __pyx_t_8 = 0;
+            __pyx_t_26 = __pyx_t_25 = __pyx_t_24 = 0;
           }
           __pyx_pybuffernd_window.diminfo[0].strides = __pyx_pybuffernd_window.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_window.diminfo[0].shape = __pyx_pybuffernd_window.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_window.diminfo[1].strides = __pyx_pybuffernd_window.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_window.diminfo[1].shape = __pyx_pybuffernd_window.rcbuffer->pybuffer.shape[1];
-          if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 93, __pyx_L1_error)
+          if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 92, __pyx_L1_error)
         }
-        __pyx_t_33 = 0;
-        __Pyx_XDECREF_SET(__pyx_v_window, ((PyArrayObject *)__pyx_t_1));
-        __pyx_t_1 = 0;
+        __pyx_t_23 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_window, ((PyArrayObject *)__pyx_t_4));
+        __pyx_t_4 = 0;
 
-        /* "facedetectionCython.pyx":99
+        /* "facedetection/cython_code/get_faces.pyx":98
  * 
  *                 window_squared = integral_image_sqaured[
  *                     y : y + windowStep,             # <<<<<<<<<<<<<<
  *                     x : x + windowStep,
  *                 ]
  */
-        __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_23 = __Pyx_PyInt_From_int((__pyx_v_y + __pyx_v_windowStep)); if (unlikely(!__pyx_t_23)) __PYX_ERR(0, 99, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_23);
+        __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 98, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
+        __pyx_t_19 = __Pyx_PyInt_From_int((__pyx_v_y + __pyx_v_windowStep)); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 98, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_19);
 
-        /* "facedetectionCython.pyx":98
+        /* "facedetection/cython_code/get_faces.pyx":97
  *                 ]
  * 
  *                 window_squared = integral_image_sqaured[             # <<<<<<<<<<<<<<
  *                     y : y + windowStep,
  *                     x : x + windowStep,
  */
-        __pyx_t_5 = PySlice_New(__pyx_t_1, __pyx_t_23, Py_None); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 98, __pyx_L1_error)
+        __pyx_t_5 = PySlice_New(__pyx_t_4, __pyx_t_19, Py_None); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 97, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __Pyx_DECREF(__pyx_t_23); __pyx_t_23 = 0;
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
 
-        /* "facedetectionCython.pyx":100
+        /* "facedetection/cython_code/get_faces.pyx":99
  *                 window_squared = integral_image_sqaured[
  *                     y : y + windowStep,
  *                     x : x + windowStep,             # <<<<<<<<<<<<<<
  *                 ]
  * 
  */
-        __pyx_t_23 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_23)) __PYX_ERR(0, 100, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_23);
-        __pyx_t_1 = __Pyx_PyInt_From_int((__pyx_v_x + __pyx_v_windowStep)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 100, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_1);
+        __pyx_t_19 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 99, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_19);
+        __pyx_t_4 = __Pyx_PyInt_From_int((__pyx_v_x + __pyx_v_windowStep)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
 
-        /* "facedetectionCython.pyx":98
+        /* "facedetection/cython_code/get_faces.pyx":97
  *                 ]
  * 
  *                 window_squared = integral_image_sqaured[             # <<<<<<<<<<<<<<
  *                     y : y + windowStep,
  *                     x : x + windowStep,
  */
-        __pyx_t_3 = PySlice_New(__pyx_t_23, __pyx_t_1, Py_None); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_3);
-        __Pyx_DECREF(__pyx_t_23); __pyx_t_23 = 0;
-        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
+        __pyx_t_1 = PySlice_New(__pyx_t_19, __pyx_t_4, Py_None); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 97, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
         __Pyx_GIVEREF(__pyx_t_5);
-        PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
-        __Pyx_GIVEREF(__pyx_t_3);
-        PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_3);
+        PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_5);
+        __Pyx_GIVEREF(__pyx_t_1);
+        PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_1);
         __pyx_t_5 = 0;
-        __pyx_t_3 = 0;
-        __pyx_t_3 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_integral_image_sqaured), __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_3);
-        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        if (!(likely(((__pyx_t_3) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_3, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 98, __pyx_L1_error)
-        __pyx_t_34 = ((PyArrayObject *)__pyx_t_3);
+        __pyx_t_1 = 0;
+        __pyx_t_1 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_integral_image_sqaured), __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 97, __pyx_L1_error)
+        __pyx_t_23 = ((PyArrayObject *)__pyx_t_1);
         {
           __Pyx_BufFmt_StackElem __pyx_stack[1];
           __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_window_squared.rcbuffer->pybuffer);
-          __pyx_t_7 = __Pyx_GetBufferAndValidate(&__pyx_pybuffernd_window_squared.rcbuffer->pybuffer, (PyObject*)__pyx_t_34, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack);
-          if (unlikely(__pyx_t_7 < 0)) {
-            PyErr_Fetch(&__pyx_t_8, &__pyx_t_9, &__pyx_t_10);
+          __pyx_t_10 = __Pyx_GetBufferAndValidate(&__pyx_pybuffernd_window_squared.rcbuffer->pybuffer, (PyObject*)__pyx_t_23, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack);
+          if (unlikely(__pyx_t_10 < 0)) {
+            PyErr_Fetch(&__pyx_t_24, &__pyx_t_25, &__pyx_t_26);
             if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_window_squared.rcbuffer->pybuffer, (PyObject*)__pyx_v_window_squared, &__Pyx_TypeInfo_nn___pyx_t_5numpy_int64_t, PyBUF_FORMAT| PyBUF_STRIDES, 2, 0, __pyx_stack) == -1)) {
-              Py_XDECREF(__pyx_t_8); Py_XDECREF(__pyx_t_9); Py_XDECREF(__pyx_t_10);
+              Py_XDECREF(__pyx_t_24); Py_XDECREF(__pyx_t_25); Py_XDECREF(__pyx_t_26);
               __Pyx_RaiseBufferFallbackError();
             } else {
-              PyErr_Restore(__pyx_t_8, __pyx_t_9, __pyx_t_10);
+              PyErr_Restore(__pyx_t_24, __pyx_t_25, __pyx_t_26);
             }
-            __pyx_t_8 = __pyx_t_9 = __pyx_t_10 = 0;
+            __pyx_t_24 = __pyx_t_25 = __pyx_t_26 = 0;
           }
           __pyx_pybuffernd_window_squared.diminfo[0].strides = __pyx_pybuffernd_window_squared.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_window_squared.diminfo[0].shape = __pyx_pybuffernd_window_squared.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_window_squared.diminfo[1].strides = __pyx_pybuffernd_window_squared.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_window_squared.diminfo[1].shape = __pyx_pybuffernd_window_squared.rcbuffer->pybuffer.shape[1];
-          if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 98, __pyx_L1_error)
+          if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 97, __pyx_L1_error)
         }
-        __pyx_t_34 = 0;
-        __Pyx_XDECREF_SET(__pyx_v_window_squared, ((PyArrayObject *)__pyx_t_3));
-        __pyx_t_3 = 0;
+        __pyx_t_23 = 0;
+        __Pyx_XDECREF_SET(__pyx_v_window_squared, ((PyArrayObject *)__pyx_t_1));
+        __pyx_t_1 = 0;
 
-        /* "facedetectionCython.pyx":103
+        /* "facedetection/cython_code/get_faces.pyx":102
  *                 ]
  * 
  *                 y1, x1 = 0, 0             # <<<<<<<<<<<<<<
  *                 y2, x2 = window.shape[0] - 1, window.shape[1] - 1
  * 
  */
-        __pyx_t_17 = 0;
-        __pyx_t_15 = 0;
-        __pyx_v_y1 = __pyx_t_17;
-        __pyx_v_x1 = __pyx_t_15;
+        __pyx_t_14 = 0;
+        __pyx_t_12 = 0;
+        __pyx_v_y1 = __pyx_t_14;
+        __pyx_v_x1 = __pyx_t_12;
 
-        /* "facedetectionCython.pyx":104
+        /* "facedetection/cython_code/get_faces.pyx":103
  * 
  *                 y1, x1 = 0, 0
  *                 y2, x2 = window.shape[0] - 1, window.shape[1] - 1             # <<<<<<<<<<<<<<
  * 
  *                 total_im = window[y2, x2] + window[y1, x1] - window[y2, x1] - window[y1, x2]
  */
-        __pyx_t_15 = ((__pyx_v_window->dimensions[0]) - 1);
-        __pyx_t_17 = ((__pyx_v_window->dimensions[1]) - 1);
-        __pyx_v_y2 = __pyx_t_15;
-        __pyx_v_x2 = __pyx_t_17;
+        __pyx_t_12 = ((__pyx_v_window->dimensions[0]) - 1);
+        __pyx_t_14 = ((__pyx_v_window->dimensions[1]) - 1);
+        __pyx_v_y2 = __pyx_t_12;
+        __pyx_v_x2 = __pyx_t_14;
 
-        /* "facedetectionCython.pyx":106
+        /* "facedetection/cython_code/get_faces.pyx":105
  *                 y2, x2 = window.shape[0] - 1, window.shape[1] - 1
  * 
  *                 total_im = window[y2, x2] + window[y1, x1] - window[y2, x1] - window[y1, x2]             # <<<<<<<<<<<<<<
  * 
  *                 total_im_square = (
  */
-        __pyx_t_32 = __pyx_v_y2;
-        __pyx_t_31 = __pyx_v_x2;
-        __pyx_t_7 = -1;
+        __pyx_t_34 = __pyx_v_y2;
+        __pyx_t_33 = __pyx_v_x2;
+        __pyx_t_10 = -1;
+        if (__pyx_t_34 < 0) {
+          __pyx_t_34 += __pyx_pybuffernd_window.diminfo[0].shape;
+          if (unlikely(__pyx_t_34 < 0)) __pyx_t_10 = 0;
+        } else if (unlikely(__pyx_t_34 >= __pyx_pybuffernd_window.diminfo[0].shape)) __pyx_t_10 = 0;
+        if (__pyx_t_33 < 0) {
+          __pyx_t_33 += __pyx_pybuffernd_window.diminfo[1].shape;
+          if (unlikely(__pyx_t_33 < 0)) __pyx_t_10 = 1;
+        } else if (unlikely(__pyx_t_33 >= __pyx_pybuffernd_window.diminfo[1].shape)) __pyx_t_10 = 1;
+        if (unlikely(__pyx_t_10 != -1)) {
+          __Pyx_RaiseBufferIndexError(__pyx_t_10);
+          __PYX_ERR(0, 105, __pyx_L1_error)
+        }
+        __pyx_t_32 = __pyx_v_y1;
+        __pyx_t_31 = __pyx_v_x1;
+        __pyx_t_10 = -1;
         if (__pyx_t_32 < 0) {
           __pyx_t_32 += __pyx_pybuffernd_window.diminfo[0].shape;
-          if (unlikely(__pyx_t_32 < 0)) __pyx_t_7 = 0;
-        } else if (unlikely(__pyx_t_32 >= __pyx_pybuffernd_window.diminfo[0].shape)) __pyx_t_7 = 0;
+          if (unlikely(__pyx_t_32 < 0)) __pyx_t_10 = 0;
+        } else if (unlikely(__pyx_t_32 >= __pyx_pybuffernd_window.diminfo[0].shape)) __pyx_t_10 = 0;
         if (__pyx_t_31 < 0) {
           __pyx_t_31 += __pyx_pybuffernd_window.diminfo[1].shape;
-          if (unlikely(__pyx_t_31 < 0)) __pyx_t_7 = 1;
-        } else if (unlikely(__pyx_t_31 >= __pyx_pybuffernd_window.diminfo[1].shape)) __pyx_t_7 = 1;
-        if (unlikely(__pyx_t_7 != -1)) {
-          __Pyx_RaiseBufferIndexError(__pyx_t_7);
-          __PYX_ERR(0, 106, __pyx_L1_error)
+          if (unlikely(__pyx_t_31 < 0)) __pyx_t_10 = 1;
+        } else if (unlikely(__pyx_t_31 >= __pyx_pybuffernd_window.diminfo[1].shape)) __pyx_t_10 = 1;
+        if (unlikely(__pyx_t_10 != -1)) {
+          __Pyx_RaiseBufferIndexError(__pyx_t_10);
+          __PYX_ERR(0, 105, __pyx_L1_error)
         }
-        __pyx_t_30 = __pyx_v_y1;
+        __pyx_t_30 = __pyx_v_y2;
         __pyx_t_29 = __pyx_v_x1;
-        __pyx_t_7 = -1;
+        __pyx_t_10 = -1;
         if (__pyx_t_30 < 0) {
           __pyx_t_30 += __pyx_pybuffernd_window.diminfo[0].shape;
-          if (unlikely(__pyx_t_30 < 0)) __pyx_t_7 = 0;
-        } else if (unlikely(__pyx_t_30 >= __pyx_pybuffernd_window.diminfo[0].shape)) __pyx_t_7 = 0;
+          if (unlikely(__pyx_t_30 < 0)) __pyx_t_10 = 0;
+        } else if (unlikely(__pyx_t_30 >= __pyx_pybuffernd_window.diminfo[0].shape)) __pyx_t_10 = 0;
         if (__pyx_t_29 < 0) {
           __pyx_t_29 += __pyx_pybuffernd_window.diminfo[1].shape;
-          if (unlikely(__pyx_t_29 < 0)) __pyx_t_7 = 1;
-        } else if (unlikely(__pyx_t_29 >= __pyx_pybuffernd_window.diminfo[1].shape)) __pyx_t_7 = 1;
-        if (unlikely(__pyx_t_7 != -1)) {
-          __Pyx_RaiseBufferIndexError(__pyx_t_7);
-          __PYX_ERR(0, 106, __pyx_L1_error)
+          if (unlikely(__pyx_t_29 < 0)) __pyx_t_10 = 1;
+        } else if (unlikely(__pyx_t_29 >= __pyx_pybuffernd_window.diminfo[1].shape)) __pyx_t_10 = 1;
+        if (unlikely(__pyx_t_10 != -1)) {
+          __Pyx_RaiseBufferIndexError(__pyx_t_10);
+          __PYX_ERR(0, 105, __pyx_L1_error)
         }
-        __pyx_t_28 = __pyx_v_y2;
-        __pyx_t_27 = __pyx_v_x1;
-        __pyx_t_7 = -1;
+        __pyx_t_28 = __pyx_v_y1;
+        __pyx_t_27 = __pyx_v_x2;
+        __pyx_t_10 = -1;
         if (__pyx_t_28 < 0) {
           __pyx_t_28 += __pyx_pybuffernd_window.diminfo[0].shape;
-          if (unlikely(__pyx_t_28 < 0)) __pyx_t_7 = 0;
-        } else if (unlikely(__pyx_t_28 >= __pyx_pybuffernd_window.diminfo[0].shape)) __pyx_t_7 = 0;
+          if (unlikely(__pyx_t_28 < 0)) __pyx_t_10 = 0;
+        } else if (unlikely(__pyx_t_28 >= __pyx_pybuffernd_window.diminfo[0].shape)) __pyx_t_10 = 0;
         if (__pyx_t_27 < 0) {
           __pyx_t_27 += __pyx_pybuffernd_window.diminfo[1].shape;
-          if (unlikely(__pyx_t_27 < 0)) __pyx_t_7 = 1;
-        } else if (unlikely(__pyx_t_27 >= __pyx_pybuffernd_window.diminfo[1].shape)) __pyx_t_7 = 1;
-        if (unlikely(__pyx_t_7 != -1)) {
-          __Pyx_RaiseBufferIndexError(__pyx_t_7);
-          __PYX_ERR(0, 106, __pyx_L1_error)
+          if (unlikely(__pyx_t_27 < 0)) __pyx_t_10 = 1;
+        } else if (unlikely(__pyx_t_27 >= __pyx_pybuffernd_window.diminfo[1].shape)) __pyx_t_10 = 1;
+        if (unlikely(__pyx_t_10 != -1)) {
+          __Pyx_RaiseBufferIndexError(__pyx_t_10);
+          __PYX_ERR(0, 105, __pyx_L1_error)
         }
-        __pyx_t_26 = __pyx_v_y1;
-        __pyx_t_25 = __pyx_v_x2;
-        __pyx_t_7 = -1;
-        if (__pyx_t_26 < 0) {
-          __pyx_t_26 += __pyx_pybuffernd_window.diminfo[0].shape;
-          if (unlikely(__pyx_t_26 < 0)) __pyx_t_7 = 0;
-        } else if (unlikely(__pyx_t_26 >= __pyx_pybuffernd_window.diminfo[0].shape)) __pyx_t_7 = 0;
-        if (__pyx_t_25 < 0) {
-          __pyx_t_25 += __pyx_pybuffernd_window.diminfo[1].shape;
-          if (unlikely(__pyx_t_25 < 0)) __pyx_t_7 = 1;
-        } else if (unlikely(__pyx_t_25 >= __pyx_pybuffernd_window.diminfo[1].shape)) __pyx_t_7 = 1;
-        if (unlikely(__pyx_t_7 != -1)) {
-          __Pyx_RaiseBufferIndexError(__pyx_t_7);
-          __PYX_ERR(0, 106, __pyx_L1_error)
-        }
-        __pyx_v_total_im = ((((*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window.rcbuffer->pybuffer.buf, __pyx_t_32, __pyx_pybuffernd_window.diminfo[0].strides, __pyx_t_31, __pyx_pybuffernd_window.diminfo[1].strides)) + (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window.rcbuffer->pybuffer.buf, __pyx_t_30, __pyx_pybuffernd_window.diminfo[0].strides, __pyx_t_29, __pyx_pybuffernd_window.diminfo[1].strides))) - (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window.rcbuffer->pybuffer.buf, __pyx_t_28, __pyx_pybuffernd_window.diminfo[0].strides, __pyx_t_27, __pyx_pybuffernd_window.diminfo[1].strides))) - (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window.rcbuffer->pybuffer.buf, __pyx_t_26, __pyx_pybuffernd_window.diminfo[0].strides, __pyx_t_25, __pyx_pybuffernd_window.diminfo[1].strides)));
+        __pyx_v_total_im = ((((*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window.rcbuffer->pybuffer.buf, __pyx_t_34, __pyx_pybuffernd_window.diminfo[0].strides, __pyx_t_33, __pyx_pybuffernd_window.diminfo[1].strides)) + (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window.rcbuffer->pybuffer.buf, __pyx_t_32, __pyx_pybuffernd_window.diminfo[0].strides, __pyx_t_31, __pyx_pybuffernd_window.diminfo[1].strides))) - (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window.rcbuffer->pybuffer.buf, __pyx_t_30, __pyx_pybuffernd_window.diminfo[0].strides, __pyx_t_29, __pyx_pybuffernd_window.diminfo[1].strides))) - (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window.rcbuffer->pybuffer.buf, __pyx_t_28, __pyx_pybuffernd_window.diminfo[0].strides, __pyx_t_27, __pyx_pybuffernd_window.diminfo[1].strides)));
 
-        /* "facedetectionCython.pyx":109
+        /* "facedetection/cython_code/get_faces.pyx":108
  * 
  *                 total_im_square = (
  *                     window_squared[y2, x2]             # <<<<<<<<<<<<<<
  *                     + window_squared[y1, x1]
  *                     - window_squared[y2, x1]
  */
-        __pyx_t_25 = __pyx_v_y2;
-        __pyx_t_26 = __pyx_v_x2;
-        __pyx_t_7 = -1;
-        if (__pyx_t_25 < 0) {
-          __pyx_t_25 += __pyx_pybuffernd_window_squared.diminfo[0].shape;
-          if (unlikely(__pyx_t_25 < 0)) __pyx_t_7 = 0;
-        } else if (unlikely(__pyx_t_25 >= __pyx_pybuffernd_window_squared.diminfo[0].shape)) __pyx_t_7 = 0;
-        if (__pyx_t_26 < 0) {
-          __pyx_t_26 += __pyx_pybuffernd_window_squared.diminfo[1].shape;
-          if (unlikely(__pyx_t_26 < 0)) __pyx_t_7 = 1;
-        } else if (unlikely(__pyx_t_26 >= __pyx_pybuffernd_window_squared.diminfo[1].shape)) __pyx_t_7 = 1;
-        if (unlikely(__pyx_t_7 != -1)) {
-          __Pyx_RaiseBufferIndexError(__pyx_t_7);
-          __PYX_ERR(0, 109, __pyx_L1_error)
+        __pyx_t_27 = __pyx_v_y2;
+        __pyx_t_28 = __pyx_v_x2;
+        __pyx_t_10 = -1;
+        if (__pyx_t_27 < 0) {
+          __pyx_t_27 += __pyx_pybuffernd_window_squared.diminfo[0].shape;
+          if (unlikely(__pyx_t_27 < 0)) __pyx_t_10 = 0;
+        } else if (unlikely(__pyx_t_27 >= __pyx_pybuffernd_window_squared.diminfo[0].shape)) __pyx_t_10 = 0;
+        if (__pyx_t_28 < 0) {
+          __pyx_t_28 += __pyx_pybuffernd_window_squared.diminfo[1].shape;
+          if (unlikely(__pyx_t_28 < 0)) __pyx_t_10 = 1;
+        } else if (unlikely(__pyx_t_28 >= __pyx_pybuffernd_window_squared.diminfo[1].shape)) __pyx_t_10 = 1;
+        if (unlikely(__pyx_t_10 != -1)) {
+          __Pyx_RaiseBufferIndexError(__pyx_t_10);
+          __PYX_ERR(0, 108, __pyx_L1_error)
         }
 
-        /* "facedetectionCython.pyx":110
+        /* "facedetection/cython_code/get_faces.pyx":109
  *                 total_im_square = (
  *                     window_squared[y2, x2]
  *                     + window_squared[y1, x1]             # <<<<<<<<<<<<<<
  *                     - window_squared[y2, x1]
  *                     - window_squared[y1, x2]
  */
-        __pyx_t_27 = __pyx_v_y1;
-        __pyx_t_28 = __pyx_v_x1;
-        __pyx_t_7 = -1;
-        if (__pyx_t_27 < 0) {
-          __pyx_t_27 += __pyx_pybuffernd_window_squared.diminfo[0].shape;
-          if (unlikely(__pyx_t_27 < 0)) __pyx_t_7 = 0;
-        } else if (unlikely(__pyx_t_27 >= __pyx_pybuffernd_window_squared.diminfo[0].shape)) __pyx_t_7 = 0;
-        if (__pyx_t_28 < 0) {
-          __pyx_t_28 += __pyx_pybuffernd_window_squared.diminfo[1].shape;
-          if (unlikely(__pyx_t_28 < 0)) __pyx_t_7 = 1;
-        } else if (unlikely(__pyx_t_28 >= __pyx_pybuffernd_window_squared.diminfo[1].shape)) __pyx_t_7 = 1;
-        if (unlikely(__pyx_t_7 != -1)) {
-          __Pyx_RaiseBufferIndexError(__pyx_t_7);
-          __PYX_ERR(0, 110, __pyx_L1_error)
+        __pyx_t_29 = __pyx_v_y1;
+        __pyx_t_30 = __pyx_v_x1;
+        __pyx_t_10 = -1;
+        if (__pyx_t_29 < 0) {
+          __pyx_t_29 += __pyx_pybuffernd_window_squared.diminfo[0].shape;
+          if (unlikely(__pyx_t_29 < 0)) __pyx_t_10 = 0;
+        } else if (unlikely(__pyx_t_29 >= __pyx_pybuffernd_window_squared.diminfo[0].shape)) __pyx_t_10 = 0;
+        if (__pyx_t_30 < 0) {
+          __pyx_t_30 += __pyx_pybuffernd_window_squared.diminfo[1].shape;
+          if (unlikely(__pyx_t_30 < 0)) __pyx_t_10 = 1;
+        } else if (unlikely(__pyx_t_30 >= __pyx_pybuffernd_window_squared.diminfo[1].shape)) __pyx_t_10 = 1;
+        if (unlikely(__pyx_t_10 != -1)) {
+          __Pyx_RaiseBufferIndexError(__pyx_t_10);
+          __PYX_ERR(0, 109, __pyx_L1_error)
         }
 
-        /* "facedetectionCython.pyx":111
+        /* "facedetection/cython_code/get_faces.pyx":110
  *                     window_squared[y2, x2]
  *                     + window_squared[y1, x1]
  *                     - window_squared[y2, x1]             # <<<<<<<<<<<<<<
  *                     - window_squared[y1, x2]
  *                 )
  */
-        __pyx_t_29 = __pyx_v_y2;
-        __pyx_t_30 = __pyx_v_x1;
-        __pyx_t_7 = -1;
-        if (__pyx_t_29 < 0) {
-          __pyx_t_29 += __pyx_pybuffernd_window_squared.diminfo[0].shape;
-          if (unlikely(__pyx_t_29 < 0)) __pyx_t_7 = 0;
-        } else if (unlikely(__pyx_t_29 >= __pyx_pybuffernd_window_squared.diminfo[0].shape)) __pyx_t_7 = 0;
-        if (__pyx_t_30 < 0) {
-          __pyx_t_30 += __pyx_pybuffernd_window_squared.diminfo[1].shape;
-          if (unlikely(__pyx_t_30 < 0)) __pyx_t_7 = 1;
-        } else if (unlikely(__pyx_t_30 >= __pyx_pybuffernd_window_squared.diminfo[1].shape)) __pyx_t_7 = 1;
-        if (unlikely(__pyx_t_7 != -1)) {
-          __Pyx_RaiseBufferIndexError(__pyx_t_7);
-          __PYX_ERR(0, 111, __pyx_L1_error)
+        __pyx_t_31 = __pyx_v_y2;
+        __pyx_t_32 = __pyx_v_x1;
+        __pyx_t_10 = -1;
+        if (__pyx_t_31 < 0) {
+          __pyx_t_31 += __pyx_pybuffernd_window_squared.diminfo[0].shape;
+          if (unlikely(__pyx_t_31 < 0)) __pyx_t_10 = 0;
+        } else if (unlikely(__pyx_t_31 >= __pyx_pybuffernd_window_squared.diminfo[0].shape)) __pyx_t_10 = 0;
+        if (__pyx_t_32 < 0) {
+          __pyx_t_32 += __pyx_pybuffernd_window_squared.diminfo[1].shape;
+          if (unlikely(__pyx_t_32 < 0)) __pyx_t_10 = 1;
+        } else if (unlikely(__pyx_t_32 >= __pyx_pybuffernd_window_squared.diminfo[1].shape)) __pyx_t_10 = 1;
+        if (unlikely(__pyx_t_10 != -1)) {
+          __Pyx_RaiseBufferIndexError(__pyx_t_10);
+          __PYX_ERR(0, 110, __pyx_L1_error)
         }
 
-        /* "facedetectionCython.pyx":112
+        /* "facedetection/cython_code/get_faces.pyx":111
  *                     + window_squared[y1, x1]
  *                     - window_squared[y2, x1]
  *                     - window_squared[y1, x2]             # <<<<<<<<<<<<<<
  *                 )
  * 
  */
-        __pyx_t_31 = __pyx_v_y1;
-        __pyx_t_32 = __pyx_v_x2;
-        __pyx_t_7 = -1;
-        if (__pyx_t_31 < 0) {
-          __pyx_t_31 += __pyx_pybuffernd_window_squared.diminfo[0].shape;
-          if (unlikely(__pyx_t_31 < 0)) __pyx_t_7 = 0;
-        } else if (unlikely(__pyx_t_31 >= __pyx_pybuffernd_window_squared.diminfo[0].shape)) __pyx_t_7 = 0;
-        if (__pyx_t_32 < 0) {
-          __pyx_t_32 += __pyx_pybuffernd_window_squared.diminfo[1].shape;
-          if (unlikely(__pyx_t_32 < 0)) __pyx_t_7 = 1;
-        } else if (unlikely(__pyx_t_32 >= __pyx_pybuffernd_window_squared.diminfo[1].shape)) __pyx_t_7 = 1;
-        if (unlikely(__pyx_t_7 != -1)) {
-          __Pyx_RaiseBufferIndexError(__pyx_t_7);
-          __PYX_ERR(0, 112, __pyx_L1_error)
+        __pyx_t_33 = __pyx_v_y1;
+        __pyx_t_34 = __pyx_v_x2;
+        __pyx_t_10 = -1;
+        if (__pyx_t_33 < 0) {
+          __pyx_t_33 += __pyx_pybuffernd_window_squared.diminfo[0].shape;
+          if (unlikely(__pyx_t_33 < 0)) __pyx_t_10 = 0;
+        } else if (unlikely(__pyx_t_33 >= __pyx_pybuffernd_window_squared.diminfo[0].shape)) __pyx_t_10 = 0;
+        if (__pyx_t_34 < 0) {
+          __pyx_t_34 += __pyx_pybuffernd_window_squared.diminfo[1].shape;
+          if (unlikely(__pyx_t_34 < 0)) __pyx_t_10 = 1;
+        } else if (unlikely(__pyx_t_34 >= __pyx_pybuffernd_window_squared.diminfo[1].shape)) __pyx_t_10 = 1;
+        if (unlikely(__pyx_t_10 != -1)) {
+          __Pyx_RaiseBufferIndexError(__pyx_t_10);
+          __PYX_ERR(0, 111, __pyx_L1_error)
         }
-        __pyx_v_total_im_square = ((((*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_squared.rcbuffer->pybuffer.buf, __pyx_t_25, __pyx_pybuffernd_window_squared.diminfo[0].strides, __pyx_t_26, __pyx_pybuffernd_window_squared.diminfo[1].strides)) + (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_squared.rcbuffer->pybuffer.buf, __pyx_t_27, __pyx_pybuffernd_window_squared.diminfo[0].strides, __pyx_t_28, __pyx_pybuffernd_window_squared.diminfo[1].strides))) - (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_squared.rcbuffer->pybuffer.buf, __pyx_t_29, __pyx_pybuffernd_window_squared.diminfo[0].strides, __pyx_t_30, __pyx_pybuffernd_window_squared.diminfo[1].strides))) - (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_squared.rcbuffer->pybuffer.buf, __pyx_t_31, __pyx_pybuffernd_window_squared.diminfo[0].strides, __pyx_t_32, __pyx_pybuffernd_window_squared.diminfo[1].strides)));
+        __pyx_v_total_im_square = ((((*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_squared.rcbuffer->pybuffer.buf, __pyx_t_27, __pyx_pybuffernd_window_squared.diminfo[0].strides, __pyx_t_28, __pyx_pybuffernd_window_squared.diminfo[1].strides)) + (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_squared.rcbuffer->pybuffer.buf, __pyx_t_29, __pyx_pybuffernd_window_squared.diminfo[0].strides, __pyx_t_30, __pyx_pybuffernd_window_squared.diminfo[1].strides))) - (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_squared.rcbuffer->pybuffer.buf, __pyx_t_31, __pyx_pybuffernd_window_squared.diminfo[0].strides, __pyx_t_32, __pyx_pybuffernd_window_squared.diminfo[1].strides))) - (*__Pyx_BufPtrStrided2d(__pyx_t_5numpy_int64_t *, __pyx_pybuffernd_window_squared.rcbuffer->pybuffer.buf, __pyx_t_33, __pyx_pybuffernd_window_squared.diminfo[0].strides, __pyx_t_34, __pyx_pybuffernd_window_squared.diminfo[1].strides)));
 
-        /* "facedetectionCython.pyx":115
+        /* "facedetection/cython_code/get_faces.pyx":114
  *                 )
  * 
  *                 im_mean = total_im / window_area             # <<<<<<<<<<<<<<
- *                 # print(total_im_square/window_area - im_mean * im_mean)
  *                 im_var = total_im_square / window_area - im_mean * im_mean
+ *                 im_var = np.sqrt(im_var)
  */
         if (unlikely(__pyx_v_window_area == 0)) {
           PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
-          __PYX_ERR(0, 115, __pyx_L1_error)
+          __PYX_ERR(0, 114, __pyx_L1_error)
         }
         else if (sizeof(int) == sizeof(long) && (!(((int)-1) > 0)) && unlikely(__pyx_v_window_area == (int)-1)  && unlikely(UNARY_NEG_WOULD_OVERFLOW(__pyx_v_total_im))) {
           PyErr_SetString(PyExc_OverflowError, "value too large to perform division");
-          __PYX_ERR(0, 115, __pyx_L1_error)
+          __PYX_ERR(0, 114, __pyx_L1_error)
         }
         __pyx_v_im_mean = __Pyx_div_int(__pyx_v_total_im, __pyx_v_window_area);
 
-        /* "facedetectionCython.pyx":117
+        /* "facedetection/cython_code/get_faces.pyx":115
+ * 
  *                 im_mean = total_im / window_area
- *                 # print(total_im_square/window_area - im_mean * im_mean)
  *                 im_var = total_im_square / window_area - im_mean * im_mean             # <<<<<<<<<<<<<<
  *                 im_var = np.sqrt(im_var)
  * 
  */
         if (unlikely(__pyx_v_window_area == 0)) {
           PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
-          __PYX_ERR(0, 117, __pyx_L1_error)
+          __PYX_ERR(0, 115, __pyx_L1_error)
         }
         else if (sizeof(int) == sizeof(long) && (!(((int)-1) > 0)) && unlikely(__pyx_v_window_area == (int)-1)  && unlikely(UNARY_NEG_WOULD_OVERFLOW(__pyx_v_total_im_square))) {
           PyErr_SetString(PyExc_OverflowError, "value too large to perform division");
-          __PYX_ERR(0, 117, __pyx_L1_error)
+          __PYX_ERR(0, 115, __pyx_L1_error)
         }
         __pyx_v_im_var = (__Pyx_div_int(__pyx_v_total_im_square, __pyx_v_window_area) - (__pyx_v_im_mean * __pyx_v_im_mean));
 
-        /* "facedetectionCython.pyx":118
- *                 # print(total_im_square/window_area - im_mean * im_mean)
+        /* "facedetection/cython_code/get_faces.pyx":116
+ *                 im_mean = total_im / window_area
  *                 im_var = total_im_square / window_area - im_mean * im_mean
  *                 im_var = np.sqrt(im_var)             # <<<<<<<<<<<<<<
  * 
  *                 if im_var < 1:
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_sqrt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 118, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sqrt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 116, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __pyx_t_1 = PyFloat_FromDouble(__pyx_v_im_var); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_23 = NULL;
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __pyx_t_4 = PyFloat_FromDouble(__pyx_v_im_var); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_4);
+        __pyx_t_19 = NULL;
         if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
-          __pyx_t_23 = PyMethod_GET_SELF(__pyx_t_5);
-          if (likely(__pyx_t_23)) {
+          __pyx_t_19 = PyMethod_GET_SELF(__pyx_t_5);
+          if (likely(__pyx_t_19)) {
             PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
-            __Pyx_INCREF(__pyx_t_23);
+            __Pyx_INCREF(__pyx_t_19);
             __Pyx_INCREF(function);
             __Pyx_DECREF_SET(__pyx_t_5, function);
           }
         }
-        __pyx_t_3 = (__pyx_t_23) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_23, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_1);
-        __Pyx_XDECREF(__pyx_t_23); __pyx_t_23 = 0;
-        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 118, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_1 = (__pyx_t_19) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_19, __pyx_t_4) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4);
+        __Pyx_XDECREF(__pyx_t_19); __pyx_t_19 = 0;
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-        __pyx_t_35 = __pyx_PyFloat_AsFloat(__pyx_t_3); if (unlikely((__pyx_t_35 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 118, __pyx_L1_error)
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __pyx_t_35 = __pyx_PyFloat_AsFloat(__pyx_t_1); if (unlikely((__pyx_t_35 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 116, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_v_im_var = __pyx_t_35;
 
-        /* "facedetectionCython.pyx":120
+        /* "facedetection/cython_code/get_faces.pyx":118
  *                 im_var = np.sqrt(im_var)
  * 
  *                 if im_var < 1:             # <<<<<<<<<<<<<<
  *                     im_var = 1
  * 
  */
-        __pyx_t_18 = ((__pyx_v_im_var < 1.0) != 0);
-        if (__pyx_t_18) {
+        __pyx_t_15 = ((__pyx_v_im_var < 1.0) != 0);
+        if (__pyx_t_15) {
 
-          /* "facedetectionCython.pyx":121
+          /* "facedetection/cython_code/get_faces.pyx":119
  * 
  *                 if im_var < 1:
  *                     im_var = 1             # <<<<<<<<<<<<<<
@@ -3702,7 +3765,7 @@ static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *__pyx_v_img, P
  */
           __pyx_v_im_var = 1.0;
 
-          /* "facedetectionCython.pyx":120
+          /* "facedetection/cython_code/get_faces.pyx":118
  *                 im_var = np.sqrt(im_var)
  * 
  *                 if im_var < 1:             # <<<<<<<<<<<<<<
@@ -3711,279 +3774,736 @@ static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *__pyx_v_img, P
  */
         }
 
-        /* "facedetectionCython.pyx":123
+        /* "facedetection/cython_code/get_faces.pyx":121
  *                     im_var = 1
  * 
  *                 face_found = True             # <<<<<<<<<<<<<<
  *                 for stage in stages:
- *                     if not stage.check_stage(features, window, window_area, im_var, scale):
+ *                     if not stage.check_stage(features, window, window_area, im_var, scale, rect_values):
  */
         __pyx_v_face_found = 1;
 
-        /* "facedetectionCython.pyx":124
+        /* "facedetection/cython_code/get_faces.pyx":122
  * 
  *                 face_found = True
  *                 for stage in stages:             # <<<<<<<<<<<<<<
- *                     if not stage.check_stage(features, window, window_area, im_var, scale):
+ *                     if not stage.check_stage(features, window, window_area, im_var, scale, rect_values):
  *                         face_found = False
  */
         if (unlikely(__pyx_v_stages == Py_None)) {
           PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-          __PYX_ERR(0, 124, __pyx_L1_error)
+          __PYX_ERR(0, 122, __pyx_L1_error)
         }
-        __pyx_t_3 = __pyx_v_stages; __Pyx_INCREF(__pyx_t_3); __pyx_t_36 = 0;
+        __pyx_t_1 = __pyx_v_stages; __Pyx_INCREF(__pyx_t_1); __pyx_t_36 = 0;
         for (;;) {
-          if (__pyx_t_36 >= PyList_GET_SIZE(__pyx_t_3)) break;
+          if (__pyx_t_36 >= PyList_GET_SIZE(__pyx_t_1)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_5 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_36); __Pyx_INCREF(__pyx_t_5); __pyx_t_36++; if (unlikely(0 < 0)) __PYX_ERR(0, 124, __pyx_L1_error)
+          __pyx_t_5 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_36); __Pyx_INCREF(__pyx_t_5); __pyx_t_36++; if (unlikely(0 < 0)) __PYX_ERR(0, 122, __pyx_L1_error)
           #else
-          __pyx_t_5 = PySequence_ITEM(__pyx_t_3, __pyx_t_36); __pyx_t_36++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 124, __pyx_L1_error)
+          __pyx_t_5 = PySequence_ITEM(__pyx_t_1, __pyx_t_36); __pyx_t_36++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 122, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           #endif
           __Pyx_XDECREF_SET(__pyx_v_stage, __pyx_t_5);
           __pyx_t_5 = 0;
 
-          /* "facedetectionCython.pyx":125
+          /* "facedetection/cython_code/get_faces.pyx":123
  *                 face_found = True
  *                 for stage in stages:
- *                     if not stage.check_stage(features, window, window_area, im_var, scale):             # <<<<<<<<<<<<<<
+ *                     if not stage.check_stage(features, window, window_area, im_var, scale, rect_values):             # <<<<<<<<<<<<<<
  *                         face_found = False
  *                         break
  */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_stage, __pyx_n_s_check_stage); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_23 = __Pyx_PyInt_From_int(__pyx_v_window_area); if (unlikely(!__pyx_t_23)) __PYX_ERR(0, 125, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_23);
-          __pyx_t_37 = PyFloat_FromDouble(__pyx_v_im_var); if (unlikely(!__pyx_t_37)) __PYX_ERR(0, 125, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_37);
-          __pyx_t_38 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_38)) __PYX_ERR(0, 125, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_38);
-          __pyx_t_39 = NULL;
-          __pyx_t_7 = 0;
-          if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
-            __pyx_t_39 = PyMethod_GET_SELF(__pyx_t_1);
-            if (likely(__pyx_t_39)) {
-              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
-              __Pyx_INCREF(__pyx_t_39);
+          __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_stage, __pyx_n_s_check_stage); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 123, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
+          __pyx_t_19 = __Pyx_PyInt_From_int(__pyx_v_window_area); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 123, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_19);
+          __pyx_t_20 = PyFloat_FromDouble(__pyx_v_im_var); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 123, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_20);
+          __pyx_t_21 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 123, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_21);
+          __pyx_t_37 = NULL;
+          __pyx_t_10 = 0;
+          if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
+            __pyx_t_37 = PyMethod_GET_SELF(__pyx_t_4);
+            if (likely(__pyx_t_37)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
+              __Pyx_INCREF(__pyx_t_37);
               __Pyx_INCREF(function);
-              __Pyx_DECREF_SET(__pyx_t_1, function);
-              __pyx_t_7 = 1;
+              __Pyx_DECREF_SET(__pyx_t_4, function);
+              __pyx_t_10 = 1;
             }
           }
           #if CYTHON_FAST_PYCALL
-          if (PyFunction_Check(__pyx_t_1)) {
-            PyObject *__pyx_temp[6] = {__pyx_t_39, __pyx_v_features, ((PyObject *)__pyx_v_window), __pyx_t_23, __pyx_t_37, __pyx_t_38};
-            __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_7, 5+__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
-            __Pyx_XDECREF(__pyx_t_39); __pyx_t_39 = 0;
+          if (PyFunction_Check(__pyx_t_4)) {
+            PyObject *__pyx_temp[7] = {__pyx_t_37, __pyx_v_features, ((PyObject *)__pyx_v_window), __pyx_t_19, __pyx_t_20, __pyx_t_21, __pyx_v_rect_values};
+            __pyx_t_5 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_10, 6+__pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 123, __pyx_L1_error)
+            __Pyx_XDECREF(__pyx_t_37); __pyx_t_37 = 0;
             __Pyx_GOTREF(__pyx_t_5);
-            __Pyx_DECREF(__pyx_t_23); __pyx_t_23 = 0;
-            __Pyx_DECREF(__pyx_t_37); __pyx_t_37 = 0;
-            __Pyx_DECREF(__pyx_t_38); __pyx_t_38 = 0;
+            __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+            __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
+            __Pyx_DECREF(__pyx_t_21); __pyx_t_21 = 0;
           } else
           #endif
           #if CYTHON_FAST_PYCCALL
-          if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
-            PyObject *__pyx_temp[6] = {__pyx_t_39, __pyx_v_features, ((PyObject *)__pyx_v_window), __pyx_t_23, __pyx_t_37, __pyx_t_38};
-            __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_7, 5+__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
-            __Pyx_XDECREF(__pyx_t_39); __pyx_t_39 = 0;
+          if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
+            PyObject *__pyx_temp[7] = {__pyx_t_37, __pyx_v_features, ((PyObject *)__pyx_v_window), __pyx_t_19, __pyx_t_20, __pyx_t_21, __pyx_v_rect_values};
+            __pyx_t_5 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_10, 6+__pyx_t_10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 123, __pyx_L1_error)
+            __Pyx_XDECREF(__pyx_t_37); __pyx_t_37 = 0;
             __Pyx_GOTREF(__pyx_t_5);
-            __Pyx_DECREF(__pyx_t_23); __pyx_t_23 = 0;
-            __Pyx_DECREF(__pyx_t_37); __pyx_t_37 = 0;
-            __Pyx_DECREF(__pyx_t_38); __pyx_t_38 = 0;
+            __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+            __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
+            __Pyx_DECREF(__pyx_t_21); __pyx_t_21 = 0;
           } else
           #endif
           {
-            __pyx_t_40 = PyTuple_New(5+__pyx_t_7); if (unlikely(!__pyx_t_40)) __PYX_ERR(0, 125, __pyx_L1_error)
-            __Pyx_GOTREF(__pyx_t_40);
-            if (__pyx_t_39) {
-              __Pyx_GIVEREF(__pyx_t_39); PyTuple_SET_ITEM(__pyx_t_40, 0, __pyx_t_39); __pyx_t_39 = NULL;
+            __pyx_t_38 = PyTuple_New(6+__pyx_t_10); if (unlikely(!__pyx_t_38)) __PYX_ERR(0, 123, __pyx_L1_error)
+            __Pyx_GOTREF(__pyx_t_38);
+            if (__pyx_t_37) {
+              __Pyx_GIVEREF(__pyx_t_37); PyTuple_SET_ITEM(__pyx_t_38, 0, __pyx_t_37); __pyx_t_37 = NULL;
             }
             __Pyx_INCREF(__pyx_v_features);
             __Pyx_GIVEREF(__pyx_v_features);
-            PyTuple_SET_ITEM(__pyx_t_40, 0+__pyx_t_7, __pyx_v_features);
+            PyTuple_SET_ITEM(__pyx_t_38, 0+__pyx_t_10, __pyx_v_features);
             __Pyx_INCREF(((PyObject *)__pyx_v_window));
             __Pyx_GIVEREF(((PyObject *)__pyx_v_window));
-            PyTuple_SET_ITEM(__pyx_t_40, 1+__pyx_t_7, ((PyObject *)__pyx_v_window));
-            __Pyx_GIVEREF(__pyx_t_23);
-            PyTuple_SET_ITEM(__pyx_t_40, 2+__pyx_t_7, __pyx_t_23);
-            __Pyx_GIVEREF(__pyx_t_37);
-            PyTuple_SET_ITEM(__pyx_t_40, 3+__pyx_t_7, __pyx_t_37);
-            __Pyx_GIVEREF(__pyx_t_38);
-            PyTuple_SET_ITEM(__pyx_t_40, 4+__pyx_t_7, __pyx_t_38);
-            __pyx_t_23 = 0;
-            __pyx_t_37 = 0;
-            __pyx_t_38 = 0;
-            __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_40, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+            PyTuple_SET_ITEM(__pyx_t_38, 1+__pyx_t_10, ((PyObject *)__pyx_v_window));
+            __Pyx_GIVEREF(__pyx_t_19);
+            PyTuple_SET_ITEM(__pyx_t_38, 2+__pyx_t_10, __pyx_t_19);
+            __Pyx_GIVEREF(__pyx_t_20);
+            PyTuple_SET_ITEM(__pyx_t_38, 3+__pyx_t_10, __pyx_t_20);
+            __Pyx_GIVEREF(__pyx_t_21);
+            PyTuple_SET_ITEM(__pyx_t_38, 4+__pyx_t_10, __pyx_t_21);
+            __Pyx_INCREF(__pyx_v_rect_values);
+            __Pyx_GIVEREF(__pyx_v_rect_values);
+            PyTuple_SET_ITEM(__pyx_t_38, 5+__pyx_t_10, __pyx_v_rect_values);
+            __pyx_t_19 = 0;
+            __pyx_t_20 = 0;
+            __pyx_t_21 = 0;
+            __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_38, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 123, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_5);
-            __Pyx_DECREF(__pyx_t_40); __pyx_t_40 = 0;
+            __Pyx_DECREF(__pyx_t_38); __pyx_t_38 = 0;
           }
-          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-          __pyx_t_18 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_18 < 0)) __PYX_ERR(0, 125, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __pyx_t_15 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_15 < 0)) __PYX_ERR(0, 123, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-          __pyx_t_41 = ((!__pyx_t_18) != 0);
-          if (__pyx_t_41) {
+          __pyx_t_39 = ((!__pyx_t_15) != 0);
+          if (__pyx_t_39) {
 
-            /* "facedetectionCython.pyx":126
+            /* "facedetection/cython_code/get_faces.pyx":124
  *                 for stage in stages:
- *                     if not stage.check_stage(features, window, window_area, im_var, scale):
+ *                     if not stage.check_stage(features, window, window_area, im_var, scale, rect_values):
  *                         face_found = False             # <<<<<<<<<<<<<<
  *                         break
  * 
  */
             __pyx_v_face_found = 0;
 
-            /* "facedetectionCython.pyx":127
- *                     if not stage.check_stage(features, window, window_area, im_var, scale):
+            /* "facedetection/cython_code/get_faces.pyx":125
+ *                     if not stage.check_stage(features, window, window_area, im_var, scale, rect_values):
  *                         face_found = False
  *                         break             # <<<<<<<<<<<<<<
  * 
  *                 if face_found:
  */
-            goto __pyx_L14_break;
+            goto __pyx_L18_break;
 
-            /* "facedetectionCython.pyx":125
+            /* "facedetection/cython_code/get_faces.pyx":123
  *                 face_found = True
  *                 for stage in stages:
- *                     if not stage.check_stage(features, window, window_area, im_var, scale):             # <<<<<<<<<<<<<<
+ *                     if not stage.check_stage(features, window, window_area, im_var, scale, rect_values):             # <<<<<<<<<<<<<<
  *                         face_found = False
  *                         break
  */
           }
 
-          /* "facedetectionCython.pyx":124
+          /* "facedetection/cython_code/get_faces.pyx":122
  * 
  *                 face_found = True
  *                 for stage in stages:             # <<<<<<<<<<<<<<
- *                     if not stage.check_stage(features, window, window_area, im_var, scale):
+ *                     if not stage.check_stage(features, window, window_area, im_var, scale, rect_values):
  *                         face_found = False
  */
         }
-        __pyx_L14_break:;
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __pyx_L18_break:;
+        __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-        /* "facedetectionCython.pyx":129
+        /* "facedetection/cython_code/get_faces.pyx":127
  *                         break
  * 
  *                 if face_found:             # <<<<<<<<<<<<<<
- *                    faces.append((x,y,scale))
+ *                    faces.append((x,y,x + WINDOW_SIZE[0]* scale, y + WINDOW_SIZE[1]* scale))
  * 
  */
-        __pyx_t_41 = (__pyx_v_face_found != 0);
-        if (__pyx_t_41) {
+        __pyx_t_39 = (__pyx_v_face_found != 0);
+        if (__pyx_t_39) {
 
-          /* "facedetectionCython.pyx":130
+          /* "facedetection/cython_code/get_faces.pyx":128
  * 
  *                 if face_found:
- *                    faces.append((x,y,scale))             # <<<<<<<<<<<<<<
+ *                    faces.append((x,y,x + WINDOW_SIZE[0]* scale, y + WINDOW_SIZE[1]* scale))             # <<<<<<<<<<<<<<
  * 
- *         scale = int(np.ceil(scale*1.25))
+ *         scale = int(ceil(scale*1.25))
  */
-          __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_5);
-          __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_40 = PyTuple_New(3); if (unlikely(!__pyx_t_40)) __PYX_ERR(0, 130, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_40);
-          __Pyx_GIVEREF(__pyx_t_3);
-          PyTuple_SET_ITEM(__pyx_t_40, 0, __pyx_t_3);
-          __Pyx_GIVEREF(__pyx_t_5);
-          PyTuple_SET_ITEM(__pyx_t_40, 1, __pyx_t_5);
+          __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
+          __pyx_t_38 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_38)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_38);
+          __pyx_t_21 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_21);
+          __pyx_t_20 = PyNumber_Multiply(__pyx_t_38, __pyx_t_21); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_20);
+          __Pyx_DECREF(__pyx_t_38); __pyx_t_38 = 0;
+          __Pyx_DECREF(__pyx_t_21); __pyx_t_21 = 0;
+          __pyx_t_21 = PyNumber_Add(__pyx_t_4, __pyx_t_20); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_21);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
+          __pyx_t_20 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_20);
+          __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_WINDOW_SIZE, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_4);
+          __pyx_t_38 = __Pyx_PyInt_From_int(__pyx_v_scale); if (unlikely(!__pyx_t_38)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_38);
+          __pyx_t_19 = PyNumber_Multiply(__pyx_t_4, __pyx_t_38); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_19);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __Pyx_DECREF(__pyx_t_38); __pyx_t_38 = 0;
+          __pyx_t_38 = PyNumber_Add(__pyx_t_20, __pyx_t_19); if (unlikely(!__pyx_t_38)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_38);
+          __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
+          __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+          __pyx_t_19 = PyTuple_New(4); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_19);
           __Pyx_GIVEREF(__pyx_t_1);
-          PyTuple_SET_ITEM(__pyx_t_40, 2, __pyx_t_1);
-          __pyx_t_3 = 0;
-          __pyx_t_5 = 0;
+          PyTuple_SET_ITEM(__pyx_t_19, 0, __pyx_t_1);
+          __Pyx_GIVEREF(__pyx_t_5);
+          PyTuple_SET_ITEM(__pyx_t_19, 1, __pyx_t_5);
+          __Pyx_GIVEREF(__pyx_t_21);
+          PyTuple_SET_ITEM(__pyx_t_19, 2, __pyx_t_21);
+          __Pyx_GIVEREF(__pyx_t_38);
+          PyTuple_SET_ITEM(__pyx_t_19, 3, __pyx_t_38);
           __pyx_t_1 = 0;
-          __pyx_t_42 = __Pyx_PyList_Append(__pyx_v_faces, __pyx_t_40); if (unlikely(__pyx_t_42 == ((int)-1))) __PYX_ERR(0, 130, __pyx_L1_error)
-          __Pyx_DECREF(__pyx_t_40); __pyx_t_40 = 0;
+          __pyx_t_5 = 0;
+          __pyx_t_21 = 0;
+          __pyx_t_38 = 0;
+          __pyx_t_40 = __Pyx_PyList_Append(__pyx_v_faces, __pyx_t_19); if (unlikely(__pyx_t_40 == ((int)-1))) __PYX_ERR(0, 128, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
 
-          /* "facedetectionCython.pyx":129
+          /* "facedetection/cython_code/get_faces.pyx":127
  *                         break
  * 
  *                 if face_found:             # <<<<<<<<<<<<<<
- *                    faces.append((x,y,scale))
+ *                    faces.append((x,y,x + WINDOW_SIZE[0]* scale, y + WINDOW_SIZE[1]* scale))
  * 
  */
         }
 
-        /* "facedetectionCython.pyx":78
- *         lastStepY = y_max - int(scale * WINDOW_SIZE[1]) - 1
+        /* "facedetection/cython_code/get_faces.pyx":78
+ *         rect_values = [[rect.get_bounds(scale) for rect in ft.rectangles] for ft in features]
  *         for x in range(0, lastStepX , step):
  *             for y in range(0, lastStepY, step):             # <<<<<<<<<<<<<<
  * 
  *                 window_canny = canny_integral_image[
  */
-        __pyx_L9_continue:;
+        __pyx_L13_continue:;
       }
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "facedetectionCython.pyx":77
- *         lastStepX = x_max - int(scale * WINDOW_SIZE[0]) - 1
- *         lastStepY = y_max - int(scale * WINDOW_SIZE[1]) - 1
+      /* "facedetection/cython_code/get_faces.pyx":77
+ * 
+ *         rect_values = [[rect.get_bounds(scale) for rect in ft.rectangles] for ft in features]
  *         for x in range(0, lastStepX , step):             # <<<<<<<<<<<<<<
  *             for y in range(0, lastStepY, step):
  * 
  */
     }
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "facedetectionCython.pyx":132
- *                    faces.append((x,y,scale))
+    /* "facedetection/cython_code/get_faces.pyx":130
+ *                    faces.append((x,y,x + WINDOW_SIZE[0]* scale, y + WINDOW_SIZE[1]* scale))
  * 
- *         scale = int(np.ceil(scale*1.25))             # <<<<<<<<<<<<<<
+ *         scale = int(ceil(scale*1.25))             # <<<<<<<<<<<<<<
  * 
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_40 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ceil); if (unlikely(!__pyx_t_40)) __PYX_ERR(0, 132, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_40);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyFloat_FromDouble((__pyx_v_scale * 1.25)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = NULL;
-    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_40))) {
-      __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_40);
-      if (likely(__pyx_t_1)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_40);
-        __Pyx_INCREF(__pyx_t_1);
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_ceil); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_19 = PyFloat_FromDouble((__pyx_v_scale * 1.25)); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_19);
+    __pyx_t_38 = NULL;
+    if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_38 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_38)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+        __Pyx_INCREF(__pyx_t_38);
         __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_40, function);
+        __Pyx_DECREF_SET(__pyx_t_3, function);
       }
     }
-    __pyx_t_4 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_40, __pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_40, __pyx_t_2);
-    __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __pyx_t_2 = (__pyx_t_38) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_38, __pyx_t_19) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_19);
+    __Pyx_XDECREF(__pyx_t_38); __pyx_t_38 = 0;
+    __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __pyx_t_3 = __Pyx_PyNumber_Int(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 132, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_DECREF(__pyx_t_40); __pyx_t_40 = 0;
-    __pyx_t_40 = __Pyx_PyNumber_Int(__pyx_t_4); if (unlikely(!__pyx_t_40)) __PYX_ERR(0, 132, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_40);
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_40); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 132, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_40); __pyx_t_40 = 0;
-    __pyx_v_scale = __pyx_t_7;
+    __pyx_t_10 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_10 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 130, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __pyx_v_scale = __pyx_t_10;
   }
 
-  /* "facedetectionCython.pyx":146
- *     #        finalFaces.append(faces[i])
+  /* "facedetection/cython_code/get_faces.pyx":134
  * 
- *     return faces             # <<<<<<<<<<<<<<
+ *     # non max suppression to remove overlapping faces
+ *     final_faces = []             # <<<<<<<<<<<<<<
+ *     for i in range(len(faces)):
+ *         main_rect = faces[i]
+ */
+  __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_v_final_faces = ((PyObject*)__pyx_t_3);
+  __pyx_t_3 = 0;
+
+  /* "facedetection/cython_code/get_faces.pyx":135
+ *     # non max suppression to remove overlapping faces
+ *     final_faces = []
+ *     for i in range(len(faces)):             # <<<<<<<<<<<<<<
+ *         main_rect = faces[i]
+ *         for j in range(i + 1, len(faces)):
+ */
+  __pyx_t_16 = PyList_GET_SIZE(__pyx_v_faces); if (unlikely(__pyx_t_16 == ((Py_ssize_t)-1))) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_3 = PyInt_FromSsize_t(__pyx_t_16); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  if (likely(PyList_CheckExact(__pyx_t_2)) || PyTuple_CheckExact(__pyx_t_2)) {
+    __pyx_t_3 = __pyx_t_2; __Pyx_INCREF(__pyx_t_3); __pyx_t_16 = 0;
+    __pyx_t_18 = NULL;
+  } else {
+    __pyx_t_16 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_18 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 135, __pyx_L1_error)
+  }
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  for (;;) {
+    if (likely(!__pyx_t_18)) {
+      if (likely(PyList_CheckExact(__pyx_t_3))) {
+        if (__pyx_t_16 >= PyList_GET_SIZE(__pyx_t_3)) break;
+        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_16); __Pyx_INCREF(__pyx_t_2); __pyx_t_16++; if (unlikely(0 < 0)) __PYX_ERR(0, 135, __pyx_L1_error)
+        #else
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_16); __pyx_t_16++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        #endif
+      } else {
+        if (__pyx_t_16 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
+        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_16); __Pyx_INCREF(__pyx_t_2); __pyx_t_16++; if (unlikely(0 < 0)) __PYX_ERR(0, 135, __pyx_L1_error)
+        #else
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_16); __pyx_t_16++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        #endif
+      }
+    } else {
+      __pyx_t_2 = __pyx_t_18(__pyx_t_3);
+      if (unlikely(!__pyx_t_2)) {
+        PyObject* exc_type = PyErr_Occurred();
+        if (exc_type) {
+          if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+          else __PYX_ERR(0, 135, __pyx_L1_error)
+        }
+        break;
+      }
+      __Pyx_GOTREF(__pyx_t_2);
+    }
+    __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_2);
+    __pyx_t_2 = 0;
+
+    /* "facedetection/cython_code/get_faces.pyx":136
+ *     final_faces = []
+ *     for i in range(len(faces)):
+ *         main_rect = faces[i]             # <<<<<<<<<<<<<<
+ *         for j in range(i + 1, len(faces)):
+ *             sub_rect = faces[j]
+ */
+    __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_faces, __pyx_v_i); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_XDECREF_SET(__pyx_v_main_rect, __pyx_t_2);
+    __pyx_t_2 = 0;
+
+    /* "facedetection/cython_code/get_faces.pyx":137
+ *     for i in range(len(faces)):
+ *         main_rect = faces[i]
+ *         for j in range(i + 1, len(faces)):             # <<<<<<<<<<<<<<
+ *             sub_rect = faces[j]
+ *             found = False
+ */
+    __pyx_t_2 = __Pyx_PyInt_AddObjC(__pyx_v_i, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_17 = PyList_GET_SIZE(__pyx_v_faces); if (unlikely(__pyx_t_17 == ((Py_ssize_t)-1))) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_19 = PyInt_FromSsize_t(__pyx_t_17); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_19);
+    __pyx_t_38 = PyTuple_New(2); if (unlikely(!__pyx_t_38)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_38);
+    __Pyx_GIVEREF(__pyx_t_2);
+    PyTuple_SET_ITEM(__pyx_t_38, 0, __pyx_t_2);
+    __Pyx_GIVEREF(__pyx_t_19);
+    PyTuple_SET_ITEM(__pyx_t_38, 1, __pyx_t_19);
+    __pyx_t_2 = 0;
+    __pyx_t_19 = 0;
+    __pyx_t_19 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_38, NULL); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_19);
+    __Pyx_DECREF(__pyx_t_38); __pyx_t_38 = 0;
+    if (likely(PyList_CheckExact(__pyx_t_19)) || PyTuple_CheckExact(__pyx_t_19)) {
+      __pyx_t_38 = __pyx_t_19; __Pyx_INCREF(__pyx_t_38); __pyx_t_17 = 0;
+      __pyx_t_22 = NULL;
+    } else {
+      __pyx_t_17 = -1; __pyx_t_38 = PyObject_GetIter(__pyx_t_19); if (unlikely(!__pyx_t_38)) __PYX_ERR(0, 137, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_38);
+      __pyx_t_22 = Py_TYPE(__pyx_t_38)->tp_iternext; if (unlikely(!__pyx_t_22)) __PYX_ERR(0, 137, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_22)) {
+        if (likely(PyList_CheckExact(__pyx_t_38))) {
+          if (__pyx_t_17 >= PyList_GET_SIZE(__pyx_t_38)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_19 = PyList_GET_ITEM(__pyx_t_38, __pyx_t_17); __Pyx_INCREF(__pyx_t_19); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+          #else
+          __pyx_t_19 = PySequence_ITEM(__pyx_t_38, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_19);
+          #endif
+        } else {
+          if (__pyx_t_17 >= PyTuple_GET_SIZE(__pyx_t_38)) break;
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_19 = PyTuple_GET_ITEM(__pyx_t_38, __pyx_t_17); __Pyx_INCREF(__pyx_t_19); __pyx_t_17++; if (unlikely(0 < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
+          #else
+          __pyx_t_19 = PySequence_ITEM(__pyx_t_38, __pyx_t_17); __pyx_t_17++; if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_19);
+          #endif
+        }
+      } else {
+        __pyx_t_19 = __pyx_t_22(__pyx_t_38);
+        if (unlikely(!__pyx_t_19)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 137, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_19);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_19);
+      __pyx_t_19 = 0;
+
+      /* "facedetection/cython_code/get_faces.pyx":138
+ *         main_rect = faces[i]
+ *         for j in range(i + 1, len(faces)):
+ *             sub_rect = faces[j]             # <<<<<<<<<<<<<<
+ *             found = False
+ *             # 0 is left
+ */
+      __pyx_t_19 = __Pyx_PyObject_GetItem(__pyx_v_faces, __pyx_v_j); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 138, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_19);
+      __Pyx_XDECREF_SET(__pyx_v_sub_rect, __pyx_t_19);
+      __pyx_t_19 = 0;
+
+      /* "facedetection/cython_code/get_faces.pyx":139
+ *         for j in range(i + 1, len(faces)):
+ *             sub_rect = faces[j]
+ *             found = False             # <<<<<<<<<<<<<<
+ *             # 0 is left
+ *             # 1 is top
+ */
+      __pyx_v_found = 0;
+
+      /* "facedetection/cython_code/get_faces.pyx":147
+ *             if(
+ *                 (
+ *                     sub_rect[0] < main_rect[0] < sub_rect[2] or             # <<<<<<<<<<<<<<
+ *                     sub_rect[0] < main_rect[2] < sub_rect[2]
+ *                 ) and
+ */
+      __pyx_t_19 = __Pyx_GetItemInt(__pyx_v_sub_rect, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 147, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_19);
+      __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_main_rect, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 147, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_21 = PyObject_RichCompare(__pyx_t_19, __pyx_t_2, Py_LT); __Pyx_XGOTREF(__pyx_t_21); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 147, __pyx_L1_error)
+      if (__Pyx_PyObject_IsTrue(__pyx_t_21)) {
+        __Pyx_DECREF(__pyx_t_21);
+        __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_sub_rect, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 147, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_21 = PyObject_RichCompare(__pyx_t_2, __pyx_t_5, Py_LT); __Pyx_XGOTREF(__pyx_t_21); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 147, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_15 = __Pyx_PyObject_IsTrue(__pyx_t_21); if (unlikely(__pyx_t_15 < 0)) __PYX_ERR(0, 147, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_21); __pyx_t_21 = 0;
+      if (!__pyx_t_15) {
+      } else {
+        goto __pyx_L27_next_and;
+      }
+
+      /* "facedetection/cython_code/get_faces.pyx":148
+ *                 (
+ *                     sub_rect[0] < main_rect[0] < sub_rect[2] or
+ *                     sub_rect[0] < main_rect[2] < sub_rect[2]             # <<<<<<<<<<<<<<
+ *                 ) and
+ *                 (
+ */
+      __pyx_t_21 = __Pyx_GetItemInt(__pyx_v_sub_rect, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 148, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_21);
+      __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_main_rect, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 148, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_19 = PyObject_RichCompare(__pyx_t_21, __pyx_t_2, Py_LT); __Pyx_XGOTREF(__pyx_t_19); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 148, __pyx_L1_error)
+      if (__Pyx_PyObject_IsTrue(__pyx_t_19)) {
+        __Pyx_DECREF(__pyx_t_19);
+        __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_sub_rect, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 148, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_19 = PyObject_RichCompare(__pyx_t_2, __pyx_t_5, Py_LT); __Pyx_XGOTREF(__pyx_t_19); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 148, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_21); __pyx_t_21 = 0;
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_15 = __Pyx_PyObject_IsTrue(__pyx_t_19); if (unlikely(__pyx_t_15 < 0)) __PYX_ERR(0, 148, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+      if (__pyx_t_15) {
+      } else {
+        __pyx_t_39 = __pyx_t_15;
+        goto __pyx_L26_bool_binop_done;
+      }
+      __pyx_L27_next_and:;
+
+      /* "facedetection/cython_code/get_faces.pyx":151
+ *                 ) and
+ *                 (
+ *                     sub_rect[1] < main_rect[1] < sub_rect[3] or             # <<<<<<<<<<<<<<
+ *                     sub_rect[1] < main_rect[3] < sub_rect[3]
+ *                 )
+ */
+      __pyx_t_19 = __Pyx_GetItemInt(__pyx_v_sub_rect, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 151, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_19);
+      __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_main_rect, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_21 = PyObject_RichCompare(__pyx_t_19, __pyx_t_2, Py_LT); __Pyx_XGOTREF(__pyx_t_21); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 151, __pyx_L1_error)
+      if (__Pyx_PyObject_IsTrue(__pyx_t_21)) {
+        __Pyx_DECREF(__pyx_t_21);
+        __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_sub_rect, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_21 = PyObject_RichCompare(__pyx_t_2, __pyx_t_5, Py_LT); __Pyx_XGOTREF(__pyx_t_21); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_15 = __Pyx_PyObject_IsTrue(__pyx_t_21); if (unlikely(__pyx_t_15 < 0)) __PYX_ERR(0, 151, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_21); __pyx_t_21 = 0;
+      if (!__pyx_t_15) {
+      } else {
+        __pyx_t_39 = __pyx_t_15;
+        goto __pyx_L26_bool_binop_done;
+      }
+
+      /* "facedetection/cython_code/get_faces.pyx":152
+ *                 (
+ *                     sub_rect[1] < main_rect[1] < sub_rect[3] or
+ *                     sub_rect[1] < main_rect[3] < sub_rect[3]             # <<<<<<<<<<<<<<
+ *                 )
+ *             ):
+ */
+      __pyx_t_21 = __Pyx_GetItemInt(__pyx_v_sub_rect, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 152, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_21);
+      __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_main_rect, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 152, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_19 = PyObject_RichCompare(__pyx_t_21, __pyx_t_2, Py_LT); __Pyx_XGOTREF(__pyx_t_19); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 152, __pyx_L1_error)
+      if (__Pyx_PyObject_IsTrue(__pyx_t_19)) {
+        __Pyx_DECREF(__pyx_t_19);
+        __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_sub_rect, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 152, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_19 = PyObject_RichCompare(__pyx_t_2, __pyx_t_5, Py_LT); __Pyx_XGOTREF(__pyx_t_19); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 152, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      }
+      __Pyx_DECREF(__pyx_t_21); __pyx_t_21 = 0;
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __pyx_t_15 = __Pyx_PyObject_IsTrue(__pyx_t_19); if (unlikely(__pyx_t_15 < 0)) __PYX_ERR(0, 152, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+      __pyx_t_39 = __pyx_t_15;
+      __pyx_L26_bool_binop_done:;
+
+      /* "facedetection/cython_code/get_faces.pyx":145
+ *             # 3 is bottom
+ * 
+ *             if(             # <<<<<<<<<<<<<<
+ *                 (
+ *                     sub_rect[0] < main_rect[0] < sub_rect[2] or
+ */
+      if (__pyx_t_39) {
+
+        /* "facedetection/cython_code/get_faces.pyx":157
+ * 
+ *                # if overlapping remove the one with smaller scale
+ *                 if(faces[i][2] < faces[j][2]):             # <<<<<<<<<<<<<<
+ *                    found = True
+ *                    final_faces.append(faces[j])
+ */
+        __pyx_t_19 = __Pyx_PyObject_GetItem(__pyx_v_faces, __pyx_v_i); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 157, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_19);
+        __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_19, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 157, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_2);
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+        __pyx_t_19 = __Pyx_PyObject_GetItem(__pyx_v_faces, __pyx_v_j); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 157, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_19);
+        __pyx_t_21 = __Pyx_GetItemInt(__pyx_t_19, 2, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 157, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_21);
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+        __pyx_t_19 = PyObject_RichCompare(__pyx_t_2, __pyx_t_21, Py_LT); __Pyx_XGOTREF(__pyx_t_19); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 157, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_DECREF(__pyx_t_21); __pyx_t_21 = 0;
+        __pyx_t_39 = __Pyx_PyObject_IsTrue(__pyx_t_19); if (unlikely(__pyx_t_39 < 0)) __PYX_ERR(0, 157, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+        if (__pyx_t_39) {
+
+          /* "facedetection/cython_code/get_faces.pyx":158
+ *                # if overlapping remove the one with smaller scale
+ *                 if(faces[i][2] < faces[j][2]):
+ *                    found = True             # <<<<<<<<<<<<<<
+ *                    final_faces.append(faces[j])
+ *                 else:
+ */
+          __pyx_v_found = 1;
+
+          /* "facedetection/cython_code/get_faces.pyx":159
+ *                 if(faces[i][2] < faces[j][2]):
+ *                    found = True
+ *                    final_faces.append(faces[j])             # <<<<<<<<<<<<<<
+ *                 else:
+ *                    found = True
+ */
+          __pyx_t_19 = __Pyx_PyObject_GetItem(__pyx_v_faces, __pyx_v_j); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 159, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_19);
+          __pyx_t_40 = __Pyx_PyList_Append(__pyx_v_final_faces, __pyx_t_19); if (unlikely(__pyx_t_40 == ((int)-1))) __PYX_ERR(0, 159, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+
+          /* "facedetection/cython_code/get_faces.pyx":157
+ * 
+ *                # if overlapping remove the one with smaller scale
+ *                 if(faces[i][2] < faces[j][2]):             # <<<<<<<<<<<<<<
+ *                    found = True
+ *                    final_faces.append(faces[j])
+ */
+          goto __pyx_L30;
+        }
+
+        /* "facedetection/cython_code/get_faces.pyx":161
+ *                    final_faces.append(faces[j])
+ *                 else:
+ *                    found = True             # <<<<<<<<<<<<<<
+ *                    final_faces.append(faces[i])
+ * 
+ */
+        /*else*/ {
+          __pyx_v_found = 1;
+
+          /* "facedetection/cython_code/get_faces.pyx":162
+ *                 else:
+ *                    found = True
+ *                    final_faces.append(faces[i])             # <<<<<<<<<<<<<<
+ * 
+ *         if not found:
+ */
+          __pyx_t_19 = __Pyx_PyObject_GetItem(__pyx_v_faces, __pyx_v_i); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 162, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_19);
+          __pyx_t_40 = __Pyx_PyList_Append(__pyx_v_final_faces, __pyx_t_19); if (unlikely(__pyx_t_40 == ((int)-1))) __PYX_ERR(0, 162, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
+        }
+        __pyx_L30:;
+
+        /* "facedetection/cython_code/get_faces.pyx":145
+ *             # 3 is bottom
+ * 
+ *             if(             # <<<<<<<<<<<<<<
+ *                 (
+ *                     sub_rect[0] < main_rect[0] < sub_rect[2] or
+ */
+      }
+
+      /* "facedetection/cython_code/get_faces.pyx":137
+ *     for i in range(len(faces)):
+ *         main_rect = faces[i]
+ *         for j in range(i + 1, len(faces)):             # <<<<<<<<<<<<<<
+ *             sub_rect = faces[j]
+ *             found = False
+ */
+    }
+    __Pyx_DECREF(__pyx_t_38); __pyx_t_38 = 0;
+
+    /* "facedetection/cython_code/get_faces.pyx":164
+ *                    final_faces.append(faces[i])
+ * 
+ *         if not found:             # <<<<<<<<<<<<<<
+ *             final_faces.append(faces[i])
+ * 
+ */
+    __pyx_t_39 = ((!(__pyx_v_found != 0)) != 0);
+    if (__pyx_t_39) {
+
+      /* "facedetection/cython_code/get_faces.pyx":165
+ * 
+ *         if not found:
+ *             final_faces.append(faces[i])             # <<<<<<<<<<<<<<
+ * 
+ *     return final_faces
+ */
+      __pyx_t_38 = __Pyx_PyObject_GetItem(__pyx_v_faces, __pyx_v_i); if (unlikely(!__pyx_t_38)) __PYX_ERR(0, 165, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_38);
+      __pyx_t_40 = __Pyx_PyList_Append(__pyx_v_final_faces, __pyx_t_38); if (unlikely(__pyx_t_40 == ((int)-1))) __PYX_ERR(0, 165, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_38); __pyx_t_38 = 0;
+
+      /* "facedetection/cython_code/get_faces.pyx":164
+ *                    final_faces.append(faces[i])
+ * 
+ *         if not found:             # <<<<<<<<<<<<<<
+ *             final_faces.append(faces[i])
+ * 
+ */
+    }
+
+    /* "facedetection/cython_code/get_faces.pyx":135
+ *     # non max suppression to remove overlapping faces
+ *     final_faces = []
+ *     for i in range(len(faces)):             # <<<<<<<<<<<<<<
+ *         main_rect = faces[i]
+ *         for j in range(i + 1, len(faces)):
+ */
+  }
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+  /* "facedetection/cython_code/get_faces.pyx":167
+ *             final_faces.append(faces[i])
+ * 
+ *     return final_faces             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_INCREF(__pyx_v_faces);
-  __pyx_r = __pyx_v_faces;
+  __Pyx_INCREF(__pyx_v_final_faces);
+  __pyx_r = __pyx_v_final_faces;
   goto __pyx_L0;
 
-  /* "facedetectionCython.pyx":15
+  /* "facedetection/cython_code/get_faces.pyx":24
  * 
  * 
- * cpdef getFaces(img,stages_in,features_in):             # <<<<<<<<<<<<<<
- *     cdef list stages
- *     cdef list features
+ * cpdef get_faces(img,stages_in,features_in):             # <<<<<<<<<<<<<<
+ *     """returns bounding boxes on the faces inside the image
+ * 
  */
 
   /* function exit code */
@@ -3993,11 +4513,11 @@ static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *__pyx_v_img, P
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_XDECREF(__pyx_t_23);
+  __Pyx_XDECREF(__pyx_t_19);
+  __Pyx_XDECREF(__pyx_t_20);
+  __Pyx_XDECREF(__pyx_t_21);
   __Pyx_XDECREF(__pyx_t_37);
   __Pyx_XDECREF(__pyx_t_38);
-  __Pyx_XDECREF(__pyx_t_39);
-  __Pyx_XDECREF(__pyx_t_40);
   { PyObject *__pyx_type, *__pyx_value, *__pyx_tb;
     __Pyx_PyThreadState_declare
     __Pyx_PyThreadState_assign
@@ -4010,7 +4530,7 @@ static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *__pyx_v_img, P
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_window_canny.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_window_squared.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("facedetectionCython.getFaces", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("facedetection.cython_code.get_faces.get_faces", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   goto __pyx_L2;
   __pyx_L0:;
@@ -4040,16 +4560,25 @@ static PyObject *__pyx_f_19facedetectionCython_getFaces(PyObject *__pyx_v_img, P
   __Pyx_XDECREF((PyObject *)__pyx_v_window);
   __Pyx_XDECREF((PyObject *)__pyx_v_window_squared);
   __Pyx_XDECREF(__pyx_v_canny_threshold);
-  __Pyx_XDECREF(__pyx_v_total_cannay);
+  __Pyx_XDECREF(__pyx_v_rect_values);
+  __Pyx_XDECREF(__pyx_v_total_canny);
   __Pyx_XDECREF(__pyx_v_stage);
+  __Pyx_XDECREF(__pyx_v_final_faces);
+  __Pyx_XDECREF(__pyx_v_i);
+  __Pyx_XDECREF(__pyx_v_main_rect);
+  __Pyx_XDECREF(__pyx_v_j);
+  __Pyx_XDECREF(__pyx_v_sub_rect);
+  __Pyx_XDECREF(__pyx_v_ft);
+  __Pyx_XDECREF(__pyx_v_rect);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_19facedetectionCython_3getFaces(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_19facedetectionCython_3getFaces(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_13facedetection_11cython_code_9get_faces_3get_faces(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_13facedetection_11cython_code_9get_faces_2get_faces[] = "returns bounding boxes on the faces inside the image\n\n    parameters:\n        img: image to detect faces on\n        stages_in: stages that are read from the xml file (check haar cascades xml files)\n        features_in: features that are read from the xml file (check haar cascades xml files)\n\n    returns:\n        final_faces: list of bounding boxes of the faces\n\n    ";
+static PyObject *__pyx_pw_13facedetection_11cython_code_9get_faces_3get_faces(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_img = 0;
   PyObject *__pyx_v_stages_in = 0;
   PyObject *__pyx_v_features_in = 0;
@@ -4058,7 +4587,7 @@ static PyObject *__pyx_pw_19facedetectionCython_3getFaces(PyObject *__pyx_self, 
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("getFaces (wrapper)", 0);
+  __Pyx_RefNannySetupContext("get_faces (wrapper)", 0);
   {
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_img,&__pyx_n_s_stages_in,&__pyx_n_s_features_in,0};
     PyObject* values[3] = {0,0,0};
@@ -4084,17 +4613,17 @@ static PyObject *__pyx_pw_19facedetectionCython_3getFaces(PyObject *__pyx_self, 
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_stages_in)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("getFaces", 1, 3, 3, 1); __PYX_ERR(0, 15, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("get_faces", 1, 3, 3, 1); __PYX_ERR(0, 24, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_features_in)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("getFaces", 1, 3, 3, 2); __PYX_ERR(0, 15, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("get_faces", 1, 3, 3, 2); __PYX_ERR(0, 24, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "getFaces") < 0)) __PYX_ERR(0, 15, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_faces") < 0)) __PYX_ERR(0, 24, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -4109,29 +4638,29 @@ static PyObject *__pyx_pw_19facedetectionCython_3getFaces(PyObject *__pyx_self, 
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("getFaces", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 15, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("get_faces", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 24, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("facedetectionCython.getFaces", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("facedetection.cython_code.get_faces.get_faces", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_19facedetectionCython_2getFaces(__pyx_self, __pyx_v_img, __pyx_v_stages_in, __pyx_v_features_in);
+  __pyx_r = __pyx_pf_13facedetection_11cython_code_9get_faces_2get_faces(__pyx_self, __pyx_v_img, __pyx_v_stages_in, __pyx_v_features_in);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_19facedetectionCython_2getFaces(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_img, PyObject *__pyx_v_stages_in, PyObject *__pyx_v_features_in) {
+static PyObject *__pyx_pf_13facedetection_11cython_code_9get_faces_2get_faces(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_img, PyObject *__pyx_v_stages_in, PyObject *__pyx_v_features_in) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("getFaces", 0);
+  __Pyx_RefNannySetupContext("get_faces", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_19facedetectionCython_getFaces(__pyx_v_img, __pyx_v_stages_in, __pyx_v_features_in, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_13facedetection_11cython_code_9get_faces_get_faces(__pyx_v_img, __pyx_v_stages_in, __pyx_v_features_in, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -4140,7 +4669,7 @@ static PyObject *__pyx_pf_19facedetectionCython_2getFaces(CYTHON_UNUSED PyObject
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("facedetectionCython.getFaces", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("facedetection.cython_code.get_faces.get_faces", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4148,7 +4677,7 @@ static PyObject *__pyx_pf_19facedetectionCython_2getFaces(CYTHON_UNUSED PyObject
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":735
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":735
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -4165,7 +4694,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 0);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":736
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":736
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -4179,7 +4708,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":735
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":735
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -4198,7 +4727,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":738
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":738
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -4215,7 +4744,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 0);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":739
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":739
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -4229,7 +4758,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":738
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":738
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -4248,7 +4777,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":741
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":741
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -4265,7 +4794,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 0);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":742
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":742
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -4279,7 +4808,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":741
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":741
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -4298,7 +4827,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":744
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":744
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -4315,7 +4844,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 0);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":745
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":745
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -4329,7 +4858,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":744
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":744
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -4348,7 +4877,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":747
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":747
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -4365,7 +4894,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 0);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":748
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":748
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -4379,7 +4908,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":747
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":747
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -4398,7 +4927,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":750
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":750
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -4412,7 +4941,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 0);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":751
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":751
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -4422,7 +4951,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = (PyDataType_HASSUBARRAY(__pyx_v_d) != 0);
   if (__pyx_t_1) {
 
-    /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":752
+    /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":752
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -4434,7 +4963,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_v_d->subarray->shape);
     goto __pyx_L0;
 
-    /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":751
+    /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":751
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -4443,7 +4972,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":754
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":754
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -4457,7 +4986,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":750
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":750
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -4472,7 +5001,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":931
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":931
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -4484,7 +5013,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("set_array_base", 0);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":932
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":932
  * 
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!             # <<<<<<<<<<<<<<
@@ -4493,7 +5022,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_INCREF(__pyx_v_base);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":933
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":933
  * cdef inline void set_array_base(ndarray arr, object base):
  *     Py_INCREF(base) # important to do this before stealing the reference below!
  *     PyArray_SetBaseObject(arr, base)             # <<<<<<<<<<<<<<
@@ -4502,7 +5031,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   (void)(PyArray_SetBaseObject(__pyx_v_arr, __pyx_v_base));
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":931
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":931
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -4514,7 +5043,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyFinishContext();
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":935
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":935
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -4529,7 +5058,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 0);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":936
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":936
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)             # <<<<<<<<<<<<<<
@@ -4538,7 +5067,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   __pyx_v_base = PyArray_BASE(__pyx_v_arr);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":937
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":937
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -4548,7 +5077,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = ((__pyx_v_base == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":938
+    /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":938
  *     base = PyArray_BASE(arr)
  *     if base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -4559,7 +5088,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":937
+    /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":937
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -4568,7 +5097,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":939
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":939
  *     if base is NULL:
  *         return None
  *     return <object>base             # <<<<<<<<<<<<<<
@@ -4580,7 +5109,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_r = ((PyObject *)__pyx_v_base);
   goto __pyx_L0;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":935
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":935
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -4595,7 +5124,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":943
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":943
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -4619,7 +5148,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_array", 0);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":944
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":944
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4635,7 +5164,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":945
+      /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":945
  * cdef inline int import_array() except -1:
  *     try:
  *         __pyx_import_array()             # <<<<<<<<<<<<<<
@@ -4644,7 +5173,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(1, 945, __pyx_L3_error)
 
-      /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":944
+      /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":944
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4658,7 +5187,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":946
+    /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":946
  *     try:
  *         __pyx_import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -4673,7 +5202,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":947
+      /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":947
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -4689,7 +5218,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":944
+    /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":944
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4704,7 +5233,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":943
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":943
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -4727,7 +5256,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":949
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":949
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -4751,7 +5280,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_umath", 0);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":950
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":950
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4767,7 +5296,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":951
+      /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":951
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -4776,7 +5305,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(1, 951, __pyx_L3_error)
 
-      /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":950
+      /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":950
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4790,7 +5319,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":952
+    /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":952
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -4805,7 +5334,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":953
+      /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":953
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -4821,7 +5350,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":950
+    /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":950
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4836,7 +5365,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":949
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":949
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -4859,7 +5388,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":955
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":955
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -4883,7 +5412,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("import_ufunc", 0);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":956
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":956
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4899,7 +5428,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":957
+      /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":957
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -4908,7 +5437,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(1, 957, __pyx_L3_error)
 
-      /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":956
+      /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":956
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4922,7 +5451,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":958
+    /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":958
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -4937,7 +5466,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":959
+      /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":959
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -4953,7 +5482,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":956
+    /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":956
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -4968,7 +5497,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":955
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":955
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -4991,7 +5520,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":969
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":969
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj):             # <<<<<<<<<<<<<<
@@ -5004,7 +5533,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_timedelta64_object", 0);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":981
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":981
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyTimedeltaArrType_Type)             # <<<<<<<<<<<<<<
@@ -5014,7 +5543,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyTimedeltaArrType_Type));
   goto __pyx_L0;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":969
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":969
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj):             # <<<<<<<<<<<<<<
@@ -5028,7 +5557,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":984
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":984
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj):             # <<<<<<<<<<<<<<
@@ -5041,7 +5570,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("is_datetime64_object", 0);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":996
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":996
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyDatetimeArrType_Type)             # <<<<<<<<<<<<<<
@@ -5051,7 +5580,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyDatetimeArrType_Type));
   goto __pyx_L0;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":984
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":984
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj):             # <<<<<<<<<<<<<<
@@ -5065,7 +5594,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":999
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":999
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -5076,7 +5605,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
 static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *__pyx_v_obj) {
   npy_datetime __pyx_r;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":1006
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":1006
  *     also needed.  That can be found using `get_datetime64_unit`.
  *     """
  *     return (<PyDatetimeScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -5086,7 +5615,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   __pyx_r = ((PyDatetimeScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":999
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":999
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -5099,7 +5628,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":1009
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":1009
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -5110,7 +5639,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
 static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject *__pyx_v_obj) {
   npy_timedelta __pyx_r;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":1013
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":1013
  *     returns the int64 value underlying scalar numpy timedelta64 object
  *     """
  *     return (<PyTimedeltaScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -5120,7 +5649,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   __pyx_r = ((PyTimedeltaScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":1009
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":1009
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -5133,7 +5662,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   return __pyx_r;
 }
 
-/* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":1016
+/* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":1016
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -5144,7 +5673,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
 static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObject *__pyx_v_obj) {
   NPY_DATETIMEUNIT __pyx_r;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":1020
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":1020
  *     returns the unit part of the dtype for a numpy datetime64 object.
  *     """
  *     return <NPY_DATETIMEUNIT>(<PyDatetimeScalarObject*>obj).obmeta.base             # <<<<<<<<<<<<<<
@@ -5152,7 +5681,7 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
   __pyx_r = ((NPY_DATETIMEUNIT)((PyDatetimeScalarObject *)__pyx_v_obj)->obmeta.base);
   goto __pyx_L0;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":1016
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":1016
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -5166,25 +5695,25 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
 }
 
 static PyMethodDef __pyx_methods[] = {
-  {"getIntegralImageCY", (PyCFunction)__pyx_pw_19facedetectionCython_1getIntegralImageCY, METH_O, 0},
-  {"getFaces", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_19facedetectionCython_3getFaces, METH_VARARGS|METH_KEYWORDS, 0},
+  {"get_integral_image", (PyCFunction)__pyx_pw_13facedetection_11cython_code_9get_faces_1get_integral_image, METH_O, __pyx_doc_13facedetection_11cython_code_9get_faces_get_integral_image},
+  {"get_faces", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_13facedetection_11cython_code_9get_faces_3get_faces, METH_VARARGS|METH_KEYWORDS, __pyx_doc_13facedetection_11cython_code_9get_faces_2get_faces},
   {0, 0, 0, 0}
 };
 
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_facedetectionCython(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_get_faces(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_facedetectionCython},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_get_faces},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "facedetectionCython",
+    "get_faces",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -5221,22 +5750,24 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_ceil, __pyx_k_ceil, sizeof(__pyx_k_ceil), 0, 0, 1, 1},
   {&__pyx_n_s_check_stage, __pyx_k_check_stage, sizeof(__pyx_k_check_stage), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
-  {&__pyx_n_s_compute_integral_image, __pyx_k_compute_integral_image, sizeof(__pyx_k_compute_integral_image), 0, 0, 1, 1},
+  {&__pyx_n_s_copy, __pyx_k_copy, sizeof(__pyx_k_copy), 0, 0, 1, 1},
   {&__pyx_n_s_cumsum, __pyx_k_cumsum, sizeof(__pyx_k_cumsum), 0, 0, 1, 1},
-  {&__pyx_n_s_default_timer, __pyx_k_default_timer, sizeof(__pyx_k_default_timer), 0, 0, 1, 1},
   {&__pyx_n_s_dtype, __pyx_k_dtype, sizeof(__pyx_k_dtype), 0, 0, 1, 1},
   {&__pyx_n_s_feature, __pyx_k_feature, sizeof(__pyx_k_feature), 0, 0, 1, 1},
   {&__pyx_n_s_features_in, __pyx_k_features_in, sizeof(__pyx_k_features_in), 0, 0, 1, 1},
+  {&__pyx_n_s_get_bounds, __pyx_k_get_bounds, sizeof(__pyx_k_get_bounds), 0, 0, 1, 1},
   {&__pyx_n_s_img, __pyx_k_img, sizeof(__pyx_k_img), 0, 0, 1, 1},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_int64, __pyx_k_int64, sizeof(__pyx_k_int64), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
+  {&__pyx_n_s_math, __pyx_k_math, sizeof(__pyx_k_math), 0, 0, 1, 1},
   {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
   {&__pyx_n_s_np, __pyx_k_np, sizeof(__pyx_k_np), 0, 0, 1, 1},
   {&__pyx_n_s_numpy, __pyx_k_numpy, sizeof(__pyx_k_numpy), 0, 0, 1, 1},
   {&__pyx_kp_s_numpy_core_multiarray_failed_to, __pyx_k_numpy_core_multiarray_failed_to, sizeof(__pyx_k_numpy_core_multiarray_failed_to), 0, 0, 1, 0},
   {&__pyx_kp_s_numpy_core_umath_failed_to_impor, __pyx_k_numpy_core_umath_failed_to_impor, sizeof(__pyx_k_numpy_core_umath_failed_to_impor), 0, 0, 1, 0},
   {&__pyx_n_s_range, __pyx_k_range, sizeof(__pyx_k_range), 0, 0, 1, 1},
+  {&__pyx_n_s_rectangles, __pyx_k_rectangles, sizeof(__pyx_k_rectangles), 0, 0, 1, 1},
   {&__pyx_n_s_shape, __pyx_k_shape, sizeof(__pyx_k_shape), 0, 0, 1, 1},
   {&__pyx_n_s_sigma, __pyx_k_sigma, sizeof(__pyx_k_sigma), 0, 0, 1, 1},
   {&__pyx_n_s_skimage, __pyx_k_skimage, sizeof(__pyx_k_skimage), 0, 0, 1, 1},
@@ -5244,11 +5775,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_square, __pyx_k_square, sizeof(__pyx_k_square), 0, 0, 1, 1},
   {&__pyx_n_s_stages_in, __pyx_k_stages_in, sizeof(__pyx_k_stages_in), 0, 0, 1, 1},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
-  {&__pyx_n_s_timeit, __pyx_k_timeit, sizeof(__pyx_k_timeit), 0, 0, 1, 1},
-  {&__pyx_n_s_timer, __pyx_k_timer, sizeof(__pyx_k_timer), 0, 0, 1, 1},
-  {&__pyx_n_s_uint64, __pyx_k_uint64, sizeof(__pyx_k_uint64), 0, 0, 1, 1},
   {&__pyx_n_s_uint8, __pyx_k_uint8, sizeof(__pyx_k_uint8), 0, 0, 1, 1},
-  {&__pyx_n_s_utils, __pyx_k_utils, sizeof(__pyx_k_utils), 0, 0, 1, 1},
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
@@ -5263,18 +5790,18 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "facedetectionCython.pyx":21
- *     features = features_in
+  /* "facedetection/cython_code/get_faces.pyx":40
+ *     cdef list features = features_in
  * 
  *     WINDOW_SIZE = (24, 24)             # <<<<<<<<<<<<<<
- *     #img_gray = io.imread(img, as_gray=True)
- *     cdef np.ndarray[np.int64_t, ndim=2] img_gray
+ *     cdef np.ndarray[np.int64_t, ndim=2] img_gray = np.array(img,dtype=np.int64)
+ * 
  */
-  __pyx_tuple_ = PyTuple_Pack(2, __pyx_int_24, __pyx_int_24); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 21, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(2, __pyx_int_24, __pyx_int_24); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":947
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":947
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -5285,7 +5812,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":953
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":953
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -5449,11 +5976,11 @@ static int __Pyx_modinit_function_import_code(void) {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC initfacedetectionCython(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC initfacedetectionCython(void)
+__Pyx_PyMODINIT_FUNC initget_faces(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC initget_faces(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_facedetectionCython(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_facedetectionCython(void)
+__Pyx_PyMODINIT_FUNC PyInit_get_faces(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_get_faces(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -5520,7 +6047,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_facedetectionCython(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_get_faces(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -5533,7 +6060,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_facedetectionCython(PyObject *__py
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'facedetectionCython' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'get_faces' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -5548,7 +6075,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_facedetectionCython(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_get_faces(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -5585,7 +6112,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("facedetectionCython", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("get_faces", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -5603,14 +6130,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_facedetectionCython) {
+  if (__pyx_module_is_main_facedetection__cython_code__get_faces) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "facedetectionCython")) {
-      if (unlikely(PyDict_SetItemString(modules, "facedetectionCython", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "facedetection.cython_code.get_faces")) {
+      if (unlikely(PyDict_SetItemString(modules, "facedetection.cython_code.get_faces", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -5631,42 +6158,42 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "facedetectionCython.pyx":1
- * from utils import compute_integral_image             # <<<<<<<<<<<<<<
- * import numpy as np
+  /* "facedetection/cython_code/get_faces.pyx":1
+ * import numpy as np             # <<<<<<<<<<<<<<
+ * from math import ceil
  * from skimage import feature
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_INCREF(__pyx_n_s_compute_integral_image);
-  __Pyx_GIVEREF(__pyx_n_s_compute_integral_image);
-  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_compute_integral_image);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_utils, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_compute_integral_image); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_compute_integral_image, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "facedetectionCython.pyx":2
- * from utils import compute_integral_image
- * import numpy as np             # <<<<<<<<<<<<<<
+  /* "facedetection/cython_code/get_faces.pyx":2
+ * import numpy as np
+ * from math import ceil             # <<<<<<<<<<<<<<
  * from skimage import feature
  * cimport numpy as np
  */
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_INCREF(__pyx_n_s_ceil);
+  __Pyx_GIVEREF(__pyx_n_s_ceil);
+  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_ceil);
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_math, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_2) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_ceil); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_ceil, __pyx_t_1) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "facedetectionCython.pyx":3
- * from utils import compute_integral_image
+  /* "facedetection/cython_code/get_faces.pyx":3
  * import numpy as np
+ * from math import ceil
  * from skimage import feature             # <<<<<<<<<<<<<<
  * cimport numpy as np
- * from timeit import default_timer as timer
+ * 
  */
   __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
@@ -5682,38 +6209,17 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "facedetectionCython.pyx":5
- * from skimage import feature
- * cimport numpy as np
- * from timeit import default_timer as timer             # <<<<<<<<<<<<<<
- * 
- * 
- */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_INCREF(__pyx_n_s_default_timer);
-  __Pyx_GIVEREF(__pyx_n_s_default_timer);
-  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_default_timer);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_timeit, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_default_timer); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_timer, __pyx_t_1) < 0) __PYX_ERR(0, 5, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-
-  /* "facedetectionCython.pyx":1
- * from utils import compute_integral_image             # <<<<<<<<<<<<<<
- * import numpy as np
+  /* "facedetection/cython_code/get_faces.pyx":1
+ * import numpy as np             # <<<<<<<<<<<<<<
+ * from math import ceil
  * from skimage import feature
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "C:/Users/alisa/anaconda3/envs/ferNew/lib/site-packages/numpy/__init__.pxd":1016
+  /* "../../../../../.local/lib/python3.9/site-packages/numpy/__init__.pxd":1016
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) nogil:             # <<<<<<<<<<<<<<
@@ -5729,11 +6235,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_2);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init facedetectionCython", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init facedetection.cython_code.get_faces", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init facedetectionCython");
+    PyErr_SetString(PyExc_ImportError, "init facedetection.cython_code.get_faces");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -6491,12 +6997,6 @@ static CYTHON_INLINE void __Pyx_ErrFetchInState(PyThreadState *tstate, PyObject 
     return 0;
 }
 
-/* BufferFallbackError */
-  static void __Pyx_RaiseBufferFallbackError(void) {
-  PyErr_SetString(PyExc_ValueError,
-     "Buffer acquisition failed on assignment; and then reacquiring the old buffer failed too!");
-}
-
 /* PyCFunctionFastCall */
   #if CYTHON_FAST_PYCCALL
 static CYTHON_INLINE PyObject * __Pyx_PyCFunction_FastCall(PyObject *func_obj, PyObject **args, Py_ssize_t nargs) {
@@ -6725,6 +7225,28 @@ static CYTHON_INLINE PyObject* __Pyx_PyObject_CallOneArg(PyObject *func, PyObjec
     result = __Pyx_PyObject_Call(func, args, NULL);
     Py_DECREF(args);
     return result;
+}
+#endif
+
+/* PyObjectCallNoArg */
+  #if CYTHON_COMPILING_IN_CPYTHON
+static CYTHON_INLINE PyObject* __Pyx_PyObject_CallNoArg(PyObject *func) {
+#if CYTHON_FAST_PYCALL
+    if (PyFunction_Check(func)) {
+        return __Pyx_PyFunction_FastCall(func, NULL, 0);
+    }
+#endif
+#ifdef __Pyx_CyFunction_USED
+    if (likely(PyCFunction_Check(func) || __Pyx_CyFunction_Check(func)))
+#else
+    if (likely(PyCFunction_Check(func)))
+#endif
+    {
+        if (likely(PyCFunction_GET_FLAGS(func) & METH_NOARGS)) {
+            return __Pyx_PyObject_CallMethO(func, NULL);
+        }
+    }
+    return __Pyx_PyObject_Call(func, __pyx_empty_tuple, NULL);
 }
 #endif
 
@@ -7301,6 +7823,12 @@ static PyObject *__Pyx_PyObject_GetItem(PyObject *obj, PyObject* key) {
     return __Pyx_PyObject_GetIndex(obj, key);
 }
 #endif
+
+/* BufferFallbackError */
+  static void __Pyx_RaiseBufferFallbackError(void) {
+  PyErr_SetString(PyExc_ValueError,
+     "Buffer acquisition failed on assignment; and then reacquiring the old buffer failed too!");
+}
 
 /* BufferIndexError */
   static void __Pyx_RaiseBufferIndexError(int axis) {

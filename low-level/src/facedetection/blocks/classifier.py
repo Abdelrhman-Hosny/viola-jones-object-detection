@@ -1,6 +1,6 @@
 import numpy as np
 
-from feature import Feature
+from facedetection.blocks.feature import Feature
 
 
 class WeakClassifier:
@@ -25,14 +25,17 @@ class WeakClassifier:
         window_area: float,
         var: float,
         scale: float,
+        rect_values: list[int],
     ) -> float:
 
-        feature = feature_list[self.feature_idx]
+        feature_idx = self.feature_idx
+        feature = feature_list[feature_idx]
 
         feature_val = feature.compute_feature(
                                             integral_image,
                                             window_area,
                                             scale,
+                                            rect_values[feature_idx],
                                             )
 
         if feature_val < self.classifier_threshold * var:

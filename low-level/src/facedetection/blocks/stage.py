@@ -1,6 +1,6 @@
 import numpy as np
-from feature import Feature
-from classifier import WeakClassifier
+from facedetection.blocks.feature import Feature
+from facedetection.blocks.classifier import WeakClassifier
 
 
 class Stage:
@@ -17,6 +17,7 @@ class Stage:
         window_area: float,
         var: float,
         scale: float,
+        rect_values: list[int],
     ) -> bool:
 
         stage_result = [
@@ -26,6 +27,7 @@ class Stage:
                         window_area,
                         var,
                         scale,
+                        rect_values,
             )
 
             for clf in self.classifier_list
