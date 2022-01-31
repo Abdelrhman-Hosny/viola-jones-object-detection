@@ -19,6 +19,12 @@ You can detect multiple types objects in an image by giving multiple xml files t
 
 The function will return a list containing a bounding box for each detected object.
 
+You also have to setup the cython file. This can be done by running the following command in the terminal:
+
+`python3 setup.py build_ext --inplace`
+
+Make sure you are inside the src directory when running this command.
+
 # Performance
 
 The detection process is quite fast as cython was used to optimize that performance.
