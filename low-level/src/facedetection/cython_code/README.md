@@ -1,1 +1,0 @@
-After trying vanilla python (not sure what to call it). We found that it worked well but it was very slow.
